@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "package-lock.json": true,
+    "README.md": true,
+    "jsconfig.json": true,
+    ".prettierrc.json": true,
+    ".gitignore": true,
+    ".eslintrc.json": true,
+    "node_modules": true,
+    ".vscode": true,
+    "next.config.js": true,
+    ".next": true
+  }
+}

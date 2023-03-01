@@ -7,10 +7,10 @@
         "plugin:react/recommended",
         "airbnb",
         "plugin:@next/next/recommended",
-        "prettier"
+        "prettier",
+        "plugin:storybook/recommended"
     ],
-    "overrides": [
-    ],
+    "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -21,7 +21,10 @@
     ],
     "rules": {
         "react/react-in-jsx-scope": 0,
-        "arrow-body-style": ["error", "always"],
+        "arrow-body-style": [
+            "error",
+            "always"
+        ],
         "react/prop-types": 0,
         "react/destructuring-assignment": 0,
         "react/jsx-props-no-spreading": 0
