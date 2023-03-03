@@ -2,12 +2,12 @@ import React from 'react';
 import clsx from 'clsx';
 
 const variants = {
-  primary: 'text-white bg-teal-700 hover:bg-teal-800 focus:outline-3 focus:outline-teal-200',
+  primary: 'text-white bg-teal-700 hover:bg-teal-800 focus:ring focus:ring-teal-200',
   secondary:
-    'text-gray-800 bg-white outline-1 outline-gray-200 hover:bg-gray-100 focus:outline-3 focus:outline-gray-300',
-  green: 'text-white bg-green-700 hover:bg-green-800 focus:outline-3 focus:outline-green-200',
-  red: 'text-white bg-red-700 hover:bg-red-800 focus:outline-3 focus:outline-red-200',
-  yellow: 'text-white bg-yellow-500 hover:bg-yellow-700 focus:outline-3 focus:outline-yellow-400',
+    'text-gray-800 bg-white outline-1 outline-gray-200 hover:bg-gray-100 focus:ring focus:ring-gray-300',
+  green: 'text-white bg-green-700 hover:bg-green-800 focus:ring focus:ring-green-200',
+  red: 'text-white bg-red-700 hover:bg-red-800 focus:ring focus:ring-red-200',
+  yellow: 'text-white bg-yellow-600 hover:bg-yellow-700 focus:ring focus:ring-yellow-400',
   // TODO: rainbow
   // TODO: primaryGradient
 };

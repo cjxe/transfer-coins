@@ -12,3 +12,35 @@ export const Primary = {
     label: 'Button',
   },
 };
+
+export const Secondary = {
+  args: {
+    variant: 'secondary',
+    size: 'base',
+    label: 'Button',
+  },
+};
+
+export const Green = {
+  args: {
+    variant: 'green',
+    size: 'base',
+    label: 'Button',
+  },
+};
+
+export const Red = {
+  args: {
+    variant: 'red',
+    size: 'base',
+    label: 'Button',
+  },
+};
+
+export const Yellow = {
+  args: {
+    variant: 'yellow',
+    size: 'base',
+    label: 'Button',
+  },
+};

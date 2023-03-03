@@ -8,7 +8,9 @@
     ".eslintrc.json": true,
     "node_modules": true,
     ".vscode": true,
+    ".next": true,
     "next.config.js": true,
-    ".next": true
+    "tailwind.config.js": true,
+    "postcss.config.js": true
   }
 }
