@@ -10,6 +10,7 @@ export const Primary = {
   args: {
     variant: 'primary',
     size: 'base',
+    Icon: TestSVG,
   },
 };
 
@@ -17,6 +18,6 @@ export const Secondary = {
   args: {
     variant: 'secondary',
     size: 'base',
-    icon: <TestSVG />,
+    Icon: TestSVG,
   },
 };
