@@ -3,14 +3,14 @@
     "package-lock.json": true,
     "README.md": true,
     "jsconfig.json": true,
-    ".prettierrc.json": true,
     ".gitignore": true,
     ".eslintrc.json": true,
     "node_modules": true,
     ".vscode": true,
     ".next": true,
-    "next.config.js": true,
     "tailwind.config.js": true,
-    "postcss.config.js": true
+    "postcss.config.js": true,
+    "next.config.js": true,
+    ".prettierrc.json": true
   }
 }

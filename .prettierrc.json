@@ -7,5 +7,6 @@
   "proseWrap": "always",
   "bracketSpacing": true,
   "trailingComma": "es5",
-  "semi": true
+  "semi": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

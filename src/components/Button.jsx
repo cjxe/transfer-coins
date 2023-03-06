@@ -4,7 +4,7 @@ import clsx from 'clsx';
 const variants = {
   primary: 'text-white bg-teal-700 hover:bg-teal-800 focus:ring focus:ring-teal-200',
   secondary:
-    'text-gray-800 bg-white outline-1 outline-gray-200 hover:bg-gray-100 focus:ring focus:ring-gray-300',
+    'bg-white text-gray-800 outline-1 outline-gray-200 hover:bg-gray-100 focus:ring focus:ring-gray-300',
   green: 'text-white bg-green-700 hover:bg-green-800 focus:ring focus:ring-green-200',
   red: 'text-white bg-red-700 hover:bg-red-800 focus:ring focus:ring-red-200',
   yellow: 'text-white bg-yellow-600 hover:bg-yellow-700 focus:ring focus:ring-yellow-400',

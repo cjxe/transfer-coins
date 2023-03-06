@@ -1,8 +1,9 @@
-import ButtonIcon from './ButtonIcon';
+import ButtonWithIcon from './ButtonWithIcon';
+import TestSVG from '../assets/icons/test.svg';
 
 export default {
-  title: 'Components/ButtonIcon',
-  component: ButtonIcon,
+  title: 'Components/ButtoWithIcon',
+  component: ButtonWithIcon,
 };
 
 export const Primary = {
@@ -16,5 +17,6 @@ export const Secondary = {
   args: {
     variant: 'secondary',
     size: 'base',
+    icon: <TestSVG />,
   },
 };

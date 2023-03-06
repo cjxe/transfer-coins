@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import TestSVG from '../assets/icons/test.svg';
 
 const variants = {
   primary: 'fill-teal-600 stroke-teal-600',
@@ -24,28 +23,29 @@ const sizesButton = {
   xl: 'p-2.5 rounded-lg',
 };
 
-function ButtonIcon({ variant, size }) {
+// Remove SVG's `height`, `width`, `fill`, `stroke` properties
+function ButtonWithIcon({ variant, size, Icon }) {
   return (
     <button
       type="button"
       className={clsx(
-        'bg-white hover:bg-gray-100 flex justify-center items-center active:ring-2 active:ring-gray-200',
+        'flex items-center justify-center bg-white hover:bg-gray-100 active:ring-2 active:ring-gray-200',
         sizesButton[size]
       )}
     >
-      <TestSVG className={clsx(variants[variant], sizesSVG[size])} />
+      <Icon className={clsx(variants[variant], sizesSVG[size])} />
     </button>
   );
 }
 
-ButtonIcon.propTypes = {
+ButtonWithIcon.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl']),
 };
 
-ButtonIcon.defaultProps = {
+ButtonWithIcon.defaultProps = {
   variant: 'primary',
   size: 'base',
 };
 
-export default ButtonIcon;
+export default ButtonWithIcon;
