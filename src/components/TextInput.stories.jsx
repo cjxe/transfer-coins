@@ -6,14 +6,19 @@ export default {
   component: TextInput,
 };
 
-export const Base = {
+export const WithLeftIcon = {
   args: {
     id: 'one',
-    label: 'First name',
-    placeholder: 'Input text',
     size: 'base',
     buttonIcon: TestSVG,
     LeftIcon: TestSVG,
-    helperText: 'We’ll never share your details. See our Privacy Policy.',
+  },
+};
+
+export const WithoutLeftIcon = {
+  args: {
+    id: 'one',
+    size: 'base',
+    buttonIcon: TestSVG,
   },
 };

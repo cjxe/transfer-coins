@@ -3,22 +3,48 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import ButtonWithIcon from './ButtonWithIcon';
 
-// TODO extra colours (success, error, disabled)
 // TODO: add buttonIcon and LeftIcon to propTypes
-// const state = {
-//   success: 'border bg-green-50 border-green-500 text-green-700',
-// };
+// TODO: add state: disabled
 
+// States
+const inputStates = {
+  default:
+    'border bg-gray-50 border-gray-300 text-gray-900 focus-within:border-gray-400 focus-within:ring-2 focus-within:ring-gray-200',
+  error:
+    'border bg-red-50 border-red-500 text-red-700 focus-within:ring-2 focus-within:ring-red-200',
+  success:
+    'border bg-green-50 border-green-500 text-green-700 focus-within:ring-2 focus-within:ring-green-200',
+};
+
+const leftIconStates = {
+  default: 'fill-gray-500 stroke-gray-500',
+  error: 'fill-red-600 stroke-red-600',
+  success: 'fill-green-600 stroke-green-600',
+};
+
+const buttonStates = {
+  default: 'secondary',
+  error: 'error',
+  success: 'success',
+};
+
+const helperStates = {
+  default: 'text-gray-500',
+  error: 'text-red-600',
+  success: 'text-green-600',
+};
+
+// Sizes
 const wrapperSizes = {
   sm: 'h-9 pl-2.5 pr-1',
   base: 'h-10 pl-3 pr-1.5',
-  lg: 'h-12 pl-4 pr-2.5',
+  lg: 'h-12 pl-3.5 pr-1.5',
 };
 
 const itemSpaces = {
   sm: 'space-x-2.5',
   base: 'space-x-3',
-  lg: 'space-x-4',
+  lg: 'space-x-3.5',
 };
 
 const inputSizes = {
@@ -27,7 +53,19 @@ const inputSizes = {
   lg: 'text-base font-normal',
 };
 
-function TextInput({ id, size, label, LeftIcon, placeholder, buttonIcon, helperText }) {
+const leftIconSizes = {
+  sm: 'h-4 w-4',
+  base: 'h-4 w-4',
+  lg: 'h-5 w-5',
+};
+
+const buttonSizes = {
+  sm: 'xs',
+  base: 'xs',
+  lg: 'sm',
+};
+
+function TextInput({ id, state, size, label, LeftIcon, placeholder, buttonIcon, helperText }) {
   return (
     <div className="flex flex-col gap-2">
       {label && (
@@ -38,12 +76,13 @@ function TextInput({ id, size, label, LeftIcon, placeholder, buttonIcon, helperT
       <div
         className={clsx(
           wrapperSizes[size],
-          'inline-block flex w-min items-center rounded-lg border border-gray-300 bg-gray-50 focus-within:border-teal-600'
+          inputStates[state],
+          'inline-block flex w-min items-center rounded-lg'
         )}
       >
         <div className={clsx(itemSpaces[size], 'flex items-center')}>
           {LeftIcon && (
-            <div className="h-4 w-4 fill-gray-500 stroke-gray-500">
+            <div className={clsx(leftIconStates[state], leftIconSizes[size])}>
               <LeftIcon />
             </div>
           )}
@@ -53,11 +92,17 @@ function TextInput({ id, size, label, LeftIcon, placeholder, buttonIcon, helperT
             className={clsx(inputSizes[size], 'bg-inherit outline-none')}
             placeholder={placeholder}
           />
-          {buttonIcon && <ButtonWithIcon variant="secondary" size="xs" Icon={buttonIcon} />}
+          {buttonIcon && (
+            <ButtonWithIcon
+              variant={buttonStates[state]}
+              size={buttonSizes[size]}
+              Icon={buttonIcon}
+            />
+          )}
         </div>
       </div>
       {helperText && (
-        <div className="text-sm font-normal leading-tight text-gray-500">
+        <div className={clsx(helperStates[state], 'text-sm font-normal leading-tight')}>
           <p>{helperText}</p>
         </div>
       )}
@@ -67,6 +112,7 @@ function TextInput({ id, size, label, LeftIcon, placeholder, buttonIcon, helperT
 
 TextInput.propTypes = {
   id: PropTypes.string.isRequired,
+  state: PropTypes.oneOf(['default', 'error', 'success']),
   size: PropTypes.oneOf(['sm', 'base', 'lg']),
   label: PropTypes.string,
   placeholder: PropTypes.string,
@@ -74,6 +120,7 @@ TextInput.propTypes = {
 };
 
 TextInput.defaultProps = {
+  state: 'default',
   size: 'base',
   label: 'First name',
   placeholder: 'Enter your first name',
