@@ -7,7 +7,7 @@ const variants = {
   secondary: 'fill-gray-500 stroke-gray-500',
 };
 
-const sizesSVG = {
+const svgSizes = {
   xs: 'w-4 h-4',
   sm: 'w-6 h-6',
   base: 'w-6 h-6',
@@ -15,7 +15,7 @@ const sizesSVG = {
   xl: 'w-8 h-8',
 };
 
-const sizesButton = {
+const buttonSizes = {
   xs: 'p-1.5 rounded',
   sm: 'p-2 rounded-lg',
   base: 'p-2.5 rounded-lg',
@@ -29,11 +29,11 @@ function ButtonWithIcon({ variant, size, Icon }) {
     <button
       type="button"
       className={clsx(
-        'flex items-center justify-center bg-white hover:bg-gray-100 active:ring-2 active:ring-gray-200',
-        sizesButton[size]
+        'flex items-center justify-center bg-inherit hover:bg-gray-100 active:ring-2 active:ring-gray-200',
+        buttonSizes[size]
       )}
     >
-      <Icon className={clsx(variants[variant], sizesSVG[size])} />
+      <Icon className={clsx(variants[variant], svgSizes[size])} />
     </button>
   );
 }
