@@ -65,7 +65,17 @@ const buttonSizes = {
   lg: 'sm',
 };
 
-function TextInput({ id, state, size, label, LeftIcon, placeholder, buttonIcon, helperText }) {
+function TextInput({
+  id,
+  state,
+  size,
+  label,
+  LeftIcon,
+  placeholder,
+  buttonIcon,
+  helperText,
+  ...props
+}) {
   return (
     <div className="flex flex-col gap-2">
       {label && (
@@ -77,29 +87,26 @@ function TextInput({ id, state, size, label, LeftIcon, placeholder, buttonIcon, 
         className={clsx(
           wrapperSizes[size],
           inputStates[state],
-          'inline-block flex w-min items-center rounded-lg'
+          'flex w-full items-center rounded-lg'
         )}
       >
-        <div className={clsx(itemSpaces[size], 'flex items-center')}>
-          {LeftIcon && (
-            <div className={clsx(leftIconStates[state], leftIconSizes[size])}>
-              <LeftIcon />
-            </div>
-          )}
+        <div className={clsx(itemSpaces[size], 'flex grow items-center')}>
+          {LeftIcon && <LeftIcon className={clsx(leftIconStates[state], leftIconSizes[size])} />}
           <input
             id={id}
             type="text"
-            className={clsx(inputSizes[size], 'bg-inherit outline-none')}
+            className={clsx(inputSizes[size], 'grow bg-inherit outline-none')}
             placeholder={placeholder}
+            {...props}
           />
-          {buttonIcon && (
-            <ButtonWithIcon
-              variant={buttonStates[state]}
-              size={buttonSizes[size]}
-              Icon={buttonIcon}
-            />
-          )}
         </div>
+        {buttonIcon && (
+          <ButtonWithIcon
+            variant={buttonStates[state]}
+            size={buttonSizes[size]}
+            Icon={buttonIcon}
+          />
+        )}
       </div>
       {helperText && (
         <div className={clsx(helperStates[state], 'text-sm font-normal leading-tight')}>
@@ -122,9 +129,9 @@ TextInput.propTypes = {
 TextInput.defaultProps = {
   state: 'default',
   size: 'base',
-  label: 'First name',
-  placeholder: 'Enter your first name',
-  helperText: "We'll never share your details. See our Privacy Policy.",
+  label: '',
+  placeholder: '',
+  helperText: '',
 };
 
 export default TextInput;
