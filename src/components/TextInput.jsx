@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import ButtonWithIcon from './ButtonWithIcon';
 
-// TODO: add buttonIcon and LeftIcon to propTypes
-// TODO: add state: disabled
+// TODO
+// - [ ] add buttonIcon and LeftIcon to propTypes
+// - [ ] add state: disabled
 
 // States
 const inputStates = {
@@ -26,6 +27,12 @@ const buttonStates = {
   default: 'secondary',
   error: 'error',
   success: 'success',
+};
+
+const labelStates = {
+  default: 'text-gray-900',
+  error: 'text-red-600',
+  success: 'text-green-600',
 };
 
 const helperStates = {
@@ -79,7 +86,7 @@ function TextInput({
   return (
     <div className="flex flex-col gap-2">
       {label && (
-        <label htmlFor={id} className="text-sm font-medium">
+        <label htmlFor={id} className={clsx(labelStates[state], 'text-sm font-medium')}>
           {label}
         </label>
       )}
