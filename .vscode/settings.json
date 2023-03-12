@@ -3,14 +3,19 @@
     "package-lock.json": true,
     "README.md": true,
     "jsconfig.json": true,
-    ".gitignore": true,
     ".eslintrc.json": true,
-    "node_modules": true,
     ".vscode": true,
     ".next": true,
-    "tailwind.config.js": true,
     "postcss.config.js": true,
     "next.config.js": true,
-    ".prettierrc.json": true
+    ".prettierrc.json": true,
+    ".gitignore": true,
+    "tailwind.config.js": true,
+    "node_modules": true,
+    "src/components/Checkbox": true,
+    "src/components/TextInput": true,
+    "src/components/ToggleSwitch": true,
+    "src/components/Tooltip": true,
+    "src/components/Button": true
   }
 }

@@ -1,4 +1,4 @@
-import ButtonWithIcon from '../components/ButtonWithIcon/ButtonWithIcon';
+import ButtonWithIcon from '../components/Button/ButtonWithIcon';
 import TestSVG from '../assets/icons/test.svg';
 
 function Test() {
