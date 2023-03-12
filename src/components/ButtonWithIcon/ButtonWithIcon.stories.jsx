@@ -1,5 +1,5 @@
 import ButtonWithIcon from './ButtonWithIcon';
-import TestSVG from '../assets/icons/test.svg';
+import TestSVG from '../../assets/icons/test.svg';
 
 export default {
   title: 'Components/ButtonWithIcon',

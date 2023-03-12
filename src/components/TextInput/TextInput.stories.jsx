@@ -1,5 +1,5 @@
 import { HiEye, HiMail, HiUser } from 'react-icons/hi';
-import ClipboardDocument from '../assets/icons/ClipboardDocument.svg';
+import ClipboardDocument from '../../assets/icons/ClipboardDocument.svg';
 import TextInput from './TextInput';
 
 export default {
