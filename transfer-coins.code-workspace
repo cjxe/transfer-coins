@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../learning-nextjs"
+		},
+		{
+			"path": "../storybook-tutorial"
+		},
+		{
+			"path": "../tailwindcss-tutorial"
+		}
+	],
+	"settings": {}
+}

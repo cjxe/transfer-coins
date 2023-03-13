@@ -30,14 +30,12 @@ function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illust
 }
 
 FeatureContainer.propTypes = {
-  headingText: PropTypes.string,
-  descriptionText: PropTypes.string,
+  headingText: PropTypes.string.isRequired,
+  descriptionText: PropTypes.string.isRequired,
   iconGap: PropTypes.string,
 };
 
 FeatureContainer.defaultProps = {
-  headingText: '',
-  descriptionText: '',
   iconGap: 'gap-6',
 };
 

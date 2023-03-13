@@ -1,20 +1,35 @@
-import ButtonWithIcon from '../components/Button/ButtonWithIcon';
-import TestSVG from '../assets/icons/test.svg';
-import FeatureContainer from '@/components/Features/FeatureContainer/FeatureContainer';
+import { HiCollection, HiFingerPrint, HiSparkles } from 'react-icons/hi';
+import SectionContainer from '@/components/SectionContainer/SectionContainer';
+import FeatureMinicard from '@/components/Features/FeatureMinicard/FeatureMinicard';
 
 function Test() {
   return (
     <div>
       <div>
-        <FeatureContainer
-          headingText="Send and receive safely"
-          descriptionText={[
-            'Stop exporting your private keys to others. Instead, copy and paste the receiving address to your favourite cryptocurrency wallet or use our cryptocurrency wallet integrations.',
-            <br />,
-            <br />,
-            '“Not your keys, not your coins.”',
-          ]}
-        />
+        <SectionContainer
+          headingText="Transferring coins made easy"
+          descriptionText="We did all the thinking so you don’t have to."
+          sectionId="features"
+        >
+          <div className="flex flex-row md:gap-16">
+            <FeatureMinicard
+              headingText="Secure transfer"
+              descriptionText="Connect your favourite wallet and we will take care of the rest."
+              Icon={HiFingerPrint}
+            />
+            <FeatureMinicard
+              headingText="All-in-One link"
+              descriptionText="Stop sending multiple cryptocurrency addresses with incomplete information."
+              Icon={HiCollection}
+            />
+            <FeatureMinicard
+              headingText="Personalized page"
+              descriptionText="Add custom colours to your page; be unique, 
+              be different."
+              Icon={HiSparkles}
+            />
+          </div>
+        </SectionContainer>
       </div>
     </div>
   );
