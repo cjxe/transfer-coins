@@ -21,7 +21,7 @@ export const FeatureCard = {
     descriptionText: 'We did all the thinking so you don’t have to.',
     sectionId: 'features',
     children: (
-      <div className="flex gap-16 gap-16 xs:flex-col md:flex-row">
+      <div className="flex gap-16 gap-16 xs:flex-col lg:flex-row">
         <FeatureMinicard
           headingText="Secure transfer"
           descriptionText="Connect your favourite wallet and we will take care of the rest."
