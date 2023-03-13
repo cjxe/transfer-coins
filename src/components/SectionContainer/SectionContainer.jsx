@@ -5,10 +5,12 @@ function SectionContainer({ headingText, descriptionText, sectionId, children })
   return (
     <div id={sectionId} className="flex flex-col items-center gap-16 py-20">
       <div className="flex flex-col gap-2">
-        <h className="text-center text-4xl font-extrabold leading-tight text-gray-900">
+        <h className="text-center font-extrabold leading-tight text-gray-900 xs:text-3xl lg:text-4xl">
           {headingText}
         </h>
-        <p className="text-center text-lg font-normal text-gray-500">{descriptionText}</p>
+        <p className="text-center font-normal text-gray-500 xs:text-base lg:text-lg">
+          {descriptionText}
+        </p>
       </div>
       {children}
     </div>

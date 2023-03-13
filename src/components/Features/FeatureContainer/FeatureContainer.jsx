@@ -10,10 +10,12 @@ function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illust
       </div>
       <div className="flex flex-col gap-9 xs:order-1 xs:order-1 xs:max-w-sm xs:max-w-xl md:max-w-2xl lg:order-2 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
         <div className="flex flex-col gap-6">
-          <h5 className="text-4xl font-extrabold leading-tight text-gray-900 xs:text-3xl">
+          <h5 className="font-extrabold leading-tight text-gray-900 xs:text-3xl lg:text-4xl">
             {headingText}
           </h5>
-          <span className="text-lg font-medium text-gray-500 xs:text-base">{descriptionText}</span>
+          <span className="font-medium text-gray-500 xs:text-base lg:text-lg">
+            {descriptionText}
+          </span>
         </div>
         <div className={clsx(iconGap, 'flex flex-row pl-1 xs:justify-center lg:justify-start')}>
           {icons &&
