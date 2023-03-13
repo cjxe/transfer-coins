@@ -2,20 +2,20 @@
   "files.exclude": {
     "package-lock.json": true,
     "README.md": true,
-    "jsconfig.json": true,
-    ".eslintrc.json": true,
     ".vscode": true,
     ".next": true,
     "postcss.config.js": true,
     "next.config.js": true,
     ".prettierrc.json": true,
     ".gitignore": true,
-    "tailwind.config.js": true,
     "node_modules": true,
     "src/components/Checkbox": true,
-    "src/components/TextInput": true,
     "src/components/ToggleSwitch": true,
     "src/components/Tooltip": true,
-    "src/components/Button": true
+    "src/components/Button": true,
+    "src/components/TextInput": true,
+    "jsconfig.json": true,
+    ".eslintrc.json": true,
+    "tailwind.config.js": true
   }
 }
