@@ -1,10 +1,16 @@
 import { HiCollection, HiFingerPrint, HiSparkles } from 'react-icons/hi';
 import SectionContainer from '@/components/SectionContainer/SectionContainer';
 import FeatureMinicard from '@/components/Features/FeatureMinicard/FeatureMinicard';
+import Navbar from '@/components/Navbar/Navbar';
+import { BrandLogo } from '@/assets/illustrations';
 
 function Test() {
   return (
     <div>
+      <Navbar>
+        <Navbar.Brand BrandIcon={BrandLogo} brandName="test" />
+        <Navbar.Link to="#features">Features</Navbar.Link>
+      </Navbar>
       <div>
         <SectionContainer
           headingText="Transferring coins made easy"
