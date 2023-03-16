@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import HeadingText from '@/components/Utils/Text/HeadingText/HeadingText';
-import DescriptionText from '@/components/Utils/Text/DescriptionText/DescriptionText';
+import HeadingText from '@/components/SectionContainer/HeadingText/HeadingText';
+import DescriptionText from '@/components/SectionContainer/DescriptionText/DescriptionText';
 
 function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illustration }) {
   return (

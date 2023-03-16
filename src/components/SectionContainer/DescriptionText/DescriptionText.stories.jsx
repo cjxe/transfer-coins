@@ -1,7 +1,7 @@
 import DescriptionText from './DescriptionText';
 
 export default {
-  title: 'Components/Utils/Text/DescriptionText',
+  title: 'Components/SectionContainer/DescriptionText',
   component: DescriptionText,
 };
 

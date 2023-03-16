@@ -14,25 +14,28 @@ export const NotSignedIn = {
   args: {
     children: (
       <>
-        <Navbar.Brand BrandIcon={BrandLogo} brandName="Transfer Coins" size="sm" />
-        <div className="flex flex-row items-center gap-8">
-          <div className="flex flex-row gap-8">
+        <div className="flex flex-row justify-between">
+          <Navbar.Brand BrandIcon={BrandLogo} brandName="Transfer Coins" size="sm" />
+          <Navbar.Toggle />
+        </div>
+        <Navbar.Collapse>
+          <div className="flex xs:flex-col xs:gap-4 lg:flex-row lg:gap-8">
             <Navbar.Link to="#features">Features</Navbar.Link>
             <Navbar.Link to="#pricing">Pricing</Navbar.Link>
             <Navbar.Link to="#faq">FAQ</Navbar.Link>
             <Navbar.Link to="#contact">Contact</Navbar.Link>
           </div>
-          <div className="flex items-center gap-4">
-            <VerticalSeparator />
+          <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
+            <VerticalSeparator className="xs:hidden lg:block" />
             <ButtonWithIcon variant="secondary" size="base" Icon={HiMoon} />
-            <Button variant="secondary" size="sm">
+            <Button className="rounded-lg border border-gray-200 bg-white font-semibold text-gray-800 hover:bg-gray-100 focus:ring focus:ring-gray-300 xs:px-5 xs:py-2.5 xs:text-sm lg:px-3 lg:py-2 lg:text-sm">
               Log in
             </Button>
-            <Button variant="primary" size="sm">
+            <Button className="rounded-lg bg-teal-700 font-semibold text-white hover:bg-teal-800 focus:ring focus:ring-teal-200 xs:px-5 xs:py-2.5 xs:text-sm lg:px-3 lg:py-2 lg:text-sm">
               Join now
             </Button>
           </div>
-        </div>
+        </Navbar.Collapse>
       </>
     ),
   },

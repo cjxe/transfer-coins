@@ -59,6 +59,7 @@ const preview = {
         ...CUSTOM_VIEWPORTS,
       },
     },
+    layout: 'fullscreen',
   },
 };
 

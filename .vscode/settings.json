@@ -13,9 +13,18 @@
     "src/components/ToggleSwitch": true,
     "src/components/Tooltip": true,
     "src/components/Button": true,
-    "src/components/TextInput": true,
     "jsconfig.json": true,
+    "tailwind.config.js": true,
+    "package.json": true,
+    "src/pages/api": true,
+    "src/stories": true,
+    "transfer-coins.code-workspace": true,
+    "public": true,
+    "src/pages/_document.jsx": true,
+    "src/components/Navbar/NavbarLink": true,
     ".eslintrc.json": true,
-    "tailwind.config.js": true
+    "src/styles": true,
+    "src/pages/_app.jsx": true,
+    ".storybook": true
   }
 }

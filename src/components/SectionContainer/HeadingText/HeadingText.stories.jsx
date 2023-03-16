@@ -1,7 +1,7 @@
 import HeadingText from './HeadingText';
 
 export default {
-  title: 'Components/Utils/Text/HeadingText',
+  title: 'Components/SectionContainer/HeadingText',
   component: HeadingText,
 };
 

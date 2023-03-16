@@ -30,6 +30,12 @@ function FeatureMinicard({ headingText, descriptionText, Icon, scrollToId }) {
 FeatureMinicard.propTypes = {
   headingText: PropTypes.string.isRequired,
   descriptionText: PropTypes.string.isRequired,
+  Icon: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.oneOf(['img', 'svg']),
+    }),
+    PropTypes.func,
+  ]).isRequired,
 };
 
 FeatureMinicard.defaultProps = {};

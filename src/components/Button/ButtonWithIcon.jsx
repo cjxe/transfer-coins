@@ -26,14 +26,15 @@ const buttonSizes = {
 };
 
 // Remove SVG's `height`, `width`, `fill`, `stroke` properties
-function ButtonWithIcon({ variant, size, Icon }) {
+function ButtonWithIcon({ variant, size, Icon, ...props }) {
   return (
     <button
       type="button"
       className={clsx(
-        'flex items-center justify-center bg-inherit hover:bg-gray-100 active:ring-2 active:ring-gray-200',
+        'flex items-center justify-center bg-inherit hover:bg-gray-100 focus:ring-2 focus:ring-gray-200',
         buttonSizes[size]
       )}
+      {...props}
     >
       <Icon className={clsx(variants[variant], svgSizes[size])} />
     </button>
@@ -41,8 +42,14 @@ function ButtonWithIcon({ variant, size, Icon }) {
 }
 
 ButtonWithIcon.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'error', 'success']),
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl']),
+  Icon: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.oneOf(['img', 'svg']),
+    }),
+    PropTypes.func,
+  ]).isRequired,
 };
 
 ButtonWithIcon.defaultProps = {

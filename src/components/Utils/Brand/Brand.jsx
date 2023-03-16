@@ -33,9 +33,12 @@ function Brand({ BrandIcon, size, brandName, takesToHomePage }) {
 }
 
 Brand.propTypes = {
-  BrandIcon: PropTypes.shape({
-    type: PropTypes.oneOf(['img', 'svg']),
-  }).isRequired,
+  BrandIcon: PropTypes.oneOfType([
+    PropTypes.shape({
+      type: PropTypes.oneOf(['img', 'svg']),
+    }),
+    PropTypes.func,
+  ]).isRequired,
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl']),
   brandName: PropTypes.string,
   takesToHomePage: PropTypes.bool,
