@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React, { useContext } from 'react';
-import { NavbarContext } from '../NavbarContext/NavbarContext';
+import { NavbarContext } from '@/components/Navbar/NavbarContext/NavbarContext';
 
 function NavbarCollapse({ children }) {
   const [isOpen] = useContext(NavbarContext);

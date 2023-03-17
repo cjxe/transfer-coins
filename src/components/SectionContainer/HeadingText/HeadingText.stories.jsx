@@ -1,4 +1,4 @@
-import HeadingText from './HeadingText';
+import HeadingText from '@/components/SectionContainer/HeadingText/HeadingText';
 
 export default {
   title: 'Components/SectionContainer/HeadingText',

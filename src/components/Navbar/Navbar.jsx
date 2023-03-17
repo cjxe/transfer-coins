@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 import NavbarBrand from '@/components/Utils/Brand/Brand';
-import NavbarCollapse from './NavbarCollapse/NavbarCollapse';
-import NavbarLink from './NavbarLink/NavbarLink';
-import NavbarToggle from './NavbarToggle/NavbarToggle';
-import { NavbarContext } from './NavbarContext/NavbarContext';
+import NavbarCollapse from '@/components/Navbar/NavbarCollapse/NavbarCollapse';
+import NavbarLink from '@/components/Navbar/NavbarLink/NavbarLink';
+import NavbarToggle from '@/components/Navbar/NavbarToggle/NavbarToggle';
+import { NavbarContext } from '@/components/Navbar/NavbarContext/NavbarContext';
 
 // TODO
 // - [ ] logged in

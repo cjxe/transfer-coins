@@ -1,4 +1,4 @@
-import FeatureContainer from './FeatureContainer';
+import FeatureContainer from '@/components/Features/FeatureContainer/FeatureContainer';
 import {
   MetaMaskIcon,
   TrezorIcon,

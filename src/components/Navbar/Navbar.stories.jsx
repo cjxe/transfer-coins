@@ -1,9 +1,9 @@
 import { HiMoon } from 'react-icons/hi';
 import { BrandLogo } from '@/assets/illustrations';
 import { VerticalSeparator } from '@/assets/other';
-import Navbar from './Navbar';
-import Button from '../Buttons/Button';
-import ButtonWithIcon from '../Buttons/ButtonWithIcon';
+import Navbar from '@/components/Navbar/Navbar';
+import Button from '@/components/Buttons/Button';
+import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 
 export default {
   title: 'Components/Navbar',

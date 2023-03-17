@@ -1,4 +1,4 @@
-import DescriptionText from './DescriptionText';
+import DescriptionText from '@/components/SectionContainer/DescriptionText/DescriptionText';
 
 export default {
   title: 'Components/SectionContainer/DescriptionText',

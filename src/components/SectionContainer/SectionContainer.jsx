@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HeadingText from './HeadingText/HeadingText';
-import DescriptionText from './DescriptionText/DescriptionText';
+import HeadingText from '@/components/SectionContainer/HeadingText/HeadingText';
+import DescriptionText from '@/components/SectionContainer/DescriptionText/DescriptionText';
 
-// TODO
-// -[ ] refactor HeadingText and DecscriptionText
 function SectionContainer({ headingText, descriptionText, sectionId, children }) {
   return (
     <div id={sectionId} className="flex flex-col items-center gap-16 py-20 px-4">

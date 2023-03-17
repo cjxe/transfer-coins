@@ -6,8 +6,6 @@
     ".prettierrc.json": true,
     ".gitignore": true,
     "node_modules": true,
-    "src/components/Checkbox": true,
-    "src/components/Tooltip": true,
     "package.json": true,
     "src/pages/api": true,
     "src/stories": true,
@@ -18,9 +16,7 @@
     ".storybook": true,
     "postcss.config.js": true,
     "src/pages": true,
-    "tailwind.config.js": true,
-    "src/components/TextInput": true,
-    "src/components/ToggleSwitch": true
+    "tailwind.config.js": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

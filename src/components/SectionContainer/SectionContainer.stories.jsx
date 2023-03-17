@@ -1,6 +1,6 @@
 import { HiCollection, HiFingerPrint, HiSparkles } from 'react-icons/hi';
-import SectionContainer from './SectionContainer';
-import FeatureMinicard from '../Features/FeatureMinicard/FeatureMinicard';
+import SectionContainer from '@/components/SectionContainer/SectionContainer';
+import FeatureMinicard from '@/components/Features/FeatureMinicard/FeatureMinicard';
 
 export default {
   title: 'Components/SectionContainer',

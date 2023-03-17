@@ -1,4 +1,4 @@
-import NavbarLink from './NavbarLink';
+import NavbarLink from '@/components/Navbar/NavbarLink/NavbarLink';
 
 export default {
   title: 'Components/Navbar/Link',

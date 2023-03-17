@@ -1,7 +1,7 @@
 import { HiMenu, HiX } from 'react-icons/hi';
 import { useContext } from 'react';
 import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
-import { NavbarContext } from '../NavbarContext/NavbarContext';
+import { NavbarContext } from '@/components/Navbar/NavbarContext/NavbarContext';
 
 function NavbarToggle() {
   const [isOpen, setIsOpen] = useContext(NavbarContext);
