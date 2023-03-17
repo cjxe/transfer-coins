@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import NavbarBrand from '../Utils/Brand/Brand';
+import NavbarBrand from '@/components/Utils/Brand/Brand';
 import NavbarCollapse from './NavbarCollapse/NavbarCollapse';
 import NavbarLink from './NavbarLink/NavbarLink';
 import NavbarToggle from './NavbarToggle/NavbarToggle';

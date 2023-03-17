@@ -2,29 +2,28 @@
   "files.exclude": {
     "package-lock.json": true,
     "README.md": true,
-    ".vscode": true,
     ".next": true,
-    "postcss.config.js": true,
-    "next.config.js": true,
     ".prettierrc.json": true,
     ".gitignore": true,
     "node_modules": true,
     "src/components/Checkbox": true,
-    "src/components/ToggleSwitch": true,
     "src/components/Tooltip": true,
-    "src/components/Button": true,
-    "jsconfig.json": true,
-    "tailwind.config.js": true,
     "package.json": true,
     "src/pages/api": true,
     "src/stories": true,
-    "transfer-coins.code-workspace": true,
     "public": true,
     "src/pages/_document.jsx": true,
-    "src/components/Navbar/NavbarLink": true,
-    ".eslintrc.json": true,
     "src/styles": true,
     "src/pages/_app.jsx": true,
-    ".storybook": true
+    ".storybook": true,
+    "postcss.config.js": true,
+    "src/pages": true,
+    "tailwind.config.js": true,
+    "src/components/TextInput": true,
+    "src/components/ToggleSwitch": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 const variants = {
-  primary: 'fill-teal-600 stroke-teal-600',
-  secondary: 'fill-gray-500 stroke-gray-500',
-  error: 'fill-red-600 stroke-red-600',
-  success: 'fill-green-600 stroke-green-600',
+  primary: 'fill-teal-600 stroke-teal-600 dark:fill-teal-500 dark:stroke-teal-500',
+  secondary: 'fill-gray-500 stroke-gray-500 dark:fill-gray-400 dark:stroke-gray-400',
+  error: 'fill-red-600 stroke-red-600 dark:fill-red-500 dark:stroke-red-500',
+  success: 'fill-green-600 stroke-green-600 dark:fill-green-500 dark:stroke-green-500',
 };
 
 const svgSizes = {
@@ -31,7 +31,7 @@ function ButtonWithIcon({ variant, size, Icon, ...props }) {
     <button
       type="button"
       className={clsx(
-        'flex items-center justify-center bg-inherit hover:bg-gray-100 focus:ring-2 focus:ring-gray-200',
+        'flex items-center justify-center bg-inherit hover:bg-gray-100 focus:ring-gray-200 focus:ring-2 dark:hover:bg-gray-700 dark:focus:ring-gray-600',
         buttonSizes[size]
       )}
       {...props}

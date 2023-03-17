@@ -1,7 +1,7 @@
 import Button from './Button';
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/Buttons/Button',
   component: Button,
 };
 
@@ -9,7 +9,7 @@ export const Primary = {
   args: {
     variant: 'primary',
     size: 'base',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
@@ -17,7 +17,7 @@ export const Secondary = {
   args: {
     variant: 'secondary',
     size: 'base',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
@@ -25,7 +25,7 @@ export const Green = {
   args: {
     variant: 'green',
     size: 'base',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
@@ -33,7 +33,7 @@ export const Red = {
   args: {
     variant: 'red',
     size: 'base',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
@@ -41,6 +41,6 @@ export const Yellow = {
   args: {
     variant: 'yellow',
     size: 'base',
-    label: 'Button',
+    children: 'Button',
   },
 };

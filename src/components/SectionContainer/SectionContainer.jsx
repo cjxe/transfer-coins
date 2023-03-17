@@ -8,7 +8,7 @@ import DescriptionText from './DescriptionText/DescriptionText';
 function SectionContainer({ headingText, descriptionText, sectionId, children }) {
   return (
     <div id={sectionId} className="flex flex-col items-center gap-16 py-20 px-4">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 xs:mt-16 lg:mt-0">
         <HeadingText>{headingText}</HeadingText>
         <DescriptionText>{descriptionText}</DescriptionText>
       </div>

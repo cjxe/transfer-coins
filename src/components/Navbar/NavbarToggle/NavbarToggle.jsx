@@ -1,6 +1,6 @@
 import { HiMenu, HiX } from 'react-icons/hi';
 import { useContext } from 'react';
-import ButtonWithIcon from '@/components/Button/ButtonWithIcon';
+import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 import { NavbarContext } from '../NavbarContext/NavbarContext';
 
 function NavbarToggle() {

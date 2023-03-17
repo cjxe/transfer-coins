@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import ButtonWithIcon from '../Button/ButtonWithIcon';
+import ButtonWithIcon from '../Buttons/ButtonWithIcon';
 
 // TODO
 // - [ ] add buttonIcon and LeftIcon to propTypes

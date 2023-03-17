@@ -26,7 +26,9 @@ function Brand({ BrandIcon, size, brandName, takesToHomePage }) {
         <BrandIcon className="h-full w-full" />
       </div>
       {brandName && (
-        <p className={clsx(NameSizes[size], 'font-semibold text-gray-900')}>{brandName}</p>
+        <p className={clsx(NameSizes[size], 'font-semibold text-gray-900 dark:text-gray-100')}>
+          {brandName}
+        </p>
       )}
     </Link>
   );

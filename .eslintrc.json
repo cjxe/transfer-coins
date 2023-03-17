@@ -18,20 +18,22 @@
     "sourceType": "module"
   },
   "plugins": ["react", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["src", "node_modules"]
+      }
+    }
+  },
   "rules": {
     "react/react-in-jsx-scope": 0,
     "arrow-body-style": ["error", "always"],
     "react/prop-types": 0,
     "react/destructuring-assignment": 0,
-    "react/jsx-props-no-spreading": 0,
-    "import/no-unresolved": 0, // TODO: bunu duzgun ayarla, illa absolute import etsin
-    "import/extensions": 0 // TODO: bunu duzgun ayarla, illa absolute import etsin
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["./"]
-      }
-    }
+    "react/jsx-props-no-spreading": 0
+    // "import/no-unresolved": 0, // TODO: bunu duzgun ayarla, illa absolute import etsin
+    // "import/extensions": 0 // TODO: bunu duzgun ayarla, illa absolute import etsin
   }
 }

@@ -46,7 +46,8 @@
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.4",
     "storybook": "^7.0.0-beta.57",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "tailwindcss-inner-border": "^0.2.0"
   },
   "resolutions": {
     "webpack": "^5"
