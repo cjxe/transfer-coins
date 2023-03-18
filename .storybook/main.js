@@ -6,6 +6,7 @@ const config = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-postcss',
+    'storybook-addon-themes',
   ],
   framework: {
     name: '@storybook/nextjs',

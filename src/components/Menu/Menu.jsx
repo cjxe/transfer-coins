@@ -4,7 +4,7 @@ import MenuUList from '@/components/Menu/MenuUList/MenuUList';
 import MenuList from '@/components/Menu/MenuList/MenuList';
 
 function Menu({ children }) {
-  return <div className="flex flex-col gap-2 px-3 py-4">{children}</div>;
+  return <div className="flex flex-col gap-2 bg-white px-3 py-4 dark:bg-gray-900">{children}</div>;
 }
 
 Menu.Title = MenuTitle;

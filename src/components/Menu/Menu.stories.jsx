@@ -59,7 +59,7 @@ export const MultipleMenus = {
           <Menu.List href="/account/public-profile" Icon={HiLockClosed}>
             Security
           </Menu.List>
-          <Menu.List href="/account/donation-settings" Icon={RiHandCoinFill}>
+          <Menu.List href="/account/donation-settings" Icon={HiCreditCard}>
             Billing and plans
           </Menu.List>
         </Menu.UList>
