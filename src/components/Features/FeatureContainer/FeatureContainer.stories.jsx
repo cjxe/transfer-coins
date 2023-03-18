@@ -9,8 +9,9 @@ import {
 import { SecureIllustration, QRCodeIllustration } from '@/assets/illustrations/index';
 
 export default {
-  title: 'Components/Features/FeatureContainer',
+  title: 'Blocks/Marketing/Features/FeatureContainer',
   component: FeatureContainer,
+  tags: ['autodocs'],
 };
 
 export const Base = {

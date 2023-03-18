@@ -6,8 +6,9 @@ import Button from '@/components/Buttons/Button';
 import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 
 export default {
-  title: 'Components/Navbar',
+  title: 'Components/Navigation/Navbar',
   component: Navbar,
+  tags: ['autodocs'],
 };
 
 export const NotSignedIn = {

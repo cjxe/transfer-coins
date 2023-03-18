@@ -21,6 +21,9 @@ const sizes = {
   xl: 'text-base px-6 px-3.5',
 };
 
+/**
+ * Primary UI component for user interaction
+ */
 function Button({ variant, size, children, ...props }) {
   return (
     <button
@@ -36,6 +39,9 @@ function Button({ variant, size, children, ...props }) {
 Button.propTypes = {
   variant: PropTypes.oneOf(['primary', 'green', 'red', 'yellow']),
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl']),
+  /**
+   * Button content
+   */
   children: PropTypes.string.isRequired,
 };
 

@@ -4,6 +4,7 @@ import Brand from './Brand';
 export default {
   title: 'Components/Utils/Brand',
   component: Brand,
+  tags: ['autodocs'],
 };
 
 export const Base = {

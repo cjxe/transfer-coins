@@ -2,8 +2,9 @@ import { HiCollection } from 'react-icons/hi';
 import FeatureMinicard from './FeatureMinicard';
 
 export default {
-  title: 'Components/Features/FeatureMinicard',
+  title: 'Blocks/Marketing/Features/FeatureMinicard',
   component: FeatureMinicard,
+  tags: ['autodocs'],
 };
 
 export const Base = {

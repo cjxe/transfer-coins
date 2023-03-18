@@ -1,13 +1,14 @@
 import { BsDiscord, BsTwitter } from 'react-icons/bs';
 import { BrandLogo } from '@/assets/illustrations';
-import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
-import HR from '@/components/Utils/Brand/HR/HR';
 import Footer from '@/components/Footer/Footer';
 import Brand from '@/components/Utils/Brand/Brand';
+import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
+import HR from '@/components/Utils/HR/HR';
 
 export default {
-  title: 'Components/Footer',
+  title: 'Blocks/Marketing/Footer',
   component: Footer,
+  tags: ['autodocs'],
 };
 
 export const Base = {

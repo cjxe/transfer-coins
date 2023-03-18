@@ -1,11 +1,12 @@
 import { HiUser, HiQrcode, HiInboxIn, HiLockClosed, HiCreditCard } from 'react-icons/hi';
 import { RiHandCoinFill } from 'react-icons/ri';
 import Menu from '@/components/Menu/Menu';
-import HR from '../Utils/Brand/HR/HR';
+import HR from '@/components/Utils/HR/HR';
 
 export default {
-  title: 'Components/Menu',
+  title: 'Components/Navigation/Menu',
   component: Menu,
+  tags: ['autodocs'],
 };
 
 export const SingleMenu = {

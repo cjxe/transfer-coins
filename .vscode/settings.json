@@ -8,7 +8,6 @@
     "node_modules": true,
     "package.json": true,
     "src/pages/api": true,
-    "src/stories": true,
     "public": true,
     "src/pages/_document.jsx": true,
     "src/styles": true,
@@ -16,7 +15,11 @@
     "postcss.config.js": true,
     "src/pages": true,
     "tailwind.config.js": true,
-    ".vscode": true
+    ".vscode": true,
+    "next.config.js": true,
+    "jsconfig.json": true,
+    ".eslintrc.json": true,
+    ".storybook": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

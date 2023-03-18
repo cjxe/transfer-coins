@@ -3,8 +3,9 @@ import ClipboardDocument from '@/assets/icons/ClipboardDocument.svg';
 import TextInput from '@/components/TextInput/TextInput';
 
 export default {
-  title: 'Components/TextInput',
+  title: 'Components/Data input/TextInput',
   component: TextInput,
+  tags: ['autodocs'],
 };
 
 export const Base = {

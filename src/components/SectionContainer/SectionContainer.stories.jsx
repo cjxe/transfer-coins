@@ -3,8 +3,9 @@ import SectionContainer from '@/components/SectionContainer/SectionContainer';
 import FeatureMinicard from '@/components/Features/FeatureMinicard/FeatureMinicard';
 
 export default {
-  title: 'Components/SectionContainer',
+  title: 'Components/Data display/SectionContainer',
   component: SectionContainer,
+  tags: ['autodocs'],
 };
 
 export const Base = {

@@ -1,8 +1,9 @@
 import Checkbox from '@/components/Checkbox/Checkbox';
 
 export default {
-  title: 'Components/Checkbox',
+  title: 'Components/Data input/Checkbox',
   component: Checkbox,
+  tags: ['autodocs'],
 };
 
 export const Base = {

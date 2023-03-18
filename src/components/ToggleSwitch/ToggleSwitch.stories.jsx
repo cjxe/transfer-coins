@@ -1,8 +1,9 @@
 import ToggleSwitch from '@/components/ToggleSwitch/ToggleSwitch';
 
 export default {
-  title: 'Components/ToggleSwitch',
+  title: 'Components/Data input/ToggleSwitch',
   component: ToggleSwitch,
+  tags: ['autodocs'],
 };
 
 export const Base = {

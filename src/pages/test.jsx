@@ -9,7 +9,7 @@ import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 import Button from '@/components/Buttons/Button';
 import Footer from '@/components/Footer/Footer';
 import Brand from '@/components/Utils/Brand/Brand';
-import HR from '@/components/Utils/Brand/HR/HR';
+import HR from '@/components/Utils/HR/HR';
 
 function Test() {
   return (
