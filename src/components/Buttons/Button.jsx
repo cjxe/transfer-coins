@@ -13,9 +13,9 @@ const variants = {
   yellow:
     'text-white bg-yellow-600 hover:bg-yellow-700 focus:ring focus:ring-yellow-400 dark:bg-yellow-700 dark:hover:bg-yellow-600 dark:focus:ring-yellow-900',
   gradientRainbow:
-    'text-white shadow-md bg-gradient-to-tl dark:to-yellow-500 dark:via-pink-600 dark:from-blue-500 to-yellow-400 transition-all motion-safe:focus:transition-none via-pink-500 from-blue-500 duration-200 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:ring focus:ring-violet-400',
+    'text-white shadow-md bg-gradient-to-tl dark:to-yellow-500 dark:via-pink-600 dark:from-blue-500 to-yellow-400 transition-all motion-safe:focus:transition-none via-pink-500 from-blue-500 duration-200 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:ring focus:ring-violet-400 dark:focus:ring-violet-700',
   gradientTeal:
-    'text-white bg-gradient-to-r to-teal-500 from-teal-700 dark:to-teal-600 dark:from-teal-800 transition-all motion-safe:focus:transition-none duration-200 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:ring focus:ring-teal-200',
+    'text-white bg-gradient-to-r to-teal-500 from-teal-700 dark:to-teal-600 dark:from-teal-800 transition-all motion-safe:focus:transition-none duration-200 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:ring focus:ring-teal-200 dark:focus:ring-teal-800',
 };
 
 const sizes = {
