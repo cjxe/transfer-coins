@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o ./out/.storybook-static"
   },
   "dependencies": {
     "@floating-ui/react": "^0.20.1",
