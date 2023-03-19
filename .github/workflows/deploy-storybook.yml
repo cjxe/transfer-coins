@@ -32,13 +32,5 @@ jobs:
           path: out/.storybook-static
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config user.name "GH Pages Bot"
-          git config user.email "hello@ghbot.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          cd out/.storybook-static
-          git add .
-          git commit -am "Deploy Storybook to GitHub Pages"
-          cd ../..
-          git subtree split --prefix web/storybook-out -b gh-pages
-          git push -f origin gh-pages:gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v1
