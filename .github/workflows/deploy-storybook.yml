@@ -29,14 +29,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./out/.storybook-static
+          path: out/.storybook-static
 
       - name: Deploy to GitHub Pages
         run: |
           git config user.name "GH Pages Bot"
           git config user.email "hello@ghbot.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          cd /out/.storybook-out
+          cd out/.storybook-static
           git add .
           git commit -am "Deploy Storybook to GitHub Pages"
           cd ../..
