@@ -13,8 +13,6 @@
     "src/styles": true,
     "src/pages/_app.jsx": true,
     "postcss.config.js": true,
-    "src/pages": true,
-    "tailwind.config.js": true,
     ".vscode": true,
     "next.config.js": true,
     "jsconfig.json": true,

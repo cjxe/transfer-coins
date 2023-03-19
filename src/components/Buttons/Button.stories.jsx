@@ -45,3 +45,19 @@ export const Yellow = {
     children: 'Button',
   },
 };
+
+export const GradientRainbow = {
+  args: {
+    variant: 'gradientRainbow',
+    size: 'base',
+    children: 'Button',
+  },
+};
+
+export const GradientTeal = {
+  args: {
+    variant: 'gradientTeal',
+    size: 'xl',
+    children: 'Get Started',
+  },
+};
