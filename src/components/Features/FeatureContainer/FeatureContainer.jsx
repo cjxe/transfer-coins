@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import HeadingText from '@/components/SectionContainer/HeadingText/HeadingText';
-import DescriptionText from '@/components/SectionContainer/DescriptionText/DescriptionText';
+import HeadingText from '@/components/Features/FeatureContainer/HeadingText/HeadingText';
+import DescriptionText from '@/components/Features/FeatureContainer/DescriptionText/DescriptionText';
 
 function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illustration }) {
   return (
-    <div className="flex items-center justify-center xs:flex-col xs:flex-col xs:gap-12 xs:gap-10 xs:py-10 xs:py-10 lg:flex-row lg:py-20 xl:gap-20 2xl:gap-40">
+    <div className="flex items-center justify-center px-4 xs:flex-col xs:flex-col xs:gap-12 xs:gap-10 xs:py-10 xs:py-10 lg:flex-row lg:py-20 xl:gap-20 2xl:gap-40">
       <div className="xs:order-2 xs:order-2 lg:order-1">
         {Illustration && <Illustration className="h-full w-full" />}
       </div>

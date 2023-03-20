@@ -15,7 +15,11 @@
     "next.config.js": true,
     "jsconfig.json": true,
     ".eslintrc.json": true,
-    ".storybook": true
+    ".github": true,
+    "out": true,
+    "build": true,
+    ".gitignore": true,
+    "package.json": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

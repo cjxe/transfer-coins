@@ -6,7 +6,7 @@ const config = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-postcss',
-    'storybook-addon-themes',
+    'storybook-dark-mode',
   ],
   framework: {
     name: '@storybook/nextjs',

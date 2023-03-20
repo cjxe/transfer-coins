@@ -42,20 +42,11 @@ const CUSTOM_VIEWPORTS = {
 
 const preview = {
   parameters: {
-    themes: {
-      clearable: false,
-      list: [
-        {
-          name: 'Light',
-          class: [],
-          color: '#ffffff',
-          default: true,
-        },
-        { name: 'Dark', class: ['dark'], color: '#1A222D' },
-      ],
-    },
-    backgrounds: {
-      default: 'light',
+    darkMode: {
+      current: 'dark',
+      darkClass: 'dark',
+      classTarget: 'html',
+      stylePreview: true,
     },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {

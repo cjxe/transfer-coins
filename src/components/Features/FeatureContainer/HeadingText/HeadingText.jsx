@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function HeadingText({ children }) {
   return (
-    <h5 className="text-center font-extrabold leading-tight text-gray-900 dark:text-gray-100 xs:text-3xl lg:text-4xl">
+    <h5 className="text-left font-extrabold leading-tight text-gray-900 dark:text-gray-100 xs:text-3xl lg:text-4xl">
       {children}
     </h5>
   );
