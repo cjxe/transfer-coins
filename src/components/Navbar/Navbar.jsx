@@ -16,8 +16,8 @@ function Navbar({ children }) {
     <NavbarContext.Provider value={[isOpen, setIsOpen]}>
       <div
         className={clsx(
-          'z-10 flex w-full bg-white xs:fixed xs:flex-col xs:overflow-hidden xs:p-4 lg:sticky lg:top-0 lg:flex-row  lg:justify-between lg:p-6',
-          isOpen ? 'xs:h-full xs:flex-col' : 'shadow-sm'
+          'z-10 flex w-full xs:fixed xs:flex-col xs:overflow-hidden xs:p-4 lg:sticky lg:top-0 lg:flex-row lg:justify-between lg:p-6',
+          isOpen ? 'xs:h-full xs:flex-col' : 'shadow-sm dark:shadow-gray-700'
         )}
       >
         {children}

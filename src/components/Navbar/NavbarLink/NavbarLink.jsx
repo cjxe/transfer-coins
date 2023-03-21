@@ -5,7 +5,7 @@ import Link from 'next/link';
 function NavbarLink({ children, to }) {
   return (
     <Link
-      className="font-medium text-gray-900 xs:rounded-lg xs:p-4 xs:text-xl xs:hover:bg-gray-100 xs:focus:ring xs:focus:ring-gray-300 lg:rounded-none lg:p-0 lg:text-base lg:decoration-1 lg:underline-offset-4 lg:hover:bg-transparent lg:hover:underline lg:focus:ring-0"
+      className="font-medium text-gray-900 dark:text-gray-100 xs:rounded-lg xs:p-4 xs:text-xl xs:hover:bg-gray-100 xs:focus:ring-gray-300 xs:focus:ring dark:xs:hover:bg-gray-700 dark:xs:focus:ring-gray-600 lg:rounded-none lg:p-0 lg:text-base lg:decoration-1 lg:underline-offset-4 lg:hover:bg-transparent lg:hover:underline lg:focus:ring-0 dark:lg:hover:bg-transparent"
       href={to}
     >
       {children}

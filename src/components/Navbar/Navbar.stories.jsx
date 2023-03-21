@@ -27,7 +27,7 @@ export const NotSignedIn = {
             <Navbar.Link to="#contact">Contact</Navbar.Link>
           </div>
           <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
-            <VerticalSeparator className="xs:hidden lg:block" />
+            <VerticalSeparator className="stroke-gray-200 dark:stroke-gray-700 xs:hidden lg:block" />
             <ButtonWithIcon variant="secondary" size="base" Icon={HiMoon} />
             <Button className="rounded-lg bg-white font-semibold text-gray-800 inner-border inner-border-gray-200 hover:bg-gray-100 focus:ring-gray-300 focus:ring xs:px-5 xs:py-2.5 xs:text-sm lg:px-3 lg:py-2 lg:text-sm">
               Log in

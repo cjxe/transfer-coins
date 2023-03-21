@@ -1,7 +1,7 @@
 import DescriptionText from '@/components/SectionContainer/DescriptionText/DescriptionText';
 
 export default {
-  title: 'Components/Data display/SectionContainer/DescriptionText',
+  title: 'Blocks/Marketing/SectionContainer/DescriptionText',
   component: DescriptionText,
   tags: ['autodocs'],
 };

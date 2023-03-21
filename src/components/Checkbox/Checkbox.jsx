@@ -10,14 +10,17 @@ function Checkbox({ id, labelText, helperText, ...props }) {
       <input
         id={id}
         type="checkbox"
-        className="form-checkbox rounded text-teal-600 focus:ring focus:ring-teal-200 focus:ring-opacity-50 focus:ring-offset-0"
+        className="form-checkbox rounded text-teal-600 focus:ring-teal-200 focus:ring-opacity-50 focus:ring-offset-0 focus:ring dark:bg-gray-700 dark:focus:ring-teal-800"
         {...props}
       />
       <div className="flex flex-col gap-0.5">
-        <label htmlFor={id} className="text-sm font-medium leading-none text-gray-900">
+        <label
+          htmlFor={id}
+          className="text-sm font-medium leading-none text-gray-900 dark:text-gray-100"
+        >
           {labelText}
         </label>
-        <p className="text-xs font-normal text-gray-500">{helperText}</p>
+        <p className="text-xs font-normal text-gray-500 dark:text-gray-400">{helperText}</p>
       </div>
     </div>
   );

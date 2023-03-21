@@ -6,11 +6,11 @@ import DescriptionText from '@/components/Features/FeatureContainer/DescriptionT
 
 function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illustration }) {
   return (
-    <div className="flex items-center justify-center px-4 xs:flex-col xs:flex-col xs:gap-12 xs:gap-10 xs:py-10 xs:py-10 lg:flex-row lg:py-20 xl:gap-20 2xl:gap-40">
-      <div className="xs:order-2 xs:order-2 lg:order-1">
+    <div className="flex items-center justify-center px-4 xs:flex-col xs:gap-12 xs:py-10 lg:flex-row lg:py-20 xl:gap-20 2xl:gap-40">
+      <div className="xs:order-2 lg:order-1">
         {Illustration && <Illustration className="h-full w-full" />}
       </div>
-      <div className="flex flex-col gap-9 xs:order-1 xs:order-1 xs:max-w-sm xs:max-w-xl md:max-w-2xl lg:order-2 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+      <div className="flex flex-col gap-9 xs:order-1 md:max-w-2xl lg:order-2 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
         <div className="flex flex-col gap-6">
           <HeadingText>{headingText}</HeadingText>
           <DescriptionText>{descriptionText}</DescriptionText>

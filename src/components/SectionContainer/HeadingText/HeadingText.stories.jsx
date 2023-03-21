@@ -1,7 +1,7 @@
 import HeadingText from '@/components/SectionContainer/HeadingText/HeadingText';
 
 export default {
-  title: 'Components/Data display/SectionContainer/HeadingText',
+  title: 'Blocks/Marketing/SectionContainer/HeadingText',
   component: HeadingText,
   tags: ['autodocs'],
 };

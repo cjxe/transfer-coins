@@ -19,7 +19,8 @@
     "out": true,
     "build": true,
     ".gitignore": true,
-    "package.json": true
+    "package.json": true,
+    ".storybook": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
