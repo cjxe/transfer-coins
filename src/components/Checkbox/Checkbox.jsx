@@ -10,7 +10,7 @@ function Checkbox({ id, labelText, helperText, ...props }) {
       <input
         id={id}
         type="checkbox"
-        className="form-checkbox rounded text-teal-600 focus:ring-teal-200 focus:ring-opacity-50 focus:ring-offset-0 focus:ring dark:bg-gray-700 dark:focus:ring-teal-800"
+        className="form-checkbox rounded border-gray-300 bg-gray-50 text-teal-600 focus:ring-teal-200 focus:ring-opacity-50 focus:ring-offset-0 focus:ring dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-teal-800"
         {...props}
       />
       <div className="flex flex-col gap-0.5">
