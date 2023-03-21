@@ -35,7 +35,7 @@ MenuList.propTypes = {
 };
 
 MenuList.defaultProps = {
-  Icon: false,
+  Icon: undefined,
 };
 
 export default MenuList;

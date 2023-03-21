@@ -6,7 +6,7 @@ import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 import HR from '@/components/Utils/HR/HR';
 
 export default {
-  title: 'Blocks/Marketing/Footer',
+  title: 'Components/Navigation/Footer',
   component: Footer,
   tags: ['autodocs'],
 };
