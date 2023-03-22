@@ -9,7 +9,7 @@ import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 // States
 const inputStates = {
   default:
-    'border bg-gray-50 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:focus-within:border-gray-700 dark:focus-within:ring-gray-500 text-gray-900 dark:text-gray-100 focus-within:border-gray-400 focus-within:ring-2 focus-within:ring-gray-200',
+    'border bg-gray-50 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:focus-within:border-gray-700 dark:focus-within:ring-gray-600 text-gray-900 dark:text-gray-100 focus-within:border-gray-400 focus-within:ring-2 focus-within:ring-gray-200',
   error:
     'border bg-red-50 dark:bg-gray-800 dark:border-red-600 dark:focus-within:border-red-900 dark:focus-within:ring-red-800 border-red-500 text-red-700 dark:text-red-300 focus-within:ring-2 focus-within:ring-red-200',
   success:

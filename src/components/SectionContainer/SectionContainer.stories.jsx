@@ -1,4 +1,4 @@
-import { HiCollection, HiFingerPrint, HiSparkles } from 'react-icons/hi';
+import { HiCollection, HiFingerPrint, HiSparkles, HiArrowRight } from 'react-icons/hi';
 import SectionContainer from '@/components/SectionContainer/SectionContainer';
 import FeatureMinicard from '@/components/Features/FeatureMinicard/FeatureMinicard';
 import PlanCard from '../PlanCard/PlanCard';
@@ -119,7 +119,7 @@ export const PricingCard = {
           </div>
           <div className="flex flex-col content-end justify-end lg:mt-10">
             <div className="mb-10 flex flex-row items-end justify-center gap-2">
-              <PlanCard.Price>Contact us</PlanCard.Price>
+              <PlanCard.Price>Custom</PlanCard.Price>
             </div>
             <ul className="mt-4 mb-10 flex flex-col gap-5">
               <PlanCard.Feature isIncluded>Over 100 cryptocurrencies</PlanCard.Feature>
@@ -135,11 +135,24 @@ export const PricingCard = {
               </PlanCard.Feature>
             </ul>
             <Button variant="primary" size="base">
-              Choose plan
+              Talk to sales
             </Button>
           </div>
         </PlanCard>
       </div>
+    ),
+  },
+};
+
+export const CTACard = {
+  args: {
+    headingText: 'Try it out, it’s free anyway',
+    descriptionText: 'Got any questions? Check out the FAQ.',
+    sectionId: 'CTA',
+    children: (
+      <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
+        Get started
+      </Button>
     ),
   },
 };

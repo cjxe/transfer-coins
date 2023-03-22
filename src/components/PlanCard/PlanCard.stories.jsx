@@ -89,7 +89,7 @@ export const PartnerPlan = {
         </div>
         <div className="flex flex-col content-end justify-end lg:mt-10">
           <div className="mb-10 flex flex-row items-end justify-center gap-2">
-            <PlanCard.Price>Contact us</PlanCard.Price>
+            <PlanCard.Price>Custom</PlanCard.Price>
           </div>
           <ul className="mt-4 mb-10 flex flex-col gap-5">
             <PlanCard.Feature isIncluded>Over 100 cryptocurrencies</PlanCard.Feature>
@@ -103,7 +103,7 @@ export const PartnerPlan = {
             </PlanCard.Feature>
           </ul>
           <Button variant="primary" size="base">
-            Choose plan
+            Talk to sales
           </Button>
         </div>
       </>

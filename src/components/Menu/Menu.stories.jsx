@@ -12,17 +12,15 @@ export default {
 export const SingleMenu = {
   args: {
     children: (
-      <>
+      <Menu.UList>
         <Menu.Title>Public</Menu.Title>
-        <Menu.UList>
-          <Menu.List href="/account/public-profile" Icon={HiUser}>
-            Public profile
-          </Menu.List>
-          <Menu.List href="/account/donation-settings" Icon={RiHandCoinFill}>
-            Donation settings
-          </Menu.List>
-        </Menu.UList>
-      </>
+        <Menu.List href="/account/public-profile" Icon={HiUser}>
+          Public profile
+        </Menu.List>
+        <Menu.List href="/account/donation-settings" Icon={RiHandCoinFill}>
+          Donation settings
+        </Menu.List>
+      </Menu.UList>
     ),
   },
 };
