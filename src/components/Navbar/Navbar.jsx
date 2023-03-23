@@ -13,6 +13,7 @@ function Navbar({ children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <NavbarContext.Provider value={[isOpen, setIsOpen]}>
       <div
         className={clsx(

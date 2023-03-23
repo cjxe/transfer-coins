@@ -1,7 +1,6 @@
 {
   "files.exclude": {
     "package-lock.json": true,
-    ".next": true,
     ".prettierrc.json": true,
     "node_modules": true,
     "src/pages/api": true,
@@ -15,10 +14,7 @@
     "jsconfig.json": true,
     ".eslintrc.json": true,
     ".github": true,
-    "out": true,
-    "build": true,
-    ".gitignore": true,
-    "package.json": true
+    ".gitignore": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
