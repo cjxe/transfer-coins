@@ -12,7 +12,7 @@ function Feature({ isIncluded, children }) {
   return (
     <li className="flex flex-row items-center gap-4">
       <div className="h-5 w-5 shrink-0">{featureIcon}</div>
-      <p className="text-base font-normal text-gray-900 dark:text-gray-100">{children}</p>
+      <p className="text-base font-normal text-zinc-900 dark:text-zinc-100">{children}</p>
     </li>
   );
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import classNames from 'classnames';
 
 const variants = {
   primary:
     'text-white bg-teal-700 hover:bg-teal-800 focus:ring focus:ring-teal-200 dark:bg-teal-800 dark:hover:bg-teal-700 dark:focus:ring-teal-900',
   secondary:
-    'bg-white text-gray-800 inner-border dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-600 dark:focus:ring-opacity-40 dark:text-white dark:inner-border-0 inner-border-gray-200 hover:bg-gray-100 focus:ring focus:ring-gray-100 focus:ring-opacity-70',
+    'bg-white text-zinc-800 inner-border dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:focus:ring-zinc-600 dark:focus:ring-opacity-40 dark:text-white dark:inner-border-0 inner-border-zinc-200 hover:bg-zinc-100 focus:ring focus:ring-zinc-100 focus:ring-opacity-70',
   green:
     'text-white bg-green-700 hover:bg-green-800 focus:ring focus:ring-green-200 dark:bg-green-800 dark:hover:bg-green-700 dark:focus:ring-green-900',
   red: 'text-white bg-red-700 hover:bg-red-800 focus:ring focus:ring-red-200 dark:bg-red-800 dark:hover:bg-red-700 dark:focus:ring-red-900',
@@ -38,11 +38,16 @@ const iconSizes = {
 /**
  * Primary UI component for user interaction
  */
-function Button({ variant, size, LeftIcon, children, RightIcon, ...props }) {
+function Button({ variant, size, LeftIcon, children, RightIcon, className, ...props }) {
   return (
     <button
       type="button"
-      className={clsx('select-none rounded-lg font-semibold', variants[variant], textSizes[size])}
+      className={classNames(
+        'select-none rounded-lg font-semibold',
+        variants[variant],
+        textSizes[size],
+        className
+      )}
       {...props}
     >
       <div className="flex flex-row items-center justify-center gap-2">

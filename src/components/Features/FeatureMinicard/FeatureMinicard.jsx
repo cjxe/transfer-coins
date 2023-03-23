@@ -6,20 +6,20 @@ function FeatureMinicard({ headingText, descriptionText, Icon, href }) {
   return (
     <div className="flex flex-col items-center gap-5">
       <div className="h-16 w-16">
-        <Icon className="h-full w-full fill-teal-600 dark:fill-teal-500" />
+        <Icon className="h-full w-full fill-teal-600 dark:fill-teal-700" />
       </div>
       <div className="flex max-w-sm flex-col gap-2">
-        <h6 className="text-center text-xl font-bold leading-tight text-gray-900 dark:text-gray-100">
+        <h6 className="text-center text-xl font-bold leading-tight text-zinc-900 dark:text-zinc-100">
           {headingText}
         </h6>
-        <span className="text-center text-base font-medium text-gray-500 dark:text-gray-400">
+        <span className="text-center text-base font-medium text-zinc-500 dark:text-zinc-400">
           {descriptionText}
         </span>
       </div>
       <div className="lg:pt-5">
         <a
           href={href}
-          className="flex flex-row items-center gap-1 text-base font-semibold text-teal-600 decoration-2 underline-offset-2 hover:underline dark:text-teal-500"
+          className="flex flex-row items-center gap-1 text-base font-semibold text-teal-600 decoration-2 underline-offset-2 hover:underline"
         >
           Learn more
           <div className="h-5 w-5 pt-0.5">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Name({ children }) {
   return (
-    <h5 className="text-center text-2xl font-semibold text-gray-900 dark:text-gray-100">
+    <h5 className="text-center text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
       {children}
     </h5>
   );

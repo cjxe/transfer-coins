@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import classNames from 'classnames';
 import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 
 // TODO
@@ -9,21 +9,21 @@ import ButtonWithIcon from '@/components/Buttons/ButtonWithIcon';
 // States
 const inputStates = {
   default:
-    'border bg-gray-50 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:focus-within:border-gray-700 dark:focus-within:ring-gray-600 text-gray-900 dark:text-gray-100 focus-within:border-gray-400 focus-within:ring-2 focus-within:ring-gray-200',
+    'border bg-zinc-50 border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 dark:focus-within:border-zinc-700 dark:focus-within:ring-zinc-600 text-zinc-900 dark:text-zinc-100 focus-within:border-zinc-400 focus-within:ring-2 focus-within:ring-zinc-200',
   error:
-    'border bg-red-50 dark:bg-gray-800 dark:border-red-600 dark:focus-within:border-red-900 dark:focus-within:ring-red-800 border-red-500 text-red-700 dark:text-red-300 focus-within:ring-2 focus-within:ring-red-200',
+    'border bg-red-50 dark:bg-zinc-800 dark:border-red-600 dark:focus-within:border-red-900 dark:focus-within:ring-red-800 border-red-500 text-red-700 dark:text-red-300 focus-within:ring-2 focus-within:ring-red-200',
   success:
-    'border bg-green-50 dark:bg-gray-800 dark:border-green-600 dark:focus-within:border-green-900 dark:focus-within:ring-green-800 border-green-500 text-green-700 dark:text-green-300 focus-within:ring-2 focus-within:ring-green-200',
+    'border bg-green-50 dark:bg-zinc-800 dark:border-green-600 dark:focus-within:border-green-900 dark:focus-within:ring-green-800 border-green-500 text-green-700 dark:text-green-300 focus-within:ring-2 focus-within:ring-green-200',
 };
 
 const placeholderStates = {
-  default: 'placeholder-gray-400 dark:placeholder-gray-500',
+  default: 'placeholder-zinc-400 dark:placeholder-zinc-500',
   error: 'placeholder-red-400 dark:placeholder-red-800',
   success: 'placeholder-green-400 dark:placeholder-green-800',
 };
 
 const leftIconStates = {
-  default: 'fill-gray-500 stroke-gray-500 dark:fill-gray-400 dark:stroke-gray-400',
+  default: 'fill-zinc-500 stroke-zinc-500 dark:fill-zinc-400 dark:stroke-zinc-400',
   error: 'fill-red-600 stroke-red-600 dark:fill-red-500 dark:stroke-red-500',
   success: 'fill-green-600 stroke-green-600 dark:fill-green-500 dark:stroke-green-500',
 };
@@ -35,13 +35,13 @@ const buttonStates = {
 };
 
 const labelStates = {
-  default: 'text-gray-900 dark:text-gray-100',
+  default: 'text-zinc-900 dark:text-zinc-100',
   error: 'text-red-600 dark:text-red-400',
   success: 'text-green-600 dark:text-green-400',
 };
 
 const helperStates = {
-  default: 'text-gray-500 dark:text-gray-400',
+  default: 'text-zinc-500 dark:text-zinc-400',
   error: 'text-red-500 dark:text-red-600',
   success: 'text-green-500 dark:text-green-600',
 };
@@ -91,23 +91,25 @@ function TextInput({
   return (
     <div className="flex flex-col gap-2">
       {label && (
-        <label htmlFor={id} className={clsx(labelStates[state], 'text-sm font-medium')}>
+        <label htmlFor={id} className={classNames(labelStates[state], 'text-sm font-medium')}>
           {label}
         </label>
       )}
       <div
-        className={clsx(
+        className={classNames(
           wrapperSizes[size],
           inputStates[state],
           'flex w-full items-center rounded-lg'
         )}
       >
-        <div className={clsx(itemSpaces[size], 'flex grow items-center')}>
-          {LeftIcon && <LeftIcon className={clsx(leftIconStates[state], leftIconSizes[size])} />}
+        <div className={classNames(itemSpaces[size], 'flex grow items-center')}>
+          {LeftIcon && (
+            <LeftIcon className={classNames(leftIconStates[state], leftIconSizes[size])} />
+          )}
           <input
             id={id}
             type="text"
-            className={clsx(
+            className={classNames(
               inputSizes[size],
               placeholderStates[state],
               'grow bg-inherit outline-none'
@@ -125,7 +127,7 @@ function TextInput({
         )}
       </div>
       {helperText && (
-        <div className={clsx(helperStates[state], 'text-sm font-normal leading-tight')}>
+        <div className={classNames(helperStates[state], 'text-sm font-normal leading-tight')}>
           <p>{helperText}</p>
         </div>
       )}

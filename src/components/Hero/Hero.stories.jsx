@@ -28,12 +28,14 @@ export const Full = {
           </Hero.Description>
           <div className="flex flex-row gap-4 xs:mt-2 xs:justify-center lg:mt-0 lg:justify-start">
             <Button
-              className="select-none rounded-lg bg-gradient-to-r from-teal-700 to-teal-500 bg-size-200 bg-pos-0 font-semibold text-white transition-all duration-200 hover:bg-pos-100 focus:ring-teal-200 focus:ring motion-safe:focus:transition-none dark:from-teal-800 dark:to-teal-600 dark:focus:ring-teal-800 xs:px-5 xs:py-3 xs:text-sm lg:px-6 lg:py-3.5 lg:text-base"
+              variant="gradientTeal"
+              size="lg"
+              className="lg:px-6 lg:py-3.5 lg:text-base"
               RightIcon={HiArrowRight}
             >
               Get started
             </Button>
-            <Button className="select-none rounded-lg bg-white font-semibold text-gray-800 inner-border inner-border-gray-200 hover:bg-gray-100 focus:ring-gray-100 focus:ring-opacity-70 focus:ring dark:bg-gray-700 dark:text-white dark:inner-border-0 dark:hover:bg-gray-600 dark:focus:ring-gray-600 dark:focus:ring-opacity-40 xs:px-5 xs:py-3 xs:text-sm lg:px-6 lg:py-3.5 lg:text-base">
+            <Button variant="secondary" size="lg" className="lg:px-6 lg:py-3.5 lg:text-base">
               Live demo
             </Button>
           </div>

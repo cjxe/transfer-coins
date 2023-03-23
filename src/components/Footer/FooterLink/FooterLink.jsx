@@ -5,7 +5,7 @@ import Link from 'next/link';
 function FooterLink({ children, href }) {
   return (
     <Link
-      className="w-fit text-base font-medium text-gray-100 underline-offset-4 hover:underline"
+      className="w-fit text-base font-medium text-zinc-100 underline-offset-4 hover:underline"
       href={href}
     >
       {children}

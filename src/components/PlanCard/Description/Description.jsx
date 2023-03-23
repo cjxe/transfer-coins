@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Description({ children }) {
   return (
-    <p className="text-center text-lg font-normal text-gray-500 dark:text-gray-400">{children}</p>
+    <p className="text-center text-lg font-normal text-zinc-500 dark:text-zinc-400">{children}</p>
   );
 }
 

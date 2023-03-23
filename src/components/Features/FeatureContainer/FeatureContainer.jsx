@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import classNames from 'classnames';
 import HeadingText from '@/components/Features/FeatureContainer/HeadingText/HeadingText';
 import DescriptionText from '@/components/Features/FeatureContainer/DescriptionText/DescriptionText';
 
@@ -17,7 +17,7 @@ function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illust
             <DescriptionText>{descriptionText}</DescriptionText>
           </div>
           <div
-            className={clsx(
+            className={classNames(
               iconGap,
               'flex flex-row flex-wrap pl-1 xs:justify-center lg:justify-start'
             )}

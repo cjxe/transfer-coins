@@ -48,5 +48,15 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ## TODO
 
-- [ ] dark mode button
-- [ ] xs:when navbarLink on click, minimise it
+- [ ] new component: Data display > `Text area`
+- [ ] new component: Data display > `File input`
+- [ ] new component: Data display > `Table`
+- [ ] new component: Data display > `Badge`
+- [ ] new component: Data display > `Tooltip`
+
+- [ ] new component: Layout > `Divider` > Vertical/horizontal
+- [ ] new component: Layout > `Toast`
+
+- [ ] new component: Navigation > `Pagination`
+
+- [ ] new component: Actions > `Modal`

@@ -7,5 +7,5 @@ export default {
 };
 
 export const Base = {
-  args: { children: 'Features', to: '#features' },
+  args: { children: 'Features', href: '#features' },
 };

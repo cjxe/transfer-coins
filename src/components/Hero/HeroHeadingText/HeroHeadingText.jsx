@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function HeroHeadingText({ children }) {
   return (
-    <h1 className="font-black leading-tight text-black dark:text-gray-100 xs:w-[18rem] xs:text-center xs:text-4xl lg:w-full lg:text-left lg:text-6xl">
+    <h1 className="font-black leading-tight text-black dark:text-zinc-100 xs:w-[18rem] xs:text-center xs:text-4xl lg:w-full lg:text-left lg:text-6xl">
       {children}
     </h1>
   );

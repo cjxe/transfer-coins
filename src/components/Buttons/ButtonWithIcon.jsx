@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import classNames from 'classnames';
 
 const variants = {
   primary: 'fill-teal-600 stroke-teal-600 dark:fill-teal-500 dark:stroke-teal-500',
-  secondary: 'fill-gray-500 stroke-gray-500 dark:fill-gray-400 dark:stroke-gray-400',
+  secondary: 'fill-zinc-500 stroke-zinc-500 dark:fill-zinc-400 dark:stroke-zinc-400',
   error: 'fill-red-600 stroke-red-600 dark:fill-red-500 dark:stroke-red-500',
   success: 'fill-green-600 stroke-green-600 dark:fill-green-500 dark:stroke-green-500',
 };
@@ -26,17 +26,18 @@ const buttonSizes = {
 };
 
 // Remove SVG's `height`, `width`, `fill`, `stroke` properties
-function ButtonWithIcon({ variant, size, Icon, ...props }) {
+function ButtonWithIcon({ variant, size, Icon, className, ...props }) {
   return (
     <button
       type="button"
-      className={clsx(
-        'flex items-center justify-center bg-inherit hover:bg-gray-100 focus:ring-gray-200 focus:ring-2 dark:hover:bg-gray-700 dark:focus:ring-gray-600',
-        buttonSizes[size]
+      className={classNames(
+        'flex items-center justify-center bg-inherit hover:bg-zinc-100 focus:ring-zinc-200 focus:ring-2 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600',
+        buttonSizes[size],
+        className
       )}
       {...props}
     >
-      <Icon className={clsx(variants[variant], svgSizes[size])} />
+      <Icon className={classNames(variants[variant], svgSizes[size])} />
     </button>
   );
 }

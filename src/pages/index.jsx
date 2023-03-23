@@ -1,4 +1,13 @@
-import { HiCollection, HiFingerPrint, HiSparkles, HiMoon, HiArrowRight } from 'react-icons/hi';
+import React from 'react';
+import { useTheme } from 'next-themes';
+import {
+  HiCollection,
+  HiFingerPrint,
+  HiSparkles,
+  HiMoon,
+  HiSun,
+  HiArrowRight,
+} from 'react-icons/hi';
 import { BsDiscord, BsTwitter } from 'react-icons/bs';
 import {
   BrandLogo,
@@ -45,6 +54,8 @@ import PlanCard from '@/components/PlanCard/PlanCard';
 
 // TODO BITTIKTEN SONRA `Navbar.stories.jsx`'i updatele
 function Home() {
+  const { theme, setTheme } = useTheme();
+
   return (
     <div>
       <Navbar>
@@ -60,18 +71,25 @@ function Home() {
             <Navbar.Link href="#contact">Contact</Navbar.Link>
           </div>
           <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
-            <VerticalSeparator className="stroke-gray-200 dark:stroke-gray-700 xs:hidden lg:block" />
-            <ButtonWithIcon variant="secondary" size="base" Icon={HiMoon} />
-            <Button className="rounded-lg bg-white font-semibold text-gray-800 inner-border inner-border-gray-200 hover:bg-gray-100 focus:ring-gray-300 focus:ring xs:px-5 xs:py-2.5 xs:text-sm lg:px-3 lg:py-2 lg:text-sm">
+            <VerticalSeparator className="stroke-zinc-200 dark:stroke-zinc-700 xs:hidden lg:block" />
+            <ButtonWithIcon
+              onClick={() => {
+                return theme === 'dark' ? setTheme('light') : setTheme('dark');
+              }}
+              variant="secondary"
+              size="base"
+              Icon={theme === 'dark' ? HiMoon : HiSun}
+            />
+            <Button variant="secondary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
               Log in
             </Button>
-            <Button className="rounded-lg bg-teal-700 font-semibold text-white hover:bg-teal-800 focus:ring-teal-200 focus:ring xs:px-5 xs:py-2.5 xs:text-sm lg:px-3 lg:px-3 lg:py-2 lg:text-sm">
+            <Button variant="primary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
               Join now
             </Button>
           </div>
         </Navbar.Collapse>
       </Navbar>
-      <div className="[&>*:nth-child(even)]:bg-gray-50">
+      <div className="[&>*:nth-child(even)]:bg-zinc-50 dark:[&>*:nth-child(even)]:bg-zinc-900">
         <Hero>
           <div className="flex flex-col xs:items-center xs:gap-4 lg:w-4/6 lg:items-start lg:gap-6">
             <Hero.Heading>
@@ -88,12 +106,14 @@ function Home() {
             </Hero.Description>
             <div className="flex flex-row gap-4 xs:mt-2 xs:justify-center lg:mt-0 lg:justify-start">
               <Button
-                className="select-none rounded-lg bg-gradient-to-r from-teal-700 to-teal-500 bg-size-200 bg-pos-0 font-semibold text-white transition-all duration-200 hover:bg-pos-100 focus:ring-teal-200 focus:ring motion-safe:focus:transition-none dark:from-teal-800 dark:to-teal-600 dark:focus:ring-teal-800 xs:px-5 xs:py-3 xs:text-sm lg:px-6 lg:py-3.5 lg:text-base"
+                variant="gradientTeal"
+                size="lg"
+                className="lg:px-6 lg:py-3.5 lg:text-base"
                 RightIcon={HiArrowRight}
               >
                 Get started
               </Button>
-              <Button className="select-none rounded-lg bg-white font-semibold text-gray-800 inner-border inner-border-gray-200 hover:bg-gray-100 focus:ring-gray-100 focus:ring-opacity-70 focus:ring dark:bg-gray-700 dark:text-white dark:inner-border-0 dark:hover:bg-gray-600 dark:focus:ring-gray-600 dark:focus:ring-opacity-40 xs:px-5 xs:py-3 xs:text-sm lg:px-6 lg:py-3.5 lg:text-base">
+              <Button variant="secondary" size="lg" className="lg:px-6 lg:py-3.5 lg:text-base">
                 Live demo
               </Button>
             </div>
@@ -299,7 +319,7 @@ function Home() {
       <Footer>
         <div className="flex justify-between xs:flex-col xs:gap-4 lg:flex-row lg:gap-0">
           <Brand size="sm" BrandIcon={BrandLogo} brandName="Transfer Coins" />
-          <hr className="my-4 h-[1px] border-0 bg-gray-700 xs:inline-block lg:hidden" />
+          <hr className="my-4 h-[1px] border-0 bg-zinc-700 xs:inline-block lg:hidden" />
           <div className="flex gap-10 xs:flex-col lg:flex-row">
             <Footer.Link href="/help#contact">Contact</Footer.Link>
             <Footer.Link href="/help#faq">FAQ</Footer.Link>
@@ -309,7 +329,7 @@ function Home() {
         </div>
         <HR />
         <div className="flex justify-between">
-          <p className="text-base font-normal text-gray-400 xs:hidden lg:inline-block">
+          <p className="text-base font-normal text-zinc-400 xs:hidden lg:inline-block">
             © Transfer Coins. All rights reserved.
           </p>
           <div className="flex gap-4">

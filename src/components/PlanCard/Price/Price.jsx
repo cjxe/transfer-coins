@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Price({ children }) {
   return (
-    <h4 className="text-center text-5xl font-extrabold leading-none text-gray-900 dark:text-gray-100">
+    <h4 className="text-center text-5xl font-extrabold leading-none text-zinc-900 dark:text-zinc-100">
       {children}
     </h4>
   );
