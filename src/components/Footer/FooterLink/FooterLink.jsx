@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-function FooterLink({ children, to }) {
+function FooterLink({ children, href }) {
   return (
     <Link
       className="w-fit text-base font-medium text-gray-100 underline-offset-4 hover:underline"
-      href={to}
+      href={href}
     >
       {children}
     </Link>
@@ -15,7 +15,7 @@ function FooterLink({ children, to }) {
 
 FooterLink.propTypes = {
   children: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
 };
 
 export default FooterLink;

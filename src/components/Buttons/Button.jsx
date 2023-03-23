@@ -65,6 +65,7 @@ function Button({ variant, size, LeftIcon, children, RightIcon, ...props }) {
 Button.propTypes = {
   variant: PropTypes.oneOf([
     'primary',
+    'secondary',
     'green',
     'red',
     'yellow',

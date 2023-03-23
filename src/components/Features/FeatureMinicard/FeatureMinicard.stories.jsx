@@ -12,5 +12,6 @@ export const Base = {
     headingText: 'All-in-One link',
     descriptionText: 'Stop sending multiple cryptocurrency addresses with incomplete information.',
     Icon: HiCollection,
+    href: '#ShareCoinsAndNetworks',
   },
 };

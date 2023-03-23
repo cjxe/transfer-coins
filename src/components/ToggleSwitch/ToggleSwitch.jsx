@@ -25,8 +25,8 @@ function ToggleSwitch({ id, labelText, helperText, ...props }) {
 
 ToggleSwitch.propTypes = {
   id: PropTypes.string.isRequired,
-  labelText: PropTypes.string,
-  helperText: PropTypes.string,
+  labelText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  helperText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 
 ToggleSwitch.defaultProps = {

@@ -10,7 +10,7 @@ function Price({ children }) {
 }
 
 Price.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
 };
 
 export default Price;

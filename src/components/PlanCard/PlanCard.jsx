@@ -35,7 +35,7 @@ function PlanCard({ isRainbow, children }) {
 }
 
 PlanCard.propTypes = {
-  children: PropTypes.func.isRequired,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]).isRequired,
   isRainbow: PropTypes.bool,
 };
 

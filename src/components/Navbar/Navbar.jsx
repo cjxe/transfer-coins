@@ -16,11 +16,11 @@ function Navbar({ children }) {
     <NavbarContext.Provider value={[isOpen, setIsOpen]}>
       <div
         className={clsx(
-          'z-10 flex w-full xs:fixed xs:flex-col xs:overflow-hidden xs:p-4 lg:sticky lg:top-0 lg:flex-row lg:justify-between lg:p-6',
+          'z-10 flex w-full bg-white dark:bg-neutral-900 xs:fixed xs:flex-col xs:overflow-hidden xs:p-4 lg:sticky lg:top-0 lg:flex-row lg:justify-center lg:p-6',
           isOpen ? 'xs:h-full xs:flex-col' : 'shadow-sm dark:shadow-gray-700'
         )}
       >
-        {children}
+        <div className="flex w-full max-w-5xl xs:h-full xs:flex-col lg:flex-row">{children}</div>
       </div>
     </NavbarContext.Provider>
   );

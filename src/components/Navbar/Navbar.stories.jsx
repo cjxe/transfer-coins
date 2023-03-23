@@ -21,10 +21,10 @@ export const NotSignedIn = {
         </div>
         <Navbar.Collapse>
           <div className="flex xs:flex-col xs:gap-4 lg:flex-row lg:gap-8">
-            <Navbar.Link to="#features">Features</Navbar.Link>
-            <Navbar.Link to="#pricing">Pricing</Navbar.Link>
-            <Navbar.Link to="#faq">FAQ</Navbar.Link>
-            <Navbar.Link to="#contact">Contact</Navbar.Link>
+            <Navbar.Link href="#features">Features</Navbar.Link>
+            <Navbar.Link href="#pricing">Pricing</Navbar.Link>
+            <Navbar.Link href="#faq">FAQ</Navbar.Link>
+            <Navbar.Link href="#contact">Contact</Navbar.Link>
           </div>
           <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
             <VerticalSeparator className="stroke-gray-200 dark:stroke-gray-700 xs:hidden lg:block" />

@@ -19,7 +19,7 @@ function Feature({ isIncluded, children }) {
 
 Feature.propTypes = {
   isIncluded: PropTypes.bool.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
 };
 
 export default Feature;

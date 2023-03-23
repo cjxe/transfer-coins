@@ -151,7 +151,7 @@ TextInput.propTypes = {
     }),
     PropTypes.func,
   ]),
-  helperText: PropTypes.string,
+  helperText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 
 TextInput.defaultProps = {
