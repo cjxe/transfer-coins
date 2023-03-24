@@ -14,7 +14,9 @@
     "build": true,
     "out": true,
     ".next": true,
-    "src/pages/_app.jsx": true
+    "src/pages/_app.jsx": true,
+    "src/styles": true,
+    "package.json": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

@@ -48,7 +48,15 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ## TODO
 
-- [ ] new component: Data display > `Text area`
+### High priority
+
+- [x] new component: Data display > `Text area`
+- [ ] new component: Data display > `Accordion`
+
+- [ ] create /help
+- [ ] /help#FAQ
+- [ ] /help#contact
+
 - [ ] new component: Data display > `File input`
 - [ ] new component: Data display > `Table`
 - [ ] new component: Data display > `Badge`
@@ -60,3 +68,10 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] new component: Navigation > `Pagination`
 
 - [ ] new component: Actions > `Modal`
+
+### Low priority
+
+- [ ] clean styles and use themes instead
+      ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
+      might help)
+- [ ] add "disabled" state for components

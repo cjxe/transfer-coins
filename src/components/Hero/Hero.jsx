@@ -6,7 +6,7 @@ import HeroDescriptionText from '@/components/Hero/HeroDescriptionText/HeroDescr
 function Hero({ children }) {
   return (
     <div className="flex justify-center" id="hero">
-      <div className="flex max-w-5xl flex-row px-4 xs:h-screen xs:items-center xs:justify-center xs:pt-12 lg:h-full lg:justify-between lg:py-20">
+      <div className="flex max-w-5xl flex-row px-4 xs:h-screen xs:items-center xs:justify-center xs:pt-4 lg:h-full lg:justify-between lg:py-20">
         {children}
       </div>
     </div>
