@@ -25,6 +25,7 @@ function NavbarToggle() {
         onClick={() => {
           return expandNavbar();
         }}
+        aria-label="hamburger menu"
       />
     </div>
   );

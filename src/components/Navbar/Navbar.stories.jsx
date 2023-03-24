@@ -28,7 +28,7 @@ export const NotSignedIn = {
           </div>
           <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
             <VerticalSeparator className="stroke-zinc-200 dark:stroke-zinc-700 xs:hidden lg:block" />
-            <ButtonWithIcon variant="secondary" size="base" Icon={HiMoon} />
+            <ButtonWithIcon variant="secondary" size="base" Icon={HiMoon} aria-label="dark mode" />
             <Button variant="secondary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
               Log in
             </Button>

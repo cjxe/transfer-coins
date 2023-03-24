@@ -31,8 +31,18 @@ export const Base = {
             © Transfer Coins. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <ButtonWithIcon variant="secondary" size="base" Icon={BsDiscord} />
-            <ButtonWithIcon variant="secondary" size="base" Icon={BsTwitter} />
+            <ButtonWithIcon
+              variant="secondary"
+              size="base"
+              Icon={BsDiscord}
+              aria-label="discord server"
+            />
+            <ButtonWithIcon
+              variant="secondary"
+              size="base"
+              Icon={BsTwitter}
+              aria-label="twitter account"
+            />
           </div>
         </div>
       </>

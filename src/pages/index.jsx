@@ -51,6 +51,7 @@ import Hero from '@/components/Hero/Hero';
 import { Typewriter } from 'react-simple-typewriter';
 import FeatureContainer from '@/components/Features/FeatureContainer/FeatureContainer';
 import PlanCard from '@/components/PlanCard/PlanCard';
+import Head from 'next/head';
 
 // TODO BITTIKTEN SONRA `Navbar.stories.jsx`'i updatele
 function Home() {
@@ -59,6 +60,15 @@ function Home() {
 
   return (
     <div>
+      <title>Transfer Coins - Home page</title>
+      <meta
+        name="description"
+        content="A new, safe and easy way to share all of your cryptocurrency addresses with one link"
+      />
+      <meta
+        name="keywords"
+        content="transfer, coins, crypto, payment, cryptocurrency, address, share, network, all"
+      />
       <Navbar>
         <div className="flex flex-row justify-between">
           <Navbar.Brand BrandIcon={BrandLogo} brandName="Transfer Coins" size="sm" />
@@ -80,6 +90,7 @@ function Home() {
               variant="secondary"
               size="base"
               Icon={currentTheme === 'dark' ? HiMoon : HiSun}
+              aria-label="dark mode"
             />
             <Button variant="secondary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
               Log in
@@ -334,8 +345,18 @@ function Home() {
             © Transfer Coins. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <ButtonWithIcon variant="secondary" size="base" Icon={BsDiscord} />
-            <ButtonWithIcon variant="secondary" size="base" Icon={BsTwitter} />
+            <ButtonWithIcon
+              variant="secondary"
+              size="base"
+              Icon={BsDiscord}
+              aria-label="discord server"
+            />
+            <ButtonWithIcon
+              variant="secondary"
+              size="base"
+              Icon={BsTwitter}
+              aria-label="twitter account"
+            />
           </div>
         </div>
       </Footer>
