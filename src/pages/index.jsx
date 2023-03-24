@@ -60,15 +60,17 @@ function Home() {
 
   return (
     <div>
-      <title>Transfer Coins - Home page</title>
-      <meta
-        name="description"
-        content="A new, safe and easy way to share all of your cryptocurrency addresses with one link"
-      />
-      <meta
-        name="keywords"
-        content="transfer, coins, crypto, payment, cryptocurrency, address, share, network, all"
-      />
+      <Head>
+        <title>Transfer Coins - Home page</title>
+        <meta
+          name="description"
+          content="A new, safe and easy way to share all of your cryptocurrency addresses with one link"
+        />
+        <meta
+          name="keywords"
+          content="transfer, coins, crypto, payment, cryptocurrency, address, share, network, all"
+        />
+      </Head>
       <Navbar>
         <div className="flex flex-row justify-between">
           <Navbar.Brand BrandIcon={BrandLogo} brandName="Transfer Coins" size="sm" />
