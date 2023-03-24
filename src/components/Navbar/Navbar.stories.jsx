@@ -23,8 +23,8 @@ export const NotSignedIn = {
           <div className="flex xs:flex-col xs:gap-4 lg:flex-row lg:gap-8">
             <Navbar.Link href="#features">Features</Navbar.Link>
             <Navbar.Link href="#pricing">Pricing</Navbar.Link>
-            <Navbar.Link href="#faq">FAQ</Navbar.Link>
-            <Navbar.Link href="#contact">Contact</Navbar.Link>
+            <Navbar.Link href="/help#faq">FAQ</Navbar.Link>
+            <Navbar.Link href="/help#contact">Contact</Navbar.Link>
           </div>
           <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
             <VerticalSeparator className="stroke-zinc-200 dark:stroke-zinc-700 xs:hidden lg:block" />

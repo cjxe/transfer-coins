@@ -5,6 +5,7 @@
 @layer base {
   html {
     @apply antialiased;
+    @apply scroll-smooth;
   }
 }
 

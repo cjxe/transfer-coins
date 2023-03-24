@@ -54,7 +54,8 @@ import PlanCard from '@/components/PlanCard/PlanCard';
 
 // TODO BITTIKTEN SONRA `Navbar.stories.jsx`'i updatele
 function Home() {
-  const { theme, setTheme } = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === 'system' ? systemTheme : theme;
 
   return (
     <div>
@@ -67,18 +68,18 @@ function Home() {
           <div className="flex xs:flex-col xs:gap-4 lg:flex-row lg:gap-8">
             <Navbar.Link href="#features">Features</Navbar.Link>
             <Navbar.Link href="#pricing">Pricing</Navbar.Link>
-            <Navbar.Link href="#faq">FAQ</Navbar.Link>
-            <Navbar.Link href="#contact">Contact</Navbar.Link>
+            <Navbar.Link href="/help#faq">FAQ</Navbar.Link>
+            <Navbar.Link href="/help#contact">Contact</Navbar.Link>
           </div>
           <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
             <VerticalSeparator className="stroke-zinc-200 dark:stroke-zinc-700 xs:hidden lg:block" />
             <ButtonWithIcon
               onClick={() => {
-                return theme === 'dark' ? setTheme('light') : setTheme('dark');
+                return currentTheme === 'dark' ? setTheme('light') : setTheme('dark');
               }}
               variant="secondary"
               size="base"
-              Icon={theme === 'dark' ? HiMoon : HiSun}
+              Icon={currentTheme === 'dark' ? HiMoon : HiSun}
             />
             <Button variant="secondary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
               Log in

@@ -24,7 +24,7 @@ function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illust
           >
             {icons &&
               icons.map((Icon) => {
-                return <Icon className="h-6 w-6 cursor-pointer" />;
+                return <Icon className="h-6 w-6 cursor-pointer" key={Icon.name} />;
                 // TODO
                 // - [ ] add tooltip when hovered
                 // - [ ] add href

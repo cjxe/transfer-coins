@@ -4,16 +4,18 @@
     ".prettierrc.json": true,
     "node_modules": true,
     "src/pages/api": true,
-    "public": true,
-    "src/pages/_document.jsx": true,
-    "src/styles": true,
     "postcss.config.js": true,
     ".vscode": true,
     "next.config.js": true,
     "jsconfig.json": true,
     ".eslintrc.json": true,
     ".github": true,
-    ".gitignore": true
+    ".gitignore": true,
+    "build": true,
+    "out": true,
+    ".next": true,
+    "src/pages/_document.jsx": true,
+    "src/pages/_app.jsx": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

@@ -21,7 +21,11 @@ const NameSizes = {
 
 function Brand({ BrandIcon, size, brandName, takesToHomePage }) {
   return (
-    <Link className="inline-flex flex-row items-center gap-3" href={takesToHomePage ? '/' : '#'}>
+    <Link
+      className="inline-flex flex-row items-center gap-3"
+      href={takesToHomePage ? '/' : '#top'}
+      scroll={false}
+    >
       <div className={IconSizes[size]}>
         <BrandIcon className="h-full w-full" />
       </div>
