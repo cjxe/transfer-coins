@@ -23,7 +23,7 @@ function Brand({ BrandIcon, size, brandName, takesToHomePage }) {
   return (
     <Link
       className="inline-flex flex-row items-center gap-3"
-      href={takesToHomePage ? '/' : '#top'}
+      href={takesToHomePage ? '/#top' : '#top'}
       scroll={false}
     >
       <div className={IconSizes[size]}>

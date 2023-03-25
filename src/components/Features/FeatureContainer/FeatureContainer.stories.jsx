@@ -72,6 +72,7 @@ export const ShareCoinsAndNetworks = {
     ],
     iconGap: 'gap-5',
     Illustration: EthereumConnectedPathsIllustration,
+    isIllustrationOnTheLeft: false,
   },
 };
 
@@ -94,6 +95,7 @@ export const CustomiseYourPage = {
       'Change the background colour to something you want! We have a few default options that we think suit the best but you can also choose your own.',
     ],
     Illustration: WebDesignerIllustration,
+    isIllustrationOnTheLeft: false,
   },
 };
 

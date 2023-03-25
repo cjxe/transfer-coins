@@ -1,8 +1,11 @@
 import { HiCollection, HiFingerPrint, HiSparkles, HiArrowRight } from 'react-icons/hi';
 import SectionContainer from '@/components/SectionContainer/SectionContainer';
 import FeatureMinicard from '@/components/Features/FeatureMinicard/FeatureMinicard';
-import PlanCard from '../PlanCard/PlanCard';
-import Button from '../Buttons/Button';
+import PlanCard from '@/components/PlanCard/PlanCard';
+import Button from '@/components/Buttons/Button';
+import Accordion from '@/components/Accordion/Accordion';
+import TextInput from '../TextInput/TextInput';
+import TextArea from '../TextArea/TextArea';
 
 export default {
   title: 'Blocks/Marketing/SectionContainer',
@@ -153,6 +156,64 @@ export const CTACard = {
       <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
         Get started
       </Button>
+    ),
+  },
+};
+
+export const FAQCard = {
+  args: {
+    headingText: 'Frequently asked questions',
+    sectionId: 'faq',
+    children: (
+      <Accordion>
+        <Accordion.Item>
+          <Accordion.Heading>What is &quot;Transfer Coins&quot;?</Accordion.Heading>
+          <Accordion.Description>
+            Transfer Coins is a web application that helps the sender to easily navigate through the
+            cryptocurrencies (i.e., coins) that the receiver accepts. We provide this by allowing
+            the receiver to customise their page and donation settings. We also provide additional
+            solutions such as sending and receiving messages, allowing the receiver to share a QR
+            code where they accept a specific coin and a specific amount.
+          </Accordion.Description>
+        </Accordion.Item>
+
+        <Accordion.Item>
+          <Accordion.Heading>Why is it free?</Accordion.Heading>
+          <Accordion.Description>
+            It does not cost much to have many users that use the Free plan. We also have enough
+            users who are opted into the Creative plan and Partner plan.
+          </Accordion.Description>
+        </Accordion.Item>
+      </Accordion>
+    ),
+  },
+};
+
+export const ContactUsCard = {
+  args: {
+    headingText: 'Contact us',
+    sectionId: 'contact',
+    children: (
+      <div className="flex w-full max-w-2xl flex-col gap-8">
+        <TextInput
+          id="email-address"
+          label="Your email address"
+          placeholder="Enter your email address"
+        />
+        <TextInput
+          id="email-subject"
+          label="Subject"
+          placeholder="Explain your issue in a few words"
+        />
+        <TextArea
+          id="email-content"
+          label="Your message"
+          placeholder="Explain your issue in detail"
+          rows={8}
+        />
+        <Button>Send message</Button>
+        <p className="text-zinc-500 dark:text-zinc-400">info@transfercoins.com</p>
+      </div>
     ),
   },
 };

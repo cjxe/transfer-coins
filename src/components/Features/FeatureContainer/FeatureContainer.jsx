@@ -4,14 +4,32 @@ import classNames from 'classnames';
 import HeadingText from '@/components/Features/FeatureContainer/HeadingText/HeadingText';
 import DescriptionText from '@/components/Features/FeatureContainer/DescriptionText/DescriptionText';
 
-function FeatureContainer({ headingText, descriptionText, icons, iconGap, Illustration, id }) {
+function FeatureContainer({
+  id,
+  headingText,
+  descriptionText,
+  icons,
+  iconGap,
+  Illustration,
+  isIllustrationOnTheLeft,
+}) {
   return (
     <div id={id} className="flex items-center justify-center xs:px-8 xs:py-10 lg:px-4 lg:py-20">
       <div className="flex max-w-5xl items-center justify-center xs:flex-col xs:gap-12 lg:flex-row xl:gap-20 2xl:gap-40">
-        <div className="xs:order-2 lg:order-1">
+        <div
+          className={classNames(
+            isIllustrationOnTheLeft ? 'lg:order-1' : 'lg:order-2',
+            'xs:order-2'
+          )}
+        >
           {Illustration && <Illustration className="h-full w-full" />}
         </div>
-        <div className="flex flex-col gap-9 xs:order-1 md:max-w-2xl lg:order-2 lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+        <div
+          className={classNames(
+            isIllustrationOnTheLeft ? 'lg:order-2' : 'lg:order-1',
+            'flex flex-col gap-9 xs:order-1 md:max-w-2xl lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl'
+          )}
+        >
           <div className="flex flex-col gap-6">
             <HeadingText>{headingText}</HeadingText>
             <DescriptionText>{descriptionText}</DescriptionText>
@@ -41,10 +59,12 @@ FeatureContainer.propTypes = {
   headingText: PropTypes.string.isRequired,
   descriptionText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   iconGap: PropTypes.string,
+  isIllustrationOnTheLeft: PropTypes.bool,
 };
 
 FeatureContainer.defaultProps = {
   iconGap: 'gap-6',
+  isIllustrationOnTheLeft: true,
 };
 
 export default FeatureContainer;

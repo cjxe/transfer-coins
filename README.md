@@ -51,11 +51,17 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 ### High priority
 
 - [x] new component: Data display > `Text area`
-- [ ] new component: Data display > `Accordion`
+- [x] new component: Data display > `Accordion`
 
-- [ ] create /help
-- [ ] /help#FAQ
-- [ ] /help#contact
+  - [ ] add new prop to `Accordion`: `onlyOneIsOpen`
+
+- [x] create /help
+- [x] /help#FAQ
+- [x] /help#contact
+
+- [ ] how to refactor navbar and footer?
+
+  - 1 approach is to release the components as library
 
 - [ ] new component: Data display > `File input`
 - [ ] new component: Data display > `Table`

@@ -7,6 +7,7 @@ function FooterLink({ children, href }) {
     <Link
       className="w-fit text-base font-medium text-zinc-100 underline-offset-4 hover:underline"
       href={href}
+      scroll={false}
     >
       {children}
     </Link>
