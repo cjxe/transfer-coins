@@ -90,14 +90,15 @@ function Home() {
                 return currentTheme === 'dark' ? setTheme('light') : setTheme('dark');
               }}
               variant="secondary"
-              size="base"
+              size="lg"
               Icon={currentTheme === 'dark' ? HiMoon : HiSun}
               aria-label="dark mode"
+              className="lg:rounded-lg lg:p-1.5"
             />
-            <Button variant="secondary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
+            <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
               Log in
             </Button>
-            <Button variant="primary" size="base" className="lg:px-3 lg:py-2 lg:text-sm">
+            <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
               Join now
             </Button>
           </div>
