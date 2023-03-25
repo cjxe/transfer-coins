@@ -118,8 +118,8 @@ function Help() {
           <Brand size="sm" BrandIcon={BrandLogo} brandName="Transfer Coins" takesToHomePage />
           <hr className="my-4 h-[1px] border-0 bg-zinc-700 xs:inline-block lg:hidden" />
           <div className="flex gap-10 xs:flex-col lg:flex-row">
-            <Footer.Link href="/help#contact">Contact</Footer.Link>
             <Footer.Link href="/help#faq">FAQ</Footer.Link>
+            <Footer.Link href="/help#contact">Contact</Footer.Link>
             <Footer.Link href="/legal/privacy-policy">Privacy Policy</Footer.Link>
             <Footer.Link href="/legal/terms-of-servce">Terms of Service</Footer.Link>
           </div>

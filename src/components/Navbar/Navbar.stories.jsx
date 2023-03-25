@@ -21,8 +21,8 @@ export const NotSignedIn = {
         </div>
         <Navbar.Collapse>
           <div className="flex xs:flex-col xs:gap-4 lg:flex-row lg:gap-8">
-            <Navbar.Link href="#features">Features</Navbar.Link>
-            <Navbar.Link href="#pricing">Pricing</Navbar.Link>
+            <Navbar.Link href="/#features">Features</Navbar.Link>
+            <Navbar.Link href="/#pricing">Pricing</Navbar.Link>
             <Navbar.Link href="/help#faq">FAQ</Navbar.Link>
             <Navbar.Link href="/help#contact">Contact</Navbar.Link>
           </div>
