@@ -64,7 +64,7 @@ function Home() {
         <title>Transfer Coins - Home page</title>
         <meta
           name="description"
-          content="A new, safe and easy way to share all of your cryptocurrency addresses with one link"
+          content="A new, safe and easy way to share all of your cryptocurrency addresses with one link!"
         />
         <meta
           name="keywords"

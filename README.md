@@ -63,6 +63,10 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
   - 1 approach is to release the components as library
 
+- [ ] Log in
+- [ ] Join now
+- [ ] diger sayfalari da yap
+
 - [ ] new component: Data display > `File input`
 - [ ] new component: Data display > `Table`
 - [ ] new component: Data display > `Badge`

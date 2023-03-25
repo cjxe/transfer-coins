@@ -24,7 +24,10 @@ function Help() {
     <div>
       <Head>
         <title>Transfer Coins - Help</title>
-        <meta name="description" content="Transfer Coin's help page" />
+        <meta
+          name="description"
+          content="Do you need help with Transfer Coins? You are at the right place!"
+        />
         <meta
           name="keywords"
           content="transfer, coins, help, faq, contact, us, email, twitter, discord"
