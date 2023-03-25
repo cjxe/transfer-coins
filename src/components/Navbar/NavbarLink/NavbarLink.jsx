@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { NavbarContext } from '@/components/Navbar/NavbarContext/NavbarContext';
 
 function NavbarLink({ children, href }) {
+  // eslint-disable-next-line no-unused-vars
   const [isOpen, setIsOpen] = useContext(NavbarContext);
 
   return (
