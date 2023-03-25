@@ -14,7 +14,7 @@ function AccordionHeading({ children }) {
         !isOpen
           ? 'text-zinc-500 dark:text-zinc-400'
           : 'bg-zinc-100 text-teal-600 dark:bg-zinc-800 dark:text-teal-500',
-        'flex w-full items-center justify-between p-4 text-left font-medium first:rounded-t-lg last:rounded-b-lg hover:bg-zinc-100 focus:ring-zinc-200 focus:ring-4 focus:dark:ring-zinc-700'
+        'flex w-full items-center justify-between p-4 text-left font-medium first:rounded-t-lg last:rounded-b-lg hover:bg-zinc-100 focus:ring-zinc-200 focus:ring-4 dark:hover:bg-zinc-800 focus:dark:ring-zinc-700'
       )}
       onClick={() => {
         setIsOpen(!isOpen);
