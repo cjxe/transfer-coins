@@ -71,7 +71,7 @@ function Help() {
           </div>
         </Navbar.Collapse>
       </Navbar>
-      <div className="[&>*:nth-child(even)]:bg-zinc-50 dark:[&>*:nth-child(even)]:bg-zinc-900">
+      <div className="pt-16 lg:pt-0 [&>*:nth-child(even)]:bg-zinc-50 dark:[&>*:nth-child(even)]:bg-zinc-900">
         <SectionContainer headingText="Frequently asked questions" sectionId="faq">
           <Accordion>
             <Accordion.Item>
