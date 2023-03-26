@@ -59,9 +59,13 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] /help#FAQ
 - [x] /help#contact
 
-- [ ] how to refactor navbar and footer?
+- [x] how to refactor navbar and footer?
 
-  - 1 approach is to release the components as library
+  - ~~1 approach is to release the components as library~~
+  - core elements go to `/components/core` meanwhile the modules/stories I create go to
+    `/components/modules`
+
+- [ ] `/legal`
 
 - [ ] Log in
 - [ ] Join now
