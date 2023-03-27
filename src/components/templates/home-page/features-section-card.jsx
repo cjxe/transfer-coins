@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionContainer, FeatureMinicard } from '@/components/core';
 import { HiCollection, HiFingerPrint, HiSparkles } from 'react-icons/hi';
 
-function FeaturesSectionModule() {
+function FeaturesSectionCard() {
   return (
     <SectionContainer
       headingText="Transferring coins made easy"
@@ -34,4 +34,4 @@ be different."
   );
 }
 
-export default FeaturesSectionModule;
+export default FeaturesSectionCard;

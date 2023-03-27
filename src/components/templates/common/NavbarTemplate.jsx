@@ -4,8 +4,9 @@ import { useTheme } from 'next-themes';
 import { HiMoon, HiSun } from 'react-icons/hi';
 import { BrandLogo } from '@/assets/illustrations';
 import { VerticalSeparator } from '@/assets/other';
+import Link from 'next/link';
 
-function NavbarModule() {
+function NavbarTemplate() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
@@ -30,20 +31,24 @@ function NavbarModule() {
             }}
             variant="secondary"
             size="lg"
-            Icon={currentTheme === 'dark' ? HiMoon : HiSun}
+            Icon={currentTheme === 'dark' ? HiSun : HiMoon}
             aria-label="dark mode"
             className="lg:rounded-lg lg:p-1.5"
           />
-          <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
-            Log in
-          </Button>
-          <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
-            Join now
-          </Button>
+          <Link href="/login" passHref>
+            <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+              Log in
+            </Button>
+          </Link>
+          <Link href="/signup" passHref>
+            <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+              Join now
+            </Button>
+          </Link>
         </div>
       </Navbar.Collapse>
     </Navbar>
   );
 }
 
-export default NavbarModule;
+export default NavbarTemplate;

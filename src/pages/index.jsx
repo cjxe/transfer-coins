@@ -1,17 +1,17 @@
 import React from 'react';
 import Head from 'next/head';
-import { NavbarModule, FooterModule } from '@/components/modules/layout';
+import { NavbarTemplate, FooterTemplate } from '@/components/templates/common';
 import {
-  HeroModule,
-  FeaturesSectionModule,
+  HeroCard,
+  FeaturesSectionCard,
   FeatureContainer1,
   FeatureContainer2,
   FeatureContainer3,
   FeatureContainer4,
   FeatureContainer5,
-  PlanSectionModule,
-  CTAModule,
-} from '@/components/modules/index';
+  PlanSectionCard,
+  CTACard,
+} from '@/components/templates/home-page/index';
 
 function Home() {
   return (
@@ -27,19 +27,19 @@ function Home() {
           content="transfer, coins, crypto, payment, cryptocurrency, address, share, network, all"
         />
       </Head>
-      <NavbarModule />
+      <NavbarTemplate />
       <main className="[&>*:nth-child(even)]:bg-zinc-50 dark:[&>*:nth-child(even)]:bg-zinc-900">
-        <HeroModule />
-        <FeaturesSectionModule />
+        <HeroCard />
+        <FeaturesSectionCard />
         <FeatureContainer1 />
         <FeatureContainer2 />
         <FeatureContainer3 />
         <FeatureContainer4 />
         <FeatureContainer5 />
-        <PlanSectionModule />
-        <CTAModule />
+        <PlanSectionCard />
+        <CTACard />
       </main>
-      <FooterModule />
+      <FooterTemplate />
     </div>
   );
 }

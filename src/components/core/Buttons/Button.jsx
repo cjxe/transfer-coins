@@ -16,6 +16,9 @@ const variants = {
     'text-white shadow-md bg-gradient-to-tl dark:to-yellow-500 dark:via-pink-600 dark:from-blue-500 to-yellow-400 transition-all motion-safe:focus:transition-none via-pink-500 from-blue-500 duration-200 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:ring focus:ring-violet-400 dark:focus:ring-violet-700 focus:ring-opacity-40 dark:focus:ring-opacity-80',
   gradientTeal:
     'text-white bg-gradient-to-r to-teal-500 from-teal-700 dark:to-teal-600 dark:from-teal-800 transition-all motion-safe:focus:transition-none duration-200 bg-size-200 bg-pos-0 hover:bg-pos-100 focus:ring focus:ring-teal-200 dark:focus:ring-teal-800',
+  google: 'text-white bg-[#4284F4] hover:bg-[#3271DC] focus:ring focus:ring-blue-200',
+  twitter: 'text-white bg-[#1DA1F2] hover:bg-[#0682CE] focus:ring focus:ring-blue-300',
+  twitch: 'text-white bg-[#6441A5] hover:bg-[#592BB0] focus:ring focus:ring-purple-200',
 };
 
 // sizes
@@ -76,6 +79,9 @@ Button.propTypes = {
     'yellow',
     'gradientTeal',
     'gradientRainbow',
+    'google',
+    'twitter',
+    'twitch',
   ]),
   size: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl']),
   /**

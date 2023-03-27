@@ -39,7 +39,7 @@ export const MultipleMenus = {
           </Menu.List>
         </Menu.UList>
 
-        <HR />
+        <HR className="my-4" />
 
         <Menu.UList>
           <Menu.Title>Media</Menu.Title>
@@ -51,7 +51,7 @@ export const MultipleMenus = {
           </Menu.List>
         </Menu.UList>
 
-        <HR />
+        <HR className="my-4" />
 
         <Menu.UList>
           <Menu.Title>Security</Menu.Title>

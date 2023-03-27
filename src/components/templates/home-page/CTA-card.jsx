@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionContainer, Button } from '@/components/core';
 import { HiArrowRight } from 'react-icons/hi';
 
-function CTAModule() {
+function CTACard() {
   return (
     <SectionContainer
       headingText="Try it out, it’s free anyway"
@@ -16,4 +16,4 @@ function CTAModule() {
   );
 }
 
-export default CTAModule;
+export default CTACard;

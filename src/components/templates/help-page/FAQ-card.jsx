@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContainer, Accordion } from '@/components/core';
 
-function FAQModule() {
+function FAQCard() {
   return (
     <SectionContainer headingText="Frequently asked questions" sectionId="faq">
       <Accordion>
@@ -28,4 +28,4 @@ function FAQModule() {
   );
 }
 
-export default FAQModule;
+export default FAQCard;

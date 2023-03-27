@@ -85,6 +85,7 @@ function TextInput({
   LeftIcon,
   placeholder,
   buttonIcon,
+  buttonOnClick,
   helperText,
   ...props
 }) {
@@ -123,6 +124,7 @@ function TextInput({
             variant={buttonStates[state]}
             size={buttonSizes[size]}
             Icon={buttonIcon}
+            onClick={buttonOnClick}
           />
         )}
       </div>

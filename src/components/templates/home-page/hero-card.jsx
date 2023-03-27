@@ -4,7 +4,7 @@ import { HeroUllustration } from '@/assets/illustrations';
 import { HiArrowRight } from 'react-icons/hi';
 import { Typewriter } from 'react-simple-typewriter';
 
-function HeroModule() {
+function HeroCard() {
   return (
     <Hero>
       <div className="flex flex-col xs:items-center xs:gap-4 lg:w-4/6 lg:items-start lg:gap-6">
@@ -41,4 +41,4 @@ function HeroModule() {
   );
 }
 
-export default HeroModule;
+export default HeroCard;

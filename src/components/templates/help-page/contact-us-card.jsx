@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContainer, TextInput, TextArea, Button } from '@/components/core';
 
-function ContactUsModule() {
+function ContactUsCard() {
   return (
     <SectionContainer headingText="Contact us" sectionId="contact">
       <div className="flex w-full max-w-2xl flex-col gap-8">
@@ -30,4 +30,4 @@ function ContactUsModule() {
   );
 }
 
-export default ContactUsModule;
+export default ContactUsCard;

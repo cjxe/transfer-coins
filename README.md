@@ -62,13 +62,16 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] how to refactor navbar and footer?
 
   - ~~1 approach is to release the components as library~~
-  - core elements go to `/components/core` meanwhile the modules/stories I create go to
-    `/components/modules`
+  - core elements go to `/components/core` meanwhile the templates/stories I create go to
+    `/components/templates`
+    - we don't want to import stories since stories test components **in a specific state** (source:
+      Storybook docs)
 
 - [ ] `/legal`
 
-- [ ] Log in
-- [ ] Join now
+- [x] Log in
+- [x] Join now
+  - [ ] Make ToS and PP a link (`TextInput`)
 - [ ] diger sayfalari da yap
 
 - [ ] new component: Data display > `File input`

@@ -35,12 +35,17 @@ export const NotSignedIn = {
               aria-label="dark mode"
               className="lg:rounded-lg lg:p-1.5"
             />
-            <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
-              Log in
-            </Button>
-            <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
-              Join now
-            </Button>
+            {/* // TODO wrap the buttons in <Link> in production */}
+            <a href="/login">
+              <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+                Log in
+              </Button>
+            </a>
+            <a href="/signup">
+              <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+                Join now
+              </Button>
+            </a>
           </div>
         </Navbar.Collapse>
       </>

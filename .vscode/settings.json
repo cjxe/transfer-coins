@@ -9,7 +9,6 @@
     "next.config.js": true,
     "jsconfig.json": true,
     ".eslintrc.json": true,
-    ".github": true,
     ".gitignore": true,
     "build": true,
     "out": true,
@@ -18,7 +17,8 @@
     "src/styles": true,
     "package.json": true,
     "tailwind.config.js": true,
-    "src/pages/_document.jsx": true
+    "src/pages/_document.jsx": true,
+    ".github": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

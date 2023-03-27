@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import { NavbarModule, FooterModule } from '@/components/modules/layout';
-import { FAQModule, ContactUsModule } from '@/components/modules/help';
+import { NavbarTemplate, FooterTemplate } from '@/components/templates/common';
+import { FAQCard, ContactUsCard } from '@/components/templates/help-page';
 
 function Help() {
   return (
@@ -17,12 +17,12 @@ function Help() {
           content="transfer, coins, help, faq, contact, us, email, twitter, discord"
         />
       </Head>
-      <NavbarModule />
-      <main className="pt-16 lg:pt-0 [&>*:nth-child(even)]:bg-zinc-50 dark:[&>*:nth-child(even)]:bg-zinc-900">
-        <FAQModule />
-        <ContactUsModule />
+      <NavbarTemplate />
+      <main className="pt-16 lg:pt-0 [&>*:nth-child(even)]:bg-zinc-100 dark:[&>*:nth-child(even)]:bg-zinc-900">
+        <FAQCard />
+        <ContactUsCard />
       </main>
-      <FooterModule />
+      <FooterTemplate />
     </div>
   );
 }

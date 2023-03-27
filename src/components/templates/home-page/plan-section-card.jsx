@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContainer, PlanCard, Button } from '@/components/core';
 
-function PlanSectionModule() {
+function PlanSectionCard() {
   return (
     <SectionContainer
       headingText="Choose the right plan for your business"
@@ -100,4 +100,4 @@ function PlanSectionModule() {
   );
 }
 
-export default PlanSectionModule;
+export default PlanSectionCard;
