@@ -8,7 +8,7 @@ import Link from 'next/link';
 function HeroCard() {
   return (
     <Hero>
-      <div className="flex flex-col xs:items-center xs:gap-4 lg:w-4/6 lg:items-start lg:gap-6">
+      <div className="flex flex-col xs:-mt-[8rem] xs:items-center xs:gap-4 lg:mt-0 lg:w-4/6 lg:items-start lg:gap-6">
         <Hero.Heading>
           <span className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent dark:from-teal-600 dark:to-teal-400">
             Share

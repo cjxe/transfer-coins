@@ -76,6 +76,8 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 - [ ] add "disabled" state for components
 
+- [ ] add husky to workflow
+
 - [ ] new component: Data display > `File input`
 - [ ] new component: Data display > `Table`
 - [ ] new component: Data display > `Badge`
