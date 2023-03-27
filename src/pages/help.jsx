@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { NavbarTemplate, FooterTemplate } from '@/components/templates/common';
+import { MarketingPageLayout } from '@/components/layouts';
 import { FAQCard, ContactUsCard } from '@/components/templates/help-page';
 
 function Help() {
@@ -17,12 +17,11 @@ function Help() {
           content="transfer, coins, help, faq, contact, us, email, twitter, discord"
         />
       </Head>
-      <NavbarTemplate />
-      <main className="pt-16 lg:pt-0 [&>*:nth-child(even)]:bg-zinc-100 dark:[&>*:nth-child(even)]:bg-zinc-900">
+
+      <MarketingPageLayout>
         <FAQCard />
         <ContactUsCard />
-      </main>
-      <FooterTemplate />
+      </MarketingPageLayout>
     </div>
   );
 }

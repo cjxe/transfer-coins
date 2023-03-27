@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { NavbarTemplate, FooterTemplate } from '@/components/templates/common';
+import { MarketingPageLayout } from '@/components/layouts';
 import {
   HeroCard,
   FeaturesSectionCard,
@@ -27,8 +27,8 @@ function Home() {
           content="transfer, coins, crypto, payment, cryptocurrency, address, share, network, all"
         />
       </Head>
-      <NavbarTemplate />
-      <main className="[&>*:nth-child(even)]:bg-zinc-50 dark:[&>*:nth-child(even)]:bg-zinc-900">
+
+      <MarketingPageLayout>
         <HeroCard />
         <FeaturesSectionCard />
         <FeatureContainer1 />
@@ -38,8 +38,7 @@ function Home() {
         <FeatureContainer5 />
         <PlanSectionCard />
         <CTACard />
-      </main>
-      <FooterTemplate />
+      </MarketingPageLayout>
     </div>
   );
 }
