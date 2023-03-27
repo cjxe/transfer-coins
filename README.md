@@ -72,7 +72,9 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] Log in
 - [x] Join now
   - [ ] Make ToS and PP a link (`TextInput`)
-- [ ] diger sayfalari da yap
+- [x] diger sayfalari da yap
+
+- [ ] add "disabled" state for components
 
 - [ ] new component: Data display > `File input`
 - [ ] new component: Data display > `Table`
@@ -89,10 +91,11 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 ### Low priority
 
 - [ ] clean folder structure
+
   - [ ] will inner components have their parent name appended to the start?
   - [ ] will text compoennts have Text at the end?
   - [ ] make all icon props start with a capital letter
-- [ ] add "disabled" state for components
+
 - [ ] clean styles and use themes instead
       ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
       might help)

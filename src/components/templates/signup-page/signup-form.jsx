@@ -9,7 +9,7 @@ function SignupForm() {
   const [passwordShown, setPasswordShown] = useState(false);
 
   return (
-    <form className="flex w-96 flex-col items-center gap-6 p-8">
+    <form className="flex w-full max-w-sm flex-col items-center gap-6 p-8">
       <Brand size="base" BrandIcon={BrandLogo} takesToHomePage />
       <h1 className="text-center text-xl font-bold text-zinc-900 dark:text-zinc-100">
         Join Transfer Coins!
@@ -53,7 +53,7 @@ function SignupForm() {
         <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
           Already on Transfer Coins?{' '}
           <Link
-            href="/login"
+            href="/auth/login"
             className="text-sm font-semibold text-teal-600 hover:underline dark:text-teal-700 lg:decoration-2"
           >
             Log in

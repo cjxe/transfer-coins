@@ -28,7 +28,7 @@ export const Full = {
           </Hero.Description>
           <div className="flex flex-row gap-4 xs:mt-2 xs:justify-center lg:mt-0 lg:justify-start">
             {/* // ! wrap the Button with <Link> in production */}
-            <a href="/signup">
+            <a href="/auth/signup">
               <Button
                 variant="gradientTeal"
                 size="lg"

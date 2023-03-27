@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navbar, Button, ButtonWithIcon } from '@/components/core';
 import { useTheme } from 'next-themes';
 import { HiMoon, HiSun } from 'react-icons/hi';
@@ -9,6 +9,10 @@ import Link from 'next/link';
 function NavbarTemplate() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  useEffect(() => {
+    document.body.style.overflow = 'auto';
+  }, []);
 
   return (
     <Navbar>
@@ -35,13 +39,13 @@ function NavbarTemplate() {
             aria-label="dark mode"
             className="lg:rounded-lg lg:p-1.5"
           />
-          <Link href="/login" passHref>
-            <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+          <Link href="/auth/login" passHref>
+            <Button variant="secondary" size="lg" className="w-full lg:px-3 lg:py-2 lg:text-sm">
               Log in
             </Button>
           </Link>
-          <Link href="/signup" passHref>
-            <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+          <Link href="/auth/signup" passHref>
+            <Button variant="primary" size="lg" className="w-full lg:px-3 lg:py-2 lg:text-sm">
               Join now
             </Button>
           </Link>

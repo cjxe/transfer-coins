@@ -10,7 +10,7 @@ function CTACard() {
       descriptionText="Got any questions? Check out the FAQ."
       sectionId="CTA"
     >
-      <Link href="/signup">
+      <Link href="/auth/signup">
         <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
           Get started
         </Button>

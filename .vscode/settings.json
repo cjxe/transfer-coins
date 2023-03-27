@@ -17,7 +17,6 @@
     "src/styles": true,
     "package.json": true,
     "tailwind.config.js": true,
-    "src/pages/_document.jsx": true,
     ".github": true
   },
   "editor.formatOnSave": true,

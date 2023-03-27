@@ -36,13 +36,13 @@ export const NotSignedIn = {
               className="lg:rounded-lg lg:p-1.5"
             />
             {/* // ! wrap the buttons in <Link> in production */}
-            <a href="/login">
-              <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+            <a href="/auth/login">
+              <Button variant="secondary" size="lg" className="w-full lg:px-3 lg:py-2 lg:text-sm">
                 Log in
               </Button>
             </a>
-            <a href="/signup">
-              <Button variant="primary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
+            <a href="/auth/signup">
+              <Button variant="primary" size="lg" className="w-full lg:px-3 lg:py-2 lg:text-sm">
                 Join now
               </Button>
             </a>

@@ -22,7 +22,7 @@ function HeroCard() {
           Send and receive over 100 different cryptocurrencies on over 5 different networks.
         </Hero.Description>
         <div className="flex flex-row gap-4 xs:mt-2 xs:justify-center lg:mt-0 lg:justify-start">
-          <Link href="/signup">
+          <Link href="/auth/signup">
             <Button
               variant="gradientTeal"
               size="lg"

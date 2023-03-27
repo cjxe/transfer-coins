@@ -154,7 +154,7 @@ export const CTACard = {
     sectionId: 'CTA',
     children: (
       // ! wrap the Button with <Link> in production
-      <a href="/signup">
+      <a href="/auth/signup">
         <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
           Get started
         </Button>
