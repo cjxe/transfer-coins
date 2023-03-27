@@ -94,7 +94,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
   - [ ] will inner components have their parent name appended to the start?
   - [ ] will text compoennts have Text at the end?
-  - [ ] make all icon props start with a capital letter
+  - [ ] make all icon props start with a capital letter?
 
 - [ ] clean styles and use themes instead
       ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
