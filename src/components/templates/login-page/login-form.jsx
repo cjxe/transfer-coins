@@ -47,7 +47,7 @@ function LoginForm() {
         />
       </div>
       <div className="flex w-full flex-row items-center justify-between">
-        <Checkbox labelText="Remember me" />
+        <Checkbox id="remember-me" labelText="Remember me" />
         <Link
           href="/forgot-password"
           className="text-sm font-semibold text-teal-600 hover:underline dark:text-teal-700 lg:decoration-2"
@@ -55,7 +55,7 @@ function LoginForm() {
           Forgot password?
         </Link>
       </div>
-      <div className="flex w-full flex-col gap-2">
+      <div className="flex w-full flex-col gap-4">
         <Button>Log in</Button>
         <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
           New to Transfer Coins?{' '}

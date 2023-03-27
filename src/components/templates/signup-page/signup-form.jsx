@@ -48,7 +48,7 @@ function SignupForm() {
           }}
         />
       </div>
-      <div className="flex w-full flex-col gap-2">
+      <div className="flex w-full flex-col gap-4">
         <Button>Join</Button>
         <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
           Already on Transfer Coins?{' '}

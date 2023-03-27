@@ -27,14 +27,17 @@ export const Full = {
             Send and receive over 100 different cryptocurrencies on over 5 different networks.
           </Hero.Description>
           <div className="flex flex-row gap-4 xs:mt-2 xs:justify-center lg:mt-0 lg:justify-start">
-            <Button
-              variant="gradientTeal"
-              size="lg"
-              className="lg:px-6 lg:py-3.5 lg:text-base"
-              RightIcon={HiArrowRight}
-            >
-              Get started
-            </Button>
+            {/* // ! wrap the Button with <Link> in production */}
+            <a href="/signup">
+              <Button
+                variant="gradientTeal"
+                size="lg"
+                className="lg:px-6 lg:py-3.5 lg:text-base"
+                RightIcon={HiArrowRight}
+              >
+                Get started
+              </Button>
+            </a>
             <Button variant="secondary" size="lg" className="lg:px-6 lg:py-3.5 lg:text-base">
               Live demo
             </Button>

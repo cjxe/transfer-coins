@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionContainer, Button } from '@/components/core';
 import { HiArrowRight } from 'react-icons/hi';
+import Link from 'next/link';
 
 function CTACard() {
   return (
@@ -9,9 +10,11 @@ function CTACard() {
       descriptionText="Got any questions? Check out the FAQ."
       sectionId="CTA"
     >
-      <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
-        Get started
-      </Button>
+      <Link href="/signup">
+        <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
+          Get started
+        </Button>
+      </Link>
     </SectionContainer>
   );
 }

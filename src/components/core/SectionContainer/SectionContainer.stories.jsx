@@ -153,9 +153,12 @@ export const CTACard = {
     descriptionText: 'Got any questions? Check out the FAQ.',
     sectionId: 'CTA',
     children: (
-      <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
-        Get started
-      </Button>
+      // ! wrap the Button with <Link> in production
+      <a href="/signup">
+        <Button variant="primary" size="lg" RightIcon={HiArrowRight}>
+          Get started
+        </Button>
+      </a>
     ),
   },
 };

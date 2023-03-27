@@ -35,7 +35,7 @@ export const NotSignedIn = {
               aria-label="dark mode"
               className="lg:rounded-lg lg:p-1.5"
             />
-            {/* // TODO wrap the buttons in <Link> in production */}
+            {/* // ! wrap the buttons in <Link> in production */}
             <a href="/login">
               <Button variant="secondary" size="lg" className="lg:px-3 lg:py-2 lg:text-sm">
                 Log in

@@ -3,6 +3,7 @@ import { Hero, Button } from '@/components/core';
 import { HeroUllustration } from '@/assets/illustrations';
 import { HiArrowRight } from 'react-icons/hi';
 import { Typewriter } from 'react-simple-typewriter';
+import Link from 'next/link';
 
 function HeroCard() {
   return (
@@ -21,14 +22,16 @@ function HeroCard() {
           Send and receive over 100 different cryptocurrencies on over 5 different networks.
         </Hero.Description>
         <div className="flex flex-row gap-4 xs:mt-2 xs:justify-center lg:mt-0 lg:justify-start">
-          <Button
-            variant="gradientTeal"
-            size="lg"
-            className="lg:px-6 lg:py-3.5 lg:text-base"
-            RightIcon={HiArrowRight}
-          >
-            Get started
-          </Button>
+          <Link href="/signup">
+            <Button
+              variant="gradientTeal"
+              size="lg"
+              className="lg:px-6 lg:py-3.5 lg:text-base"
+              RightIcon={HiArrowRight}
+            >
+              Get started
+            </Button>
+          </Link>
           <Button variant="secondary" size="lg" className="lg:px-6 lg:py-3.5 lg:text-base">
             Live demo
           </Button>
