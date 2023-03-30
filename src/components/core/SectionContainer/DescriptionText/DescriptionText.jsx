@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 function DescriptionText({ children }) {
   return (
-    <p className="text-center font-normal text-zinc-500 dark:text-zinc-400 xs:text-base lg:text-lg">
+    <span className="text-center font-normal text-zinc-500 dark:text-zinc-400 xs:text-base lg:text-lg">
       {children}
-    </p>
+    </span>
   );
 }
 
 DescriptionText.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.element]).isRequired,
 };
 
 export default DescriptionText;

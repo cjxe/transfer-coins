@@ -9,6 +9,7 @@ export default {
 export const Base = {
   args: {
     id: 'base',
+    disabled: false,
   },
 };
 
@@ -17,6 +18,7 @@ export const Full = {
     id: 'full',
     labelText: 'Dark mode',
     helperText: "This option is saved in your browser's cookies",
+    disabled: false,
     // checked: 'checked', // ...props
   },
 };

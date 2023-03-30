@@ -20,7 +20,7 @@ function SectionContainer({ headingText, descriptionText, sectionId, children })
 
 SectionContainer.propTypes = {
   headingText: PropTypes.string.isRequired,
-  descriptionText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  descriptionText: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.element]),
   sectionId: PropTypes.string.isRequired,
 };
 

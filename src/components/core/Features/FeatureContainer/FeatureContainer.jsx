@@ -43,9 +43,6 @@ function FeatureContainer({
             {icons &&
               icons.map((Icon) => {
                 return <Icon className="h-6 w-6 cursor-pointer" key={Icon.name} />;
-                // TODO
-                // - [ ] add tooltip when hovered
-                // - [ ] add href
               })}
           </div>
         </div>
@@ -57,7 +54,8 @@ function FeatureContainer({
 FeatureContainer.propTypes = {
   id: PropTypes.string.isRequired,
   headingText: PropTypes.string.isRequired,
-  descriptionText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+  descriptionText: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.element])
+    .isRequired,
   iconGap: PropTypes.string,
   isIllustrationOnTheLeft: PropTypes.bool,
 };

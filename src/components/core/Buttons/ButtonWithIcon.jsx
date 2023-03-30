@@ -26,15 +26,16 @@ const buttonSizes = {
 };
 
 // Remove SVG's `height`, `width`, `fill`, `stroke` properties
-function ButtonWithIcon({ variant, size, Icon, className, ...props }) {
+function ButtonWithIcon({ variant, size, Icon, className, disabled, ...props }) {
   return (
     <button
       type="button"
       className={classNames(
-        'flex items-center justify-center bg-inherit hover:bg-zinc-100 focus:ring-zinc-200 focus:ring-2 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600',
+        'flex items-center justify-center bg-inherit focus:ring-zinc-200 focus:ring-2 hover:enabled:bg-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:focus:ring-zinc-600 dark:hover:enabled:bg-zinc-700 dark:disabled:opacity-40',
         buttonSizes[size],
         className
       )}
+      disabled={disabled}
       {...props}
     >
       <Icon className={classNames(variants[variant], svgSizes[size])} />
@@ -51,11 +52,13 @@ ButtonWithIcon.propTypes = {
     }),
     PropTypes.func,
   ]).isRequired,
+  disabled: PropTypes.bool,
 };
 
 ButtonWithIcon.defaultProps = {
   variant: 'primary',
   size: 'base',
+  disabled: false,
 };
 
 export default ButtonWithIcon;

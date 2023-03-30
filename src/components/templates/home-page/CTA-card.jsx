@@ -7,7 +7,18 @@ function CTACard() {
   return (
     <SectionContainer
       headingText="Try it out, it’s free anyway"
-      descriptionText="Got any questions? Check out the FAQ."
+      descriptionText={
+        <div>
+          Got any questions? Check out the{' '}
+          <Link
+            href="/help#faq"
+            className="font-semibold text-teal-600 hover:underline dark:text-teal-700 lg:decoration-2"
+          >
+            FAQ
+          </Link>
+          .
+        </div>
+      }
       sectionId="CTA"
     >
       <Link href="/auth/signup">

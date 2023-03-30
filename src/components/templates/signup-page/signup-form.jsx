@@ -41,7 +41,24 @@ function SignupForm() {
           type={passwordShown ? 'text' : 'password'}
           id="password"
           label="Password"
-          helperText="By creating an account, you aggree to our Terms of Service and Privacy Policy."
+          helperText={
+            <div>
+              By creating an account, you aggree to our{' '}
+              <Link
+                href="/legal/terms-of-service"
+                className="text-sm font-semibold text-teal-600 hover:underline dark:text-teal-700 lg:decoration-2"
+              >
+                Terms of Service
+              </Link>{' '}
+              and{' '}
+              <Link
+                href="/legal/privacy-policy"
+                className="text-sm font-semibold text-teal-600 hover:underline dark:text-teal-700 lg:decoration-2"
+              >
+                Privacy Policy
+              </Link>
+            </div>
+          }
           buttonIcon={passwordShown ? HiEyeOff : HiEye}
           buttonOnClick={() => {
             setPasswordShown(!passwordShown);

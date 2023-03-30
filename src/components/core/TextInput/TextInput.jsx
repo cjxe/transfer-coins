@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import ButtonWithIcon from '@/components/core/Buttons/ButtonWithIcon';
 
-// TODO
-// - [ ] add state: disabled
-
 // States
 const inputStates = {
   default:
@@ -87,12 +84,25 @@ function TextInput({
   buttonIcon,
   buttonOnClick,
   helperText,
+  disabled,
   ...props
 }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div
+      className={classNames(
+        disabled ? 'cursor-not-allowed opacity-40 ' : '',
+        'flex flex-col gap-2'
+      )}
+    >
       {label && (
-        <label htmlFor={id} className={classNames(labelStates[state], 'text-sm font-medium')}>
+        <label
+          htmlFor={id}
+          className={classNames(
+            disabled ? 'cursor-not-allowed opacity-40' : '',
+            labelStates[state],
+            'text-sm font-medium'
+          )}
+        >
           {label}
         </label>
       )}
@@ -113,9 +123,10 @@ function TextInput({
             className={classNames(
               inputSizes[size],
               placeholderStates[state],
-              'grow bg-inherit outline-none'
+              'grow bg-inherit outline-none disabled:cursor-not-allowed'
             )}
             placeholder={placeholder}
+            disabled={disabled}
             {...props}
           />
         </div>
@@ -130,7 +141,7 @@ function TextInput({
       </div>
       {helperText && (
         <div className={classNames(helperStates[state], 'text-sm font-normal leading-tight')}>
-          <p>{helperText}</p>
+          <span>{helperText}</span>
         </div>
       )}
     </div>
@@ -155,7 +166,8 @@ TextInput.propTypes = {
     }),
     PropTypes.func,
   ]),
-  helperText: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  helperText: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.element]),
+  disabled: PropTypes.bool,
 };
 
 TextInput.defaultProps = {
@@ -166,6 +178,7 @@ TextInput.defaultProps = {
   placeholder: '',
   buttonIcon: undefined,
   helperText: '',
+  disabled: false,
 };
 
 export default TextInput;

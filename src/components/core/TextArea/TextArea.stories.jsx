@@ -12,6 +12,7 @@ export const Base = {
     size: 'base',
     rows: 20,
     cols: 2,
+    disabled: false,
   },
 };
 
@@ -24,5 +25,6 @@ export const Full = {
     helperText: 'info@transfercoins.com',
     rows: 6,
     cols: 2,
+    disabled: false,
   },
 };

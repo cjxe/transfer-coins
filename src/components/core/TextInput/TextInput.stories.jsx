@@ -12,6 +12,7 @@ export const Base = {
   args: {
     id: 'one',
     size: 'base',
+    disabled: false,
   },
 };
 
@@ -22,6 +23,7 @@ export const WithLeftIcon = {
     label: 'Email address',
     placeholder: 'Enter your email address',
     LeftIcon: HiMail,
+    disabled: false,
   },
 };
 
@@ -32,6 +34,7 @@ export const WithRightButton = {
     label: 'Password',
     buttonIcon: HiEye,
     helperText: 'By creating an account, you agree to our Terms of Service and Privacy Policy.',
+    disabled: false,
   },
 };
 
@@ -45,5 +48,6 @@ export const WithIconAndButton = {
     buttonIcon: ClipboardDocument,
     helperText: 'This name will be displayed on the screen after sending the money.',
     maxlength: 16, // included in ...props
+    disabled: false,
   },
 };

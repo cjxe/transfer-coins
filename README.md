@@ -15,6 +15,22 @@ Storybook.
 
 The build has been tested with [Node.js 19.2.0](https://nodejs.org/dist/v19.2.0/).
 
+### Husky
+
+Husky, Prettier and ESLint is used to automatically test the local code before committing.
+
+```bash
+npm install -g prettier
+```
+
+```bash
+npm install -g ESLint
+```
+
+```bash
+npm run prepare
+```
+
 ### Storybook
 
 Storybook is used to isolate and test UI components.
@@ -53,8 +69,6 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] new component: Data display > `Text area`
 - [x] new component: Data display > `Accordion`
 
-  - [ ] add new prop to `Accordion`: `onlyOneIsOpen`
-
 - [x] create /help
 - [x] /help#FAQ
 - [x] /help#contact
@@ -67,17 +81,19 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
     - we don't want to import stories since stories test components **in a specific state** (source:
       Storybook docs)
 
-- [ ] `/legal`
+- [ ] add new page: `/legal`
+
+  - [ ] new page layout for content
 
 - [x] Log in
 - [x] Join now
-  - [ ] Make ToS and PP a link (`TextInput`)
+  - [x] Make ToS and PP a link (`TextInput`)
 - [x] diger sayfalari da yap
 
-- [ ] add "disabled" state for components
-- [ ] make max width 1440p
+- [x] add husky to workflow
 
-- [ ] add husky to workflow
+- [x] add "disabled" state for components
+- [ ] make max width 1440p
 
 #### New components
 
@@ -90,6 +106,8 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] `Avatar`
 - [ ] `Table`
 - [ ] `Tooltip`
+  - [ ] make `FeatureContainer`s icons `Tooltip`
+  - [ ] add href to icons in the list
 - [ ] `Notification`/`Toast`[s](https://ant.design/components/notification) (low priority)
 - [ ] `Progress` (low priority) [s](https://nextui.org/docs/components/progress)
 - [ ] `KBD` (low priority)
@@ -101,6 +119,11 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ##### Navigation
 
+- [x] `Navbar`
+  - [ ] make one for `Logged in`
+- [x] `Footer`
+- [x] `Menu`
+  - [ ] Add `Badge`s
 - [ ] `Pagination`
 - [ ] `Table of Contents`/`Anchor` [s](https://www.emgoto.com/react-table-of-contents/)
 - [ ] `Stepper` (low priority)
@@ -127,6 +150,14 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
   - [ ] will text compoennts have Text at the end?
   - [ ] make all icon props start with a capital letter?
 
+- [ ] refactor FeatureContainer (make it like <FeatureContainer.Heading> etc)
+
 - [ ] clean styles and use themes instead
       ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
       might help)
+
+#### Components
+
+- [ ] add new prop to `Accordion`: `onlyOneIsOpen`
+- [ ] add new sizes to `ToggleSwitch`: (sm, base, lg)
+- [ ] make `Checkbox` like `ToggleSwitch` where it gets checked even if the label is clicked

@@ -6,9 +6,6 @@ import NavbarCollapse from '@/components/core/Navbar/NavbarCollapse/NavbarCollap
 import NavbarLink from '@/components/core/Navbar/NavbarLink/NavbarLink';
 import NavbarToggle from '@/components/core/Navbar/NavbarToggle/NavbarToggle';
 
-// TODO
-// - [ ] logged in
-
 function Navbar({ children }) {
   const [isOpen, setIsOpen] = useState(false);
 

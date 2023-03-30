@@ -13,7 +13,10 @@
     ".next": true,
     "src/pages/_app.jsx": true,
     "src/styles": true,
-    ".github": true
+    ".github": true,
+    ".husky": true,
+    ".prettierignore": true,
+    "tailwind.config.js": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

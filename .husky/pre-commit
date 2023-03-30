@@ -24,8 +24,7 @@ echo '✅📐 ESLint check is successful.'
 # Build Next.js app
 npm run build ||
 (
-    echo '❌🔨 Next build failed. View the errors above to see why. 
-    '
+    echo '❌🔨 Next build failed. View the errors above to see why.'
     false;
 )
 

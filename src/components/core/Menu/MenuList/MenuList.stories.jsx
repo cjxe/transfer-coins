@@ -11,6 +11,7 @@ export const Base = {
   args: {
     href: '/',
     children: 'Menu list',
+    disabled: false,
   },
 };
 
@@ -19,5 +20,6 @@ export const WithIcon = {
     href: '/account/public-profile',
     children: 'Public profile',
     Icon: HiUser,
+    disabled: false,
   },
 };

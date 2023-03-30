@@ -11,6 +11,7 @@ export const Primary = {
     variant: 'primary',
     size: 'base',
     children: 'Button',
+    disabled: false,
   },
 };
 
@@ -19,6 +20,7 @@ export const Secondary = {
     variant: 'secondary',
     size: 'base',
     children: 'Button',
+    disabled: false,
   },
 };
 
@@ -27,6 +29,7 @@ export const Green = {
     variant: 'green',
     size: 'base',
     children: 'Button',
+    disabled: false,
   },
 };
 
@@ -35,6 +38,7 @@ export const Red = {
     variant: 'red',
     size: 'base',
     children: 'Button',
+    disabled: false,
   },
 };
 
@@ -43,6 +47,7 @@ export const Yellow = {
     variant: 'yellow',
     size: 'base',
     children: 'Button',
+    disabled: false,
   },
 };
 
@@ -51,6 +56,7 @@ export const GradientRainbow = {
     variant: 'gradientRainbow',
     size: 'base',
     children: 'Button',
+    disabled: false,
   },
 };
 
@@ -59,5 +65,6 @@ export const GradientTeal = {
     variant: 'gradientTeal',
     size: 'xl',
     children: 'Get Started',
+    disabled: false,
   },
 };

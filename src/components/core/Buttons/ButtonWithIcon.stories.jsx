@@ -12,6 +12,7 @@ export const Primary = {
     variant: 'primary',
     size: 'base',
     Icon: TestSVG,
+    disabled: false,
   },
 };
 
@@ -20,5 +21,6 @@ export const Secondary = {
     variant: 'secondary',
     size: 'base',
     Icon: TestSVG,
+    disabled: false,
   },
 };
