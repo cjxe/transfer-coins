@@ -4,18 +4,22 @@
 echo '🏗️👷 Styling, testing and building your project before committing...'
 
 # Check Prettier standards
-npm run check-format ||
+prettier --check . --loglevel silent ||
 (
     echo '❌🌹 Prettier check failed. Run `npm run format`, make the required changes listed above, add changes and try to commit again.';
     false;
 )
 
+echo '✅🌹 Prettier check is successful.'
+
 # Check ESLint standards
-npm run check-lint ||
+eslint . --quiet ||
 (
         echo '❌📐 ESLint check failed. Run `npm run lint`, make the required changes listed above, add changes and try to commit again.'
         false; 
 )
+
+echo '✅📐 ESLint check is successful.'
 
 # Build Next.js app
 npm run build ||
