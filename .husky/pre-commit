@@ -1,0 +1,28 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Styling, testing and building your project before committing...'
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo '❌🌹 Prettier check failed. Run `npm run format`, make the required changes listed above, add changes and try to commit again.';
+    false;
+)
+
+# Check ESLint standards
+npm run check-lint ||
+(
+        echo '❌📐 ESLint check failed. Run `npm run lint`, make the required changes listed above, add changes and try to commit again.'
+        false; 
+)
+
+# Build Next.js app
+npm run build ||
+(
+    echo '❌🔨 Next build failed. View the errors above to see why. 
+    '
+    false;
+)
+
+echo '✅🐶 Husky passed all local tests.'

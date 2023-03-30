@@ -75,20 +75,49 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] diger sayfalari da yap
 
 - [ ] add "disabled" state for components
+- [ ] make max width 1440p
 
 - [ ] add husky to workflow
 
-- [ ] new component: Data display > `File input`
-- [ ] new component: Data display > `Table`
-- [ ] new component: Data display > `Badge`
-- [ ] new component: Data display > `Tooltip`
+#### New components
 
-- [ ] new component: Layout > `Divider` > Vertical/horizontal
-- [ ] new component: Layout > `Toast`
+##### Data display
 
-- [ ] new component: Navigation > `Pagination`
+- [ ] `Table`
+- [ ] `Badge` / `Tag`
+- [ ] `Alert`
+- [ ] `Loading` [s](https://nextui.org/docs/components/loading#types)
+- [ ] `Avatar`
+- [ ] `Table`
+- [ ] `Tooltip`
+- [ ] `Notification`/`Toast`[s](https://ant.design/components/notification) (low priority)
+- [ ] `Progress` (low priority) [s](https://nextui.org/docs/components/progress)
+- [ ] `KBD` (low priority)
 
-- [ ] new component: Actions > `Modal`
+##### Layout
+
+- [ ] `Divider` > Vertical/horizontal and w/ text in the middle
+- [ ] `Toast`
+
+##### Navigation
+
+- [ ] `Pagination`
+- [ ] `Table of Contents`/`Anchor` [s](https://www.emgoto.com/react-table-of-contents/)
+- [ ] `Stepper` (low priority)
+- [ ] `Timeline` (low priority)
+- [ ] `Tabs` (very low priority)
+- [ ] `Breadcrumb` (very low priority)
+
+##### Actions
+
+- [ ] `File input`
+- [ ] `Modal` [also mobile like this](https://daisyui.com/components/modal/)
+- [ ] `Dropdown`
+- [ ] `Radio` (low priority)
+- [ ] `Range` (very low priority)
+- [ ] `Date picker` (very low priority)
+- [ ] `Rating` i.e., 5 stars (very low priority)
+- [ ] `Button group` (very low priority)
 
 ### Low priority
 
