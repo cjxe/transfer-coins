@@ -13,7 +13,7 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Base = {
+export const Default = {
   args: {
     headingText: 'Transferring coins made easy',
     descriptionText: 'We did all the thinking so you don’t have to.',

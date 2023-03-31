@@ -7,7 +7,7 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Base = {
+export const Default = {
   args: {
     href: '/',
     children: 'Menu list',

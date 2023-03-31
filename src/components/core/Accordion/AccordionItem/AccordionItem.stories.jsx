@@ -7,7 +7,7 @@ export default {
   component: AccordionItem,
 };
 
-export const Base = {
+export const Default = {
   args: {
     children: (
       <>

@@ -28,4 +28,6 @@ npm run build ||
     false;
 )
 
+echo '✅🔨 Next build is successful.'
+
 echo '✅🐶 Husky passed all local tests.'

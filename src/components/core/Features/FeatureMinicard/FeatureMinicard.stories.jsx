@@ -7,7 +7,7 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Base = {
+export const Default = {
   args: {
     headingText: 'All-in-One link',
     descriptionText: 'Stop sending multiple cryptocurrency addresses with incomplete information.',

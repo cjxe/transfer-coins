@@ -93,18 +93,18 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] add husky to workflow
 
 - [x] add "disabled" state for components
-- [ ] make max width 1440p
+- [ ] make max width 1440px
 
 #### New components
 
 ##### Data display
 
-- [ ] `Table`
+- [x] `Table`
+  - [ ] make table responsive like Binance's
 - [ ] `Badge` / `Tag`
 - [ ] `Alert`
 - [ ] `Loading` [s](https://nextui.org/docs/components/loading#types)
 - [ ] `Avatar`
-- [ ] `Table`
 - [ ] `Tooltip`
   - [ ] make `FeatureContainer`s icons `Tooltip`
   - [ ] add href to icons in the list
@@ -131,11 +131,17 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] `Tabs` (very low priority)
 - [ ] `Breadcrumb` (very low priority)
 
-##### Actions
+##### Actions/Data input
 
+- [x] `Button`
+- [x] `Special button with icon`
+- [x] `Checkbox`
+- [x] `ToggleSwitch`
+- [x] `TextInput`
+- [x] `TextArea`
 - [ ] `File input`
-- [ ] `Modal` [also mobile like this](https://daisyui.com/components/modal/)
 - [ ] `Dropdown`
+- [ ] `Modal` [also mobile like this](https://daisyui.com/components/modal/)
 - [ ] `Radio` (low priority)
 - [ ] `Range` (very low priority)
 - [ ] `Date picker` (very low priority)

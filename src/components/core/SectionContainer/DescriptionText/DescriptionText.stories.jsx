@@ -6,7 +6,7 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Base = {
+export const Default = {
   args: {
     children: 'We did all the thinking so you don’t have to.',
   },
