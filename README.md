@@ -100,7 +100,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 ##### Data display
 
 - [x] `Table`
-  - [ ] make table responsive like Binance's
+  - [x] make table responsive like Binance's
 - [ ] `Badge` / `Tag`
 - [ ] `Alert`
 - [ ] `Loading` [s](https://nextui.org/docs/components/loading#types)

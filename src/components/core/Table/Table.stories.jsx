@@ -11,21 +11,21 @@ export const Default = {
       <>
         <Table.Head>
           <Table.Row className="hover:bg-transparent dark:hover:bg-transparent">
-            <Table.Cell>First Name</Table.Cell>
-            <Table.Cell>Last Name</Table.Cell>
+            <Table.Cell>First name</Table.Cell>
+            <Table.Cell>Last name</Table.Cell>
             <Table.Cell>Age</Table.Cell>
           </Table.Row>
         </Table.Head>
         <Table.Body>
           <Table.Row>
-            <Table.Cell>John</Table.Cell>
-            <Table.Cell>Doe</Table.Cell>
-            <Table.Cell>42</Table.Cell>
+            <Table.Cell data-label="First name">John</Table.Cell>
+            <Table.Cell data-label="Last name">Doe</Table.Cell>
+            <Table.Cell data-label="Age">42</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>Jane</Table.Cell>
-            <Table.Cell>Doe</Table.Cell>
-            <Table.Cell>39</Table.Cell>
+            <Table.Cell data-label="First name">Jane</Table.Cell>
+            <Table.Cell data-label="Last name">Doe</Table.Cell>
+            <Table.Cell data-label="Age">39</Table.Cell>
           </Table.Row>
         </Table.Body>
       </>
@@ -39,8 +39,8 @@ export const ManyColumns = {
       <>
         <Table.Head>
           <Table.Row className="hover:bg-transparent dark:hover:bg-transparent">
-            <Table.Cell>First Name</Table.Cell>
-            <Table.Cell>Last Name</Table.Cell>
+            <Table.Cell>First name</Table.Cell>
+            <Table.Cell>Last name</Table.Cell>
             <Table.Cell>Age</Table.Cell>
             <Table.Cell>ID number</Table.Cell>
             <Table.Cell>Address</Table.Cell>
@@ -48,18 +48,18 @@ export const ManyColumns = {
         </Table.Head>
         <Table.Body>
           <Table.Row>
-            <Table.Cell>John</Table.Cell>
-            <Table.Cell>Doe</Table.Cell>
-            <Table.Cell>42</Table.Cell>
-            <Table.Cell>123456789</Table.Cell>
-            <Table.Cell>123 Main St, Anytown, USA</Table.Cell>
+            <Table.Cell data-label="First name">John</Table.Cell>
+            <Table.Cell data-label="Last name">Doe</Table.Cell>
+            <Table.Cell data-label="Age">42</Table.Cell>
+            <Table.Cell data-label="ID number">123456789</Table.Cell>
+            <Table.Cell data-label="Address">123 Main St, Anytown, USA</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>Jane</Table.Cell>
-            <Table.Cell>Doe</Table.Cell>
-            <Table.Cell>39</Table.Cell>
-            <Table.Cell>987654321</Table.Cell>
-            <Table.Cell>987 Elm St, Anytown, USA</Table.Cell>
+            <Table.Cell data-label="First name">Jane</Table.Cell>
+            <Table.Cell data-label="Last name">Doe</Table.Cell>
+            <Table.Cell data-label="Age">39</Table.Cell>
+            <Table.Cell data-label="ID number">987654321</Table.Cell>
+            <Table.Cell data-label="Address">987 Elm St, Anytown, USA</Table.Cell>
           </Table.Row>
         </Table.Body>
       </>
@@ -86,8 +86,8 @@ export const WithObjectData = {
       <>
         <Table.Head>
           <Table.Row className="hover:bg-transparent dark:hover:bg-transparent">
-            <Table.Cell>First Name</Table.Cell>
-            <Table.Cell>Last Name</Table.Cell>
+            <Table.Cell>First name</Table.Cell>
+            <Table.Cell>Last name</Table.Cell>
             <Table.Cell>Age</Table.Cell>
           </Table.Row>
         </Table.Head>
@@ -95,9 +95,9 @@ export const WithObjectData = {
           {data.map((row) => {
             return (
               <Table.Row key={row.firstName + row.lastName + row.age}>
-                <Table.Cell>{row.firstName}</Table.Cell>
-                <Table.Cell>{row.lastName}</Table.Cell>
-                <Table.Cell>{row.age}</Table.Cell>
+                <Table.Cell data-label="First name">{row.firstName}</Table.Cell>
+                <Table.Cell data-label="Last name">{row.lastName}</Table.Cell>
+                <Table.Cell data-label="Age">{row.age}</Table.Cell>
               </Table.Row>
             );
           })}
