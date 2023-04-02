@@ -101,7 +101,8 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 - [x] `Table`
   - [x] make table responsive like Binance's
-- [ ] `Badge` / `Tag`
+- [x] `Chip`
+  - [ ] make new proprties: `onClickIcon`, `onClick`
 - [ ] `Alert`
 - [ ] `Loading` [s](https://nextui.org/docs/components/loading#types)
 - [ ] `Avatar`
@@ -111,6 +112,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] `Notification`/`Toast`[s](https://ant.design/components/notification) (low priority)
 - [ ] `Progress` (low priority) [s](https://nextui.org/docs/components/progress)
 - [ ] `KBD` (low priority)
+- [ ] `Notification Badge` (very low priority)
 
 ##### Layout
 
@@ -161,6 +163,8 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] clean styles and use themes instead
       ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
       might help)
+
+- [ ] make all Icon propTypes: elementType (make sure there are no errors)
 
 #### Components
 

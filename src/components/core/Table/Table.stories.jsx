@@ -3,6 +3,7 @@ import Table from './Table';
 export default {
   title: 'Components/Data display/Table',
   component: Table,
+  tags: ['autodocs'],
 };
 
 export const Default = {
