@@ -1,4 +1,5 @@
 export { default as Accordion } from './Accordion/Accordion';
+export { default as Alert } from './Alert/Alert';
 export { default as Button } from './Buttons/Button';
 export { default as ButtonWithIcon } from './Buttons/ButtonWithIcon';
 export { default as Checkbox } from './Checkbox/Checkbox';

@@ -103,7 +103,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
   - [x] make table responsive like Binance's
 - [x] `Chip`
   - [ ] make new proprties: `onClickIcon`, `onClick`
-- [ ] `Alert`
+- [x] `Alert`
 - [ ] `Loading` [s](https://nextui.org/docs/components/loading#types)
 - [ ] `Avatar`
 - [ ] `Tooltip`
