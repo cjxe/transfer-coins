@@ -102,7 +102,6 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] `Table`
   - [x] make table responsive like Binance's
 - [x] `Chip`
-  - [ ] make new proprties: `onClickIcon`, `onClick`
 - [x] `Alert`
 - [x] `Loading` [s](https://nextui.org/docs/components/loading#types)
 - [ ] `Avatar`
@@ -158,16 +157,18 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
   - [ ] will text compoennts have Text at the end?
   - [ ] make all icon props start with a capital letter?
 
-- [ ] refactor FeatureContainer (make it like <FeatureContainer.Heading> etc)
+- [ ] use cache for github actions and vercelz
+
+- [ ] make all Icon propTypes: elementType (make sure there are no errors)
 
 - [ ] clean styles and use themes instead
       ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
       might help)
 
-- [ ] make all Icon propTypes: elementType (make sure there are no errors)
-
 #### Components
 
-- [ ] add new prop to `Accordion`: `onlyOneIsOpen`
-- [ ] add new sizes to `ToggleSwitch`: (sm, base, lg)
-- [ ] make `Checkbox` like `ToggleSwitch` where it gets checked even if the label is clicked
+- [ ] refactor `<FeatureContainer>` (make it like <FeatureContainer.Heading> etc)
+- [ ] add new prop to `<Accordion>`: `onlyOneIsOpen`
+- [ ] add new sizes to `<ToggleSwitch>`: (sm, base, lg)
+- [ ] make `<Checkbox>` like `<ToggleSwitch>` where it gets checked even if the label is clicked
+- [ ] make new proprties for `<Chip>`: `onClickIcon`, `onClick`

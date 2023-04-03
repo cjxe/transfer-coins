@@ -37,9 +37,26 @@ export const Large = {
   },
 };
 
+export const SmallWithIcon = {
+  args: {
+    size: 'sm',
+    Icon: FaSmileBeam,
+    children: 'Small chip with icon',
+  },
+};
+
 export const MediumWithIcon = {
   args: {
+    size: 'md',
     Icon: FaSmileBeam,
     children: 'Medium chip with icon',
+  },
+};
+
+export const LargeWithIcon = {
+  args: {
+    size: 'lg',
+    Icon: FaSmileBeam,
+    children: 'Large chip with icon',
   },
 };

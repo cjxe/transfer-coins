@@ -2,7 +2,7 @@ import ButtonWithIcon from '@/components/core/Buttons/ButtonWithIcon';
 import TestSVG from '@/assets/icons/test.svg';
 
 export default {
-  title: 'Components/Action/Buttons/ButtonWithIcon',
+  title: 'Components/Data input/Buttons/ButtonWithIcon',
   component: ButtonWithIcon,
   tags: ['autodocs'],
 };

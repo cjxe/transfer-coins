@@ -33,10 +33,12 @@ function Loading({ variant, className }) {
 
 Loading.propType = {
   variant: PropTypes.oneOf(['spinner', 'three-dots']),
+  className: PropTypes.string,
 };
 
 Loading.defaultProps = {
   variant: 'spinner',
+  className: '',
 };
 
 export default Loading;

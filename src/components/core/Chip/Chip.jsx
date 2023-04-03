@@ -10,9 +10,9 @@ const chipColors = {
 };
 
 const chipSizes = {
-  sm: 'text-xs py-0.5 px-1.5 gap-1 rounded',
-  md: 'text-xs py-1.5 px-2 gap-1.5 rounded-md',
-  lg: 'text-sm py-1.5 px-2.5 gap-2 rounded-md',
+  sm: 'text-xs py-0.5 px-1.5 gap-1',
+  md: 'text-xs py-1.5 px-2 gap-1.5',
+  lg: 'text-sm py-1.5 px-2.5 gap-1.5',
 };
 
 // icon
@@ -28,13 +28,13 @@ function Chip({ color, size, Icon, className, children }) {
       className={classnames(
         chipColors[color],
         chipSizes[size],
-        'inline-flex items-center font-medium',
+        'inline-flex items-center rounded-full font-medium',
         className
       )}
     >
       {Icon && (
         <div className={iconSizes[size]}>
-          <Icon className="h-full w-full" />
+          <Icon className="ml-[-0.06rem] h-full w-full" />
         </div>
       )}
       <span>{children}</span>
@@ -46,6 +46,7 @@ Chip.propTypes = {
   color: PropTypes.oneOf(['primary', 'red', 'yellow', 'green']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   Icon: PropTypes.elementType,
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
@@ -53,6 +54,7 @@ Chip.defaultProps = {
   color: 'primary',
   size: 'md',
   Icon: null,
+  className: '',
 };
 
 export default Chip;

@@ -16,9 +16,8 @@
     ".prettierignore": true,
     ".gitignore": true,
     ".vscode": true,
-    ".storybook": true,
     ".husky": true,
-    ".github": true
+    ".storybook": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
