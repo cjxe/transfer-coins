@@ -8,6 +8,7 @@ export { default as FeatureContainer } from './Features/FeatureContainer/Feature
 export { default as FeatureMinicard } from './Features/FeatureMinicard/FeatureMinicard';
 export { default as Footer } from './Footer/Footer';
 export { default as Hero } from './Hero/Hero';
+export { default as Loading } from './Loading/Loading';
 export { default as Menu } from './Menu/Menu';
 export { default as Navbar } from './Navbar/Navbar';
 export { default as PlanCard } from './PlanCard/PlanCard';

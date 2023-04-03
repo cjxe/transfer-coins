@@ -13,7 +13,6 @@
     ".next": true,
     "src/pages/_app.jsx": true,
     "src/styles": true,
-    "tailwind.config.js": true,
     ".prettierignore": true,
     ".gitignore": true,
     ".vscode": true,

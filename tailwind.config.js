@@ -6,6 +6,15 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      animation: {
+        blink: 'blink 1.5s ease-in-out infinite',
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '0.2' },
+          '50%': { opacity: '1' },
+        },
+      },
       screens: {
         xs: '0px',
       },
@@ -23,5 +32,6 @@ module.exports = {
       strategy: 'class',
     }),
     require('tailwindcss-inner-border'),
+    require('tailwindcss-animation-delay'),
   ],
 };

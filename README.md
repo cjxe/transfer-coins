@@ -104,7 +104,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] `Chip`
   - [ ] make new proprties: `onClickIcon`, `onClick`
 - [x] `Alert`
-- [ ] `Loading` [s](https://nextui.org/docs/components/loading#types)
+- [x] `Loading` [s](https://nextui.org/docs/components/loading#types)
 - [ ] `Avatar`
 - [ ] `Tooltip`
   - [ ] make `FeatureContainer`s icons `Tooltip`
