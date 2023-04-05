@@ -18,4 +18,4 @@ export { default as TextArea } from './TextArea/TextArea';
 export { default as TextInput } from './TextInput/TextInput';
 export { default as ToggleSwitch } from './ToggleSwitch/ToggleSwitch';
 export { default as Brand } from './Utils/Brand/Brand';
-export { default as HR } from './Utils/HR/HR';
+export { default as Divider } from './Utils/Divider/Divider';

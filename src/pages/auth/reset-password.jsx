@@ -11,7 +11,7 @@ function ResetPassword() {
         <meta name="keywords" content="transfer, coins, reset, create, new, password" />
       </Head>
 
-      <main className="flex min-h-screen items-center justify-center bg-neutral-100 pt-16 dark:bg-neutral-900 lg:pb-40 lg:pt-0">
+      <main className="flex min-h-screen items-center justify-center bg-zinc-100 pt-16 dark:bg-zinc-900 lg:pb-40 lg:pt-0">
         <ResetPasswordForm />
       </main>
     </div>

@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import { Navbar, Button, ButtonWithIcon } from '@/components/core';
+import { Navbar, Button, ButtonWithIcon, Divider } from '@/components/core';
 import { useTheme } from 'next-themes';
 import { HiMoon, HiSun } from 'react-icons/hi';
 import { BrandLogo } from '@/assets/illustrations';
-import { VerticalSeparator } from '@/assets/other';
 import Link from 'next/link';
 
 function NavbarTemplate() {
@@ -28,7 +27,7 @@ function NavbarTemplate() {
           <Navbar.Link href="/help#contact">Contact</Navbar.Link>
         </nav>
         <div className="flex gap-4 xs:flex-col lg:flex-row lg:items-center">
-          <VerticalSeparator className="stroke-zinc-200 dark:stroke-zinc-700 xs:hidden lg:block" />
+          <Divider orientation="vertical" className="h-5 xs:hidden lg:block" />
           <ButtonWithIcon
             onClick={() => {
               return currentTheme === 'dark' ? setTheme('light') : setTheme('dark');

@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-function AvatarFallback({ children, className }) {
+function AvatarFallback({ className, children, ...props }) {
   return (
     <div
-      className={classNames(
-        'text-lg font-medium text-neutral-600 dark:text-neutral-200',
-        className
-      )}
+      className={classNames('text-lg font-medium text-zinc-600 dark:text-zinc-200', className)}
+      {...props}
     >
       {children}
     </div>

@@ -6,7 +6,7 @@ function TableBody({ className, children }) {
   return (
     <tbody
       className={classNames(
-        'divide-y divide-neutral-200 text-sm font-semibold text-neutral-900 dark:divide-neutral-800 dark:text-neutral-100 xs:block md:table-row-group',
+        'divide-y divide-zinc-200 text-sm font-semibold text-zinc-900 dark:divide-zinc-800 dark:text-zinc-100 xs:block md:table-row-group',
         className
       )}
     >

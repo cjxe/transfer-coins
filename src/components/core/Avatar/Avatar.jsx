@@ -11,7 +11,7 @@ function Avatar({ className, children }) {
   return (
     <div
       className={classNames(
-        'relative flex items-center justify-center overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-600',
+        'relative flex items-center justify-center overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-600',
         className
       )}
     >

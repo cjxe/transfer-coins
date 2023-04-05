@@ -1,7 +1,7 @@
 import { HiUser, HiQrcode, HiInboxIn, HiLockClosed, HiCreditCard } from 'react-icons/hi';
 import { RiHandCoinFill } from 'react-icons/ri';
 import Menu from '@/components/core/Menu/Menu';
-import HR from '@/components/core/Utils/HR/HR';
+import Divider from '@/components/core/Utils/Divider/Divider';
 
 export default {
   title: 'Components/Navigation/Menu',
@@ -39,7 +39,7 @@ export const MultipleMenus = {
           </Menu.List>
         </Menu.UList>
 
-        <HR className="my-4" />
+        <Divider orientation="horizontal" className="my-4" />
 
         <Menu.UList>
           <Menu.Title>Media</Menu.Title>
@@ -51,7 +51,7 @@ export const MultipleMenus = {
           </Menu.List>
         </Menu.UList>
 
-        <HR className="my-4" />
+        <Divider orientation="horizontal" className="my-4" />
 
         <Menu.UList>
           <Menu.Title>Security</Menu.Title>

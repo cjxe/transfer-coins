@@ -11,6 +11,7 @@ function AvatarImage({ src, alt, className, ...props }) {
         <Image
           src={src}
           alt={alt}
+          placeholder="empty"
           onError={() => {
             setImageSuccessfullyLoaded(false);
           }}

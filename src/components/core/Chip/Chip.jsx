@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 const chipColors = {
-  primary: 'text-neutral-900 bg-neutral-200 dark:text-neutral-100 dark:bg-neutral-700',
+  primary: 'text-zinc-900 bg-zinc-200 dark:text-zinc-100 dark:bg-zinc-700',
   red: 'text-red-900 bg-red-200 dark:text-red-100 dark:bg-red-900',
   yellow: 'text-yellow-900 bg-yellow-200 dark:text-yellow-100 dark:bg-yellow-900',
   green: 'text-green-900 bg-green-200 dark:text-green-100 dark:bg-green-900',

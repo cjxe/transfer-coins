@@ -1,5 +1,5 @@
 import { BrandLogo } from '@/assets/illustrations';
-import { Brand, Button, HR, TextInput } from '@/components/core';
+import { Brand, Button, Divider, TextInput } from '@/components/core';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaGoogle, FaTwitch, FaTwitter } from 'react-icons/fa';
@@ -26,9 +26,9 @@ function SignupForm() {
         </Button>
       </div>
       <div className="flex w-full flex-row items-center gap-3">
-        <HR className="flex w-full flex-col" />
+        <Divider orientation="horizontal" className="flex w-full flex-col" />
         <span className="text-sm font-normal text-gray-400 dark:text-gray-500">or</span>
-        <HR className="flex w-full flex-col" />
+        <Divider orientation="horizontal" className="flex w-full flex-col" />
       </div>
       <div className="flex w-full flex-col gap-5">
         <TextInput id="username" label="Username" placeholder="Enter your new username" />
@@ -67,7 +67,7 @@ function SignupForm() {
       </div>
       <div className="flex w-full flex-col gap-4">
         <Button>Join</Button>
-        <span className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
+        <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
           Already on Transfer Coins?{' '}
           <Link
             href="/auth/login"

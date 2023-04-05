@@ -104,7 +104,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] `Chip`
 - [x] `Alert`
 - [x] `Loading` [s](https://nextui.org/docs/components/loading#types)
-- [ ] `Avatar`
+- [x] `Avatar`
 - [ ] `Tooltip`
   - [ ] make `FeatureContainer`s icons `Tooltip`
   - [ ] add href to icons in the list
@@ -115,7 +115,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ##### Layout
 
-- [ ] `Divider` > Vertical/horizontal and w/ text in the middle
+- [x] `Divider` > Vertical/horizontal ~~and w/ text in the middle~~
 - [ ] `Toast`
 
 ##### Navigation
@@ -172,3 +172,5 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] add new sizes to `<ToggleSwitch>`: (sm, base, lg)
 - [ ] make `<Checkbox>` like `<ToggleSwitch>` where it gets checked even if the label is clicked
 - [ ] make new proprties for `<Chip>`: `onClickIcon`, `onClick`
+- [ ] Make `<Avatar>`s `onError` prop more seamingless (as soon as the image returns an error,
+      broken-image icon is displayed and then gone after it is rerendered)

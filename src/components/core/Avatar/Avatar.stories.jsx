@@ -27,9 +27,12 @@ export const TextFallback = {
 export const ImageFallback = {
   args: {
     children: (
-      <Avatar.Fallback>
-        <Image src="https://i.pravatar.cc/300?img=5" height="100" width="100" alt="Avatar image" />
-      </Avatar.Fallback>
+      <>
+        <Avatar.Image src="https://i.pravatar.cc/300?img=-1" alt="Avatar image" />
+        <Avatar.Fallback>
+          <Image src="https://i.pravatar.cc/300?img=5" fill alt="Avatar image" />
+        </Avatar.Fallback>
+      </>
     ),
   },
 };
