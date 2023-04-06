@@ -95,7 +95,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] add "disabled" state for components
 - [ ] make max width 1440px
 
-#### New components
+#### New components
 
 ##### Data display
 
@@ -108,15 +108,15 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] `Tooltip`
   - [ ] make `FeatureContainer`s icons `Tooltip`
   - [ ] add href to icons in the list
-- [ ] `Notification`/`Toast`[s](https://ant.design/components/notification) (low priority)
+- [ ] `Notification`/`Toast`[s](https://ant.design/components/notification)
 - [ ] `Progress` (low priority) [s](https://nextui.org/docs/components/progress)
 - [ ] `KBD` (low priority)
 - [ ] `Notification Badge` (very low priority)
 
-##### Layout
+##### Layout
 
 - [x] `Divider` > Vertical/horizontal ~~and w/ text in the middle~~
-- [ ] `Toast`
+- [x] `Toast`
 
 ##### Navigation
 
@@ -132,7 +132,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] `Tabs` (very low priority)
 - [ ] `Breadcrumb` (very low priority)
 
-##### Actions/Data input
+##### Actions/Data input
 
 - [x] `Button`
 - [x] `Special button with icon`
@@ -151,13 +151,15 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ### Low priority
 
+- [ ] standardise all sizings (md or base?)
+
 - [ ] clean folder structure
 
   - [ ] will inner components have their parent name appended to the start?
-  - [ ] will text compoennts have Text at the end?
+  - [ ] will text compoennts have Text at the end? no
   - [ ] make all icon props start with a capital letter?
 
-- [ ] use cache for github actions and vercelz
+- [ ] use cache for github actions and vercel
 
 - [ ] make all Icon propTypes: elementType (make sure there are no errors)
 
@@ -165,7 +167,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
       ([this](https://github.com/themesberg/flowbite-react/blob/be78e5e748a64ee213018837c576a75ed35a4f13/src/lib/theme/default.ts)
       might help)
 
-#### Components
+#### Components
 
 - [ ] refactor `<FeatureContainer>` (make it like <FeatureContainer.Heading> etc)
 - [ ] add new prop to `<Accordion>`: `onlyOneIsOpen`

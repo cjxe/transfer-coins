@@ -23,20 +23,23 @@ const severityIcons = {
   success: <HiCheckCircle className="h-5 w-5" />,
 };
 
-function Alert({ severity, CustomIcon, className, children }) {
+function Alert({ severity, CustomIcon, action, className, children }) {
   const Icon = (CustomIcon && <CustomIcon className="h-5 w-5" />) || severityIcons[severity];
 
   return (
     <div
       className={classNames(
         severityStyles[severity],
-        'flex flex-row justify-start gap-3 rounded p-3 font-normal',
+        'flex flex-row items-center justify-between gap-3 rounded p-3 font-normal',
         className
       )}
       role="alert"
     >
-      <div className="mt-[0.13rem]">{Icon}</div>
-      <div className="flex flex-col gap-4">{children}</div>
+      <div className="flex flex-row items-center justify-start gap-3">
+        <div className="mt-[0.13rem] self-start">{Icon}</div>
+        <div className="flex flex-col gap-4">{children}</div>
+      </div>
+      <div className="self-start">{action}</div>
     </div>
   );
 }
@@ -44,6 +47,7 @@ function Alert({ severity, CustomIcon, className, children }) {
 Alert.propTypes = {
   severity: PropTypes.oneOf(['error', 'warning', 'info', 'success']),
   CustomIcon: PropTypes.elementType,
+  action: PropTypes.node,
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
@@ -51,6 +55,7 @@ Alert.propTypes = {
 Alert.defaultProps = {
   severity: 'info',
   CustomIcon: null,
+  action: null,
   className: '',
 };
 

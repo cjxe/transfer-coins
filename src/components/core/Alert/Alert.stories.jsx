@@ -1,4 +1,5 @@
-import { Button } from '..';
+import { HiX } from 'react-icons/hi';
+import { Button, ButtonWithIcon } from '..';
 import Alert from './Alert';
 
 export default {
@@ -44,8 +45,9 @@ export const CustomIcon = {
   },
 };
 
-export const WithTitle = {
+export const WithTitleAndActions = {
   args: {
+    severity: 'success',
     children: (
       <>
         <Alert.Title>This is Alert.Title</Alert.Title>
@@ -62,6 +64,31 @@ export const WithTitle = {
           </Button>
         </div>
       </>
+    ),
+    action: (
+      <div className="mt-[-0.38rem]">
+        <ButtonWithIcon
+          size="sm"
+          Icon={HiX}
+          variant="none"
+          className="focus:ring-green-300 hover:enabled:bg-green-200 dark:focus:ring-green-700 dark:hover:enabled:bg-green-800"
+        />
+      </div>
+    ),
+  },
+};
+
+export const WithAction = {
+  args: {
+    children: 'This is an alert with an action',
+    severity: 'success',
+    action: (
+      <ButtonWithIcon
+        size="sm"
+        Icon={HiX}
+        variant="none"
+        className="focus:ring-green-300 hover:enabled:bg-green-200 dark:focus:ring-green-700 dark:hover:enabled:bg-green-800"
+      />
     ),
   },
 };
