@@ -1,9 +1,52 @@
-import React from 'react';
-import { Hero, Button } from '@/components/core';
+import React, { useContext } from 'react';
+import { Hero, Button, Toast, Alert, ButtonWithIcon } from '@/components/core';
+import { ToastContext } from '@/components/core/Toast/ToastContext/ToastContext';
 import { HeroUllustration } from '@/assets/illustrations';
-import { HiArrowRight } from 'react-icons/hi';
+import { HiArrowRight, HiX } from 'react-icons/hi';
 import { Typewriter } from 'react-simple-typewriter';
 import Link from 'next/link';
+
+function LiveDemoButtonAlert() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Alert
+      severity="warning"
+      action={
+        <ButtonWithIcon
+          size="sm"
+          Icon={HiX}
+          variant="none"
+          className="focus:ring-yellow-300 hover:enabled:bg-yellow-200 dark:focus:ring-yellow-700 dark:hover:enabled:bg-yellow-800"
+          onClick={() => {
+            return setIsHidden(true);
+          }}
+        />
+      }
+    >
+      Live demo will be added very soon!
+    </Alert>
+  );
+}
+
+function LiveDemoButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="secondary"
+      size="lg"
+      className="lg:px-6 lg:py-3.5 lg:text-base"
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Live demo
+    </Button>
+  );
+}
 
 function HeroCard() {
   return (
@@ -32,9 +75,14 @@ function HeroCard() {
               Get started
             </Button>
           </Link>
-          <Button variant="secondary" size="lg" className="lg:px-6 lg:py-3.5 lg:text-base">
-            Live demo
-          </Button>
+          <Toast
+            location="bottom-right"
+            autoHide
+            duration={5000}
+            ToastChildren={<LiveDemoButtonAlert />}
+          >
+            <LiveDemoButton />
+          </Toast>
         </div>
       </div>
       <div className="xs:hidden lg:block lg:w-2/6">

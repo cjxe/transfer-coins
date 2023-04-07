@@ -1,10 +1,115 @@
+import React, { useState, useContext } from 'react';
 import { BrandLogo } from '@/assets/illustrations';
-import { Brand, Button, Checkbox, Divider, TextInput } from '@/components/core';
+import {
+  Brand,
+  Button,
+  Checkbox,
+  Divider,
+  TextInput,
+  Alert,
+  ButtonWithIcon,
+  Toast,
+} from '@/components/core';
+import { ToastContext } from '@/components/core/Toast/ToastContext/ToastContext';
 import Link from 'next/link';
-import React, { useState } from 'react';
 import { FaGoogle, FaTwitch, FaTwitter } from 'react-icons/fa';
-import { HiEye, HiEyeOff } from 'react-icons/hi';
+import { HiEye, HiEyeOff, HiX } from 'react-icons/hi';
 
+function LogInButtonAlert() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Alert
+      severity="warning"
+      action={
+        <ButtonWithIcon
+          size="sm"
+          Icon={HiX}
+          variant="none"
+          className="focus:ring-yellow-300 hover:enabled:bg-yellow-200 dark:focus:ring-yellow-700 dark:hover:enabled:bg-yellow-800"
+          onClick={() => {
+            return setIsHidden(true);
+          }}
+        />
+      }
+    >
+      Log in will be added very soon!
+    </Alert>
+  );
+}
+
+// # buttons
+function LogInWithGoogleButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="google"
+      size="base"
+      LeftIcon={FaGoogle}
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Log in with Google
+    </Button>
+  );
+}
+
+function LogInWithTwitterButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="twitter"
+      size="base"
+      LeftIcon={FaTwitter}
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Log in with Twitter
+    </Button>
+  );
+}
+
+function LogInWithTwitchButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="twitch"
+      size="base"
+      LeftIcon={FaTwitch}
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Log in with Twitch
+    </Button>
+  );
+}
+
+function LogInWithPasswordButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Log in
+    </Button>
+  );
+}
+
+// # main component
 function LoginForm() {
   const [passwordShown, setPasswordShown] = useState(false);
 
@@ -15,15 +120,30 @@ function LoginForm() {
         Welcome back!
       </h1>
       <div className="flex w-full flex-col gap-3">
-        <Button variant="google" size="base" LeftIcon={FaGoogle}>
-          Log in with Google
-        </Button>
-        <Button variant="twitter" size="base" LeftIcon={FaTwitter}>
-          Log in with Twitter
-        </Button>
-        <Button variant="twitch" size="base" LeftIcon={FaTwitch}>
-          Log in with Twitch
-        </Button>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<LogInButtonAlert />}
+        >
+          <LogInWithGoogleButton />
+        </Toast>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<LogInButtonAlert />}
+        >
+          <LogInWithTwitterButton />
+        </Toast>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<LogInButtonAlert />}
+        >
+          <LogInWithTwitchButton />
+        </Toast>
       </div>
       <div className="flex w-full flex-row items-center gap-3">
         <Divider orientation="horizontal" className="flex w-full flex-col" />
@@ -56,7 +176,14 @@ function LoginForm() {
         </Link>
       </div>
       <div className="flex w-full flex-col gap-4">
-        <Button>Log in</Button>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<LogInButtonAlert />}
+        >
+          <LogInWithPasswordButton />
+        </Toast>
         <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
           New to Transfer Coins?{' '}
           <Link

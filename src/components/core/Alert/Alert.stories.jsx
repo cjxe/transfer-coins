@@ -80,15 +80,18 @@ export const WithTitleAndActions = {
 
 export const WithAction = {
   args: {
-    children: 'This is an alert with an action',
+    children:
+      'This is an alert with an action This is an alert with an action This is an alert with an action This is an alert with an action This is an alert with an action This is an alert with an action This is an alert with an action',
     severity: 'success',
     action: (
-      <ButtonWithIcon
-        size="sm"
-        Icon={HiX}
-        variant="none"
-        className="focus:ring-green-300 hover:enabled:bg-green-200 dark:focus:ring-green-700 dark:hover:enabled:bg-green-800"
-      />
+      <div className="mt-[-0.38rem]">
+        <ButtonWithIcon
+          size="sm"
+          Icon={HiX}
+          variant="none"
+          className="focus:ring-green-300 hover:enabled:bg-green-200 dark:focus:ring-green-700 dark:hover:enabled:bg-green-800"
+        />
+      </div>
     ),
   },
 };

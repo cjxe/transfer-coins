@@ -1,6 +1,6 @@
 import { HiX } from 'react-icons/hi';
 import React, { useContext } from 'react';
-import { Toast, Alert, ButtonWithIcon } from '..';
+import { Toast, Alert, ButtonWithIcon, Button } from '..';
 import { ToastContext } from './ToastContext/ToastContext';
 
 export default {
@@ -11,6 +11,23 @@ export default {
 
 // # functions
 // have to use functions because we need to use the `ToastContext`
+function ViewAlertButton({ children }) {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <div className="flex h-screen items-center justify-center">
+      <Button
+        onClick={() => {
+          return setIsHidden(false);
+        }}
+      >
+        {children}
+      </Button>
+    </div>
+  );
+}
+
 function DismissableErrorAlert() {
   // eslint-disable-next-line no-unused-vars
   const [_, setIsHidden] = useContext(ToastContext);
@@ -113,7 +130,8 @@ export const VerySimpleToast = {
     autoHide: true,
     autoHideDuration: 3000,
     location: 'top-left',
-    children: <div className="bg-red-500 font-bold text-white">Simple toast</div>,
+    ToastChildren: <div className="bg-red-500 font-bold text-white">Simple toast</div>,
+    children: <ViewAlertButton>View &quot;very simple toast&quot;</ViewAlertButton>,
   },
 };
 
@@ -122,7 +140,8 @@ export const SimpleAlert = {
     autoHide: true,
     autoHideDuration: 5000,
     location: 'top-left',
-    children: <Alert>This is NOT a dismissable success alert</Alert>,
+    ToastChildren: <Alert>This is NOT a dismissable alert</Alert>,
+    children: <ViewAlertButton>View &quot;simple alert&quot;</ViewAlertButton>,
   },
 };
 
@@ -131,7 +150,8 @@ export const TopLeftErrorAlert = {
     autoHide: true,
     autoHideDuration: 3000,
     location: 'top-left',
-    children: <DismissableErrorAlert />,
+    ToastChildren: <DismissableErrorAlert />,
+    children: <ViewAlertButton>View &quot;top left error alert&quot;</ViewAlertButton>,
   },
 };
 
@@ -140,7 +160,8 @@ export const TopRightWarningAlert = {
     autoHide: true,
     autoHideDuration: 3000,
     location: 'top-right',
-    children: <DismissableWarningAlert />,
+    ToastChildren: <DismissableWarningAlert />,
+    children: <ViewAlertButton>View &quot;top right warning alert&quot;</ViewAlertButton>,
   },
 };
 
@@ -149,7 +170,8 @@ export const BottomLeftInfoAlert = {
     autoHide: true,
     autoHideDuration: 3000,
     location: 'bottom-left',
-    children: <DismissableInfoAlert />,
+    ToastChildren: <DismissableInfoAlert />,
+    children: <ViewAlertButton>View &quot;bottom left info alert&quot;</ViewAlertButton>,
   },
 };
 
@@ -158,14 +180,16 @@ export const BottomRightSuccessAlert = {
     autoHide: true,
     autoHideDuration: 3000,
     location: 'bottom-right',
-    children: <DismissableSuccessAlert />,
+    ToastChildren: <DismissableSuccessAlert />,
+    children: <ViewAlertButton>View &quot;bottom right success alert&quot;</ViewAlertButton>,
   },
 };
 
-export const NotAutoHidden = {
+export const NotAutoHiddenAlert = {
   args: {
     autoHide: false,
-    location: 'top-left',
-    children: <DismissableErrorAlert />,
+    location: 'bottom-right',
+    ToastChildren: <DismissableErrorAlert />,
+    children: <ViewAlertButton>View &quot;not auto hidden&quot;</ViewAlertButton>,
   },
 };

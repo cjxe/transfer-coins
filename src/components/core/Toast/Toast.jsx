@@ -14,8 +14,8 @@ const locationClasses = {
  * This component is used to display a toast message.
  * A toast message can be anything from a simple notification to a more complex component like a custom `<Alert>`.
  */
-function Toast({ location, autoHide, duration, children }) {
-  const [isHidden, setIsHidden] = useState(false);
+function Toast({ location, autoHide, duration, ToastChildren, children }) {
+  const [isHidden, setIsHidden] = useState(true);
 
   // eslint-disable-next-line consistent-return
   useEffect(() => {
@@ -27,19 +27,20 @@ function Toast({ location, autoHide, duration, children }) {
         clearTimeout(timeout);
       };
     }
-  }, [autoHide, duration]);
+  }, [isHidden]);
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <ToastContext.Provider value={[isHidden, setIsHidden]}>
+      {children}
       <div
         className={classNames(
-          'fixed transition-opacity duration-300 shadow-lg',
+          'fixed transition-opacity duration-200 shadow-lg',
           locationClasses[location],
-          isHidden ? 'opacity-0' : 'opacity-100'
+          isHidden ? '-z-50 animate-fade-out opacity-0' : 'z-50 animate-fade-in opacity-100'
         )}
       >
-        {children}
+        {ToastChildren}
       </div>
     </ToastContext.Provider>
   );
@@ -48,7 +49,8 @@ function Toast({ location, autoHide, duration, children }) {
 Toast.propTypes = {
   location: PropTypes.oneOf(['top-left', 'top-right', 'bottom-left', 'bottom-right']).isRequired,
   autoHide: PropTypes.bool,
-  duration: PropTypes.number,
+  // PropTypes number or string
+  duration: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   children: PropTypes.node.isRequired,
 };
 

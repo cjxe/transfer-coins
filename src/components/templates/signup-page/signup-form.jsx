@@ -1,10 +1,106 @@
 import { BrandLogo } from '@/assets/illustrations';
-import { Brand, Button, Divider, TextInput } from '@/components/core';
+import { Brand, Button, Divider, Toast, TextInput, Alert, ButtonWithIcon } from '@/components/core';
+import { ToastContext } from '@/components/core/Toast/ToastContext/ToastContext';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FaGoogle, FaTwitch, FaTwitter } from 'react-icons/fa';
-import { HiEye, HiEyeOff } from 'react-icons/hi';
+import { HiEye, HiEyeOff, HiX } from 'react-icons/hi';
 
+function SignUpButtonAlert() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Alert
+      severity="warning"
+      action={
+        <ButtonWithIcon
+          size="sm"
+          Icon={HiX}
+          variant="none"
+          className="focus:ring-yellow-300 hover:enabled:bg-yellow-200 dark:focus:ring-yellow-700 dark:hover:enabled:bg-yellow-800"
+          onClick={() => {
+            return setIsHidden(true);
+          }}
+        />
+      }
+    >
+      Sign up will be added very soon!
+    </Alert>
+  );
+}
+
+// # buttons
+function SignUpWithGoogleButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="google"
+      size="base"
+      LeftIcon={FaGoogle}
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Join with Google
+    </Button>
+  );
+}
+
+function SignUpWithTwitterButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="twitter"
+      size="base"
+      LeftIcon={FaTwitter}
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Join with Twitter
+    </Button>
+  );
+}
+
+function SignUpWithTwitchButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      variant="twitch"
+      size="base"
+      LeftIcon={FaTwitch}
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Join with Twitch
+    </Button>
+  );
+}
+
+function SignUpWithPasswordButton() {
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsHidden] = useContext(ToastContext);
+
+  return (
+    <Button
+      onClick={() => {
+        return setIsHidden(false);
+      }}
+    >
+      Join
+    </Button>
+  );
+}
+
+// # main component
 function SignupForm() {
   const [passwordShown, setPasswordShown] = useState(false);
 
@@ -15,15 +111,30 @@ function SignupForm() {
         Join Transfer Coins!
       </h1>
       <div className="flex w-full flex-col gap-3">
-        <Button variant="google" size="base" LeftIcon={FaGoogle}>
-          Join with Google
-        </Button>
-        <Button variant="twitter" size="base" LeftIcon={FaTwitter}>
-          Join with Twitter
-        </Button>
-        <Button variant="twitch" size="base" LeftIcon={FaTwitch}>
-          Join with Twitch
-        </Button>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<SignUpButtonAlert />}
+        >
+          <SignUpWithGoogleButton />
+        </Toast>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<SignUpButtonAlert />}
+        >
+          <SignUpWithTwitterButton />
+        </Toast>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<SignUpButtonAlert />}
+        >
+          <SignUpWithTwitchButton />
+        </Toast>
       </div>
       <div className="flex w-full flex-row items-center gap-3">
         <Divider orientation="horizontal" className="flex w-full flex-col" />
@@ -66,7 +177,14 @@ function SignupForm() {
         />
       </div>
       <div className="flex w-full flex-col gap-4">
-        <Button>Join</Button>
+        <Toast
+          location="bottom-right"
+          autoHide
+          duration={5000}
+          ToastChildren={<SignUpButtonAlert />}
+        >
+          <SignUpWithPasswordButton />
+        </Toast>
         <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
           Already on Transfer Coins?{' '}
           <Link

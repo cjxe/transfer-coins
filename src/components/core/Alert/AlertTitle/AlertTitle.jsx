@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 function AlertTitle({ className, children }) {
   return (
-    <span className={classNames('mt-[-0.13rem] mb-[-0.5rem] text-lg font-semibold', className)}>
+    <span className={classNames('mb-[-0.5rem] text-lg font-semibold leading-snug', className)}>
       {children}
     </span>
   );

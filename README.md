@@ -117,6 +117,8 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 - [x] `Divider` > Vertical/horizontal ~~and w/ text in the middle~~
 - [x] `Toast`
+  - [ ] bring up ToastContextProvider to `<App />`
+  - [ ] make ToastList
 
 ##### Navigation
 
