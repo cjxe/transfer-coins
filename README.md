@@ -93,6 +93,7 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] add husky to workflow
 
 - [x] add "disabled" state for components
+- [x] use `swiper` to make "plan cards" a carousel
 - [ ] make max width 1440px
 
 #### New components
@@ -161,8 +162,6 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
   - [ ] will text compoennts have Text at the end? no
   - [ ] make all icon props start with a capital letter?
 
-- [ ] use cache for github actions and vercel
-
 - [ ] make all Icon propTypes: elementType (make sure there are no errors)
 
 - [ ] clean styles and use themes instead
@@ -178,3 +177,5 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] make new proprties for `<Chip>`: `onClickIcon`, `onClick`
 - [ ] Make `<Avatar>`s `onError` prop more seamingless (as soon as the image returns an error,
       broken-image icon is displayed and then gone after it is rerendered)
+- [ ] add new `<Table>` component with sorting
+- [ ] add new prop to `<TextInput>`: `onResponse` when text input has a text response

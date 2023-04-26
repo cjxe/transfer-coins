@@ -16,7 +16,7 @@ function PlanCard({ isRainbow, children }) {
       className={classNames(
         'flex max-w-sm flex-col rounded-lg p-1',
         isRainbow
-          ? 'bg-gradient-to-br from-cyan-400 via-yellow-400 to-red-400 shadow-2xl dark:from-cyan-600 dark:via-yellow-600 dark:to-red-600'
+          ? 'bg-gradient-to-br from-cyan-400 via-yellow-400 to-red-400 shadow-lg dark:from-cyan-600 dark:via-yellow-600 dark:to-red-600'
           : 'border border-zinc-200 bg-white shadow-md dark:border-zinc-600 dark:bg-zinc-800'
       )}
     >

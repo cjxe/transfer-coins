@@ -54,8 +54,7 @@ export const CreativePlan = {
         </div>
         <div className="flex flex-col content-end justify-end lg:mt-10">
           <div className="mb-10 flex flex-row items-end justify-center gap-2">
-            <PlanCard.Price>$2</PlanCard.Price>
-            <PlanCard.Description>/month</PlanCard.Description>
+            <PlanCard.Price>$10</PlanCard.Price>
           </div>
           <ul className="mt-4 mb-10 flex flex-col gap-5">
             <PlanCard.Feature isIncluded>Over 100 cryptocurrencies</PlanCard.Feature>
