@@ -14,6 +14,7 @@ import { ToastContext } from '@/components/core/Toast/ToastContext/ToastContext'
 import Link from 'next/link';
 import { FaGoogle, FaTwitch, FaTwitter } from 'react-icons/fa';
 import { HiEye, HiEyeOff, HiX } from 'react-icons/hi';
+import { signIn } from 'next-auth/react';
 
 function LogInButtonAlert() {
   // eslint-disable-next-line no-unused-vars
@@ -34,66 +35,12 @@ function LogInButtonAlert() {
         />
       }
     >
-      Log in will be added very soon!
+      Please use social log ins for now!
     </Alert>
   );
 }
 
 // # buttons
-function LogInWithGoogleButton() {
-  // eslint-disable-next-line no-unused-vars
-  const [_, setIsHidden] = useContext(ToastContext);
-
-  return (
-    <Button
-      variant="google"
-      size="base"
-      LeftIcon={FaGoogle}
-      onClick={() => {
-        return setIsHidden(false);
-      }}
-    >
-      Log in with Google
-    </Button>
-  );
-}
-
-function LogInWithTwitterButton() {
-  // eslint-disable-next-line no-unused-vars
-  const [_, setIsHidden] = useContext(ToastContext);
-
-  return (
-    <Button
-      variant="twitter"
-      size="base"
-      LeftIcon={FaTwitter}
-      onClick={() => {
-        return setIsHidden(false);
-      }}
-    >
-      Log in with Twitter
-    </Button>
-  );
-}
-
-function LogInWithTwitchButton() {
-  // eslint-disable-next-line no-unused-vars
-  const [_, setIsHidden] = useContext(ToastContext);
-
-  return (
-    <Button
-      variant="twitch"
-      size="base"
-      LeftIcon={FaTwitch}
-      onClick={() => {
-        return setIsHidden(false);
-      }}
-    >
-      Log in with Twitch
-    </Button>
-  );
-}
-
 function LogInWithPasswordButton() {
   // eslint-disable-next-line no-unused-vars
   const [_, setIsHidden] = useContext(ToastContext);
@@ -120,30 +67,36 @@ function LoginForm() {
         Welcome back!
       </h1>
       <div className="flex w-full flex-col gap-3">
-        <Toast
-          location="bottom-right"
-          autoHide
-          duration={5000}
-          ToastChildren={<LogInButtonAlert />}
+        <Button
+          variant="google"
+          size="base"
+          LeftIcon={FaGoogle}
+          onClick={() => {
+            signIn('google');
+          }}
         >
-          <LogInWithGoogleButton />
-        </Toast>
-        <Toast
-          location="bottom-right"
-          autoHide
-          duration={5000}
-          ToastChildren={<LogInButtonAlert />}
+          Log in with Google
+        </Button>
+        <Button
+          variant="twitter"
+          size="base"
+          LeftIcon={FaTwitter}
+          onClick={() => {
+            signIn('twitter');
+          }}
         >
-          <LogInWithTwitterButton />
-        </Toast>
-        <Toast
-          location="bottom-right"
-          autoHide
-          duration={5000}
-          ToastChildren={<LogInButtonAlert />}
+          Log in with Twitter
+        </Button>
+        <Button
+          variant="twitch"
+          size="base"
+          LeftIcon={FaTwitch}
+          onClick={() => {
+            signIn('twitch');
+          }}
         >
-          <LogInWithTwitchButton />
-        </Toast>
+          Log in with Twitch
+        </Button>
       </div>
       <div className="flex w-full flex-row items-center gap-3">
         <Divider orientation="horizontal" className="flex w-full flex-col" />

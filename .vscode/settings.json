@@ -3,7 +3,6 @@
     "package-lock.json": true,
     ".prettierrc.json": true,
     "node_modules": true,
-    "src/pages/api": true,
     "postcss.config.js": true,
     "next.config.js": true,
     "jsconfig.json": true,
@@ -13,11 +12,12 @@
     ".next": true,
     "src/styles": true,
     ".prettierignore": true,
-    ".gitignore": true,
     ".vscode": true,
     ".husky": true,
     ".storybook": true,
-    ".github": true
+    ".github": true,
+    "tailwind.config.js": true,
+    ".gitignore": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

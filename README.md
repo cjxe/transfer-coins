@@ -81,10 +81,6 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
     - we don't want to import stories since stories test components **in a specific state** (source:
       Storybook docs)
 
-- [ ] add new page: `/legal`
-
-  - [ ] new page layout for content
-
 - [x] Log in
 - [x] Join now
   - [x] Make ToS and PP a link (`TextInput`)
@@ -94,6 +90,19 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 - [x] add "disabled" state for components
 - [x] use `swiper` to make "plan cards" a carousel
+
+- [x] test useSession() works anywhere
+- [x] create test API endpoint `/protected` and show email
+- [x] create a middleware for checking every req if it has a token when accessing `/dashboard`
+- [ ] skip login/signup if user is already signed in
+- [ ] add new page: `/legal`
+  - [ ] new page layout for content
+    - [ ] `/legal/terms-of-service`
+    - [ ] `/legal/privacy-policy`
+      - [ ] link these to footer buttons
+- [ ] push changes
+- [ ]
+
 - [ ] make max width 1440px
 
 #### New components
@@ -109,7 +118,6 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [ ] `Tooltip`
   - [ ] make `FeatureContainer`s icons `Tooltip`
   - [ ] add href to icons in the list
-- [ ] `Notification`/`Toast`[s](https://ant.design/components/notification)
 - [ ] `Progress` (low priority) [s](https://nextui.org/docs/components/progress)
 - [ ] `KBD` (low priority)
 - [ ] `Notification Badge` (very low priority)
@@ -117,9 +125,9 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 ##### Layout
 
 - [x] `Divider` > Vertical/horizontal ~~and w/ text in the middle~~
-- [x] `Toast`
-  - [ ] bring up ToastContextProvider to `<App />`
-  - [ ] make ToastList
+- [x] `Notification`/`Toast`[s](https://ant.design/components/notification)
+  - [ ] fix: multiple toasts override each other. Make a list instead. Potential solution: bring up
+        ToastContextProvider to `<App />` and wrap it with `<ToastListContextProvider>`
 
 ##### Navigation
 
@@ -140,13 +148,16 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] `Button`
 - [x] `Special button with icon`
 - [x] `Checkbox`
+  - [ ] `CheckboxList`
 - [x] `ToggleSwitch`
 - [x] `TextInput`
+  - [ ] add new child tag: `FeedbackText`
 - [x] `TextArea`
 - [ ] `File input`
 - [ ] `Dropdown`
 - [ ] `Modal` [also mobile like this](https://daisyui.com/components/modal/)
 - [ ] `Radio` (low priority)
+  - [ ] `RadioList`
 - [ ] `Range` (very low priority)
 - [ ] `Date picker` (very low priority)
 - [ ] `Rating` i.e., 5 stars (very low priority)
@@ -154,7 +165,11 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 
 ### Low priority
 
-- [ ] standardise all sizings (md or base?)
+- [ ] standardise all sizings to `md`
+
+  - research result: `-base` variant is only applied to text styles. no flag (default one) is in
+    between `md` and `lg`. However, for this project set the component size to `md` as if it's the
+    base size
 
 - [ ] clean folder structure
 
