@@ -1,23 +1,21 @@
-import { useSession } from 'next-auth/react';
+import { Loading } from '@/components/core';
+import useRequireAuth from '@/lib/useRequireAuth';
 
 export default function ProtectedPage() {
-  const { data: session } = useSession();
+  const session = useRequireAuth();
 
+  // not loaded yet
   if (!session) {
-    return (
-      <div>
-        <p>Access denied (ssr)</p>
-      </div>
-    );
+    return <Loading variant="spinner" />;
   }
 
   // If session exists, display content
   return (
     <div>
-      <h1>Protected Page</h1>
+      <h1>Protected Page (sg)</h1>
       <p>
         <strong>
-          Welcome back {session.user.name} - {session.user.email}
+          welcome back {session.user.name} - {session.user.email}
         </strong>
       </p>
     </div>
