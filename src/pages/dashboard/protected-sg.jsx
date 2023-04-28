@@ -3,13 +3,13 @@ import { useSession } from 'next-auth/react';
 export default function ProtectedPage() {
   const { data: session } = useSession();
 
-  // if (!session) {
-  //   return (
-  //     <div>
-  //       <p>Access denied (ssr)</p>
-  //     </div>
-  //   );
-  // }
+  if (!session) {
+    return (
+      <div>
+        <p>Access denied (ssr)</p>
+      </div>
+    );
+  }
 
   // If session exists, display content
   return (
