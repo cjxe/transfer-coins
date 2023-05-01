@@ -10,14 +10,14 @@
     "build": true,
     "out": true,
     ".next": true,
-    "src/styles": true,
     ".prettierignore": true,
     ".vscode": true,
     ".husky": true,
     ".storybook": true,
     ".github": true,
     "tailwind.config.js": true,
-    ".gitignore": true
+    ".gitignore": true,
+    "src/styles": true
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

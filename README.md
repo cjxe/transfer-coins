@@ -91,6 +91,11 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 - [x] add "disabled" state for components
 - [x] use `swiper` to make "plan cards" a carousel
 
+  - [x] add Navigation and Pagination
+
+- [ ] use [google analytics](https://marketingplatform.google.com/about/analytics/).
+      [official example](https://github.com/vercel/next.js/tree/canary/examples/with-google-analytics)
+
 - [x] test useSession() works anywhere
 - [x] create test API endpoint `/protected` and show email
 - [x] create a middleware for checking every req if it has a token when accessing `/dashboard`

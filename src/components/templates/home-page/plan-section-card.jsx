@@ -1,13 +1,16 @@
 import React from 'react';
 import { SectionContainer, PlanCard, Button } from '@/components/core';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 function PlanSectionCard() {
+  SwiperCore.use([Pagination, Navigation]);
+
   return (
     <SectionContainer
       headingText="Choose the right plan for your business"
@@ -15,14 +18,23 @@ function PlanSectionCard() {
       sectionId="pricing"
     >
       <Swiper
+        modules={[Pagination, Navigation]}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        navigation
+        loop
+        simulateTouch
+        style={{
+          '--swiper-pagination-color': '#009688',
+          '--swiper-pagination-bullet-inactive-color': '#999999',
+          '--swiper-navigation-color': '#009688',
+          '--swiper-navigation-sides-offset': '0px',
+        }}
         breakpoints={{
           0: {
             spaceBetween: 32,
-            slidesPerView: 'auto',
+            slidesPerView: 1,
             centeredSlides: true,
             grabCursor: true,
           },
